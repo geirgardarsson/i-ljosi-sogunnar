@@ -1293,7 +1293,7 @@
     "kind": "region",
     "lat": 49.21,
     "lon": -2.13,
-    "q": "Jersey"
+    "q": "Bailiwick of Jersey"
   },
   "doha": {
     "name": "Doha",
@@ -1356,5 +1356,110 @@
     "lat": 38.8,
     "lon": -120.89,
     "q": "Coloma, California"
+  },
+  "wrangel-eyja": {
+    "name": "Wrangel-eyja",
+    "kind": "region",
+    "lat": 71.23,
+    "lon": -179.3,
+    "q": "Wrangel Island"
+  },
+  "nordursjor": {
+    "name": "Norðursjór",
+    "kind": "water",
+    "lat": 56.5,
+    "lon": 3.2,
+    "q": "North Sea"
+  },
+  "antananarivo": {
+    "name": "Antananarivo",
+    "kind": "city",
+    "lat": -18.88,
+    "lon": 47.51,
+    "q": "Antananarivo"
+  },
+  "santiago": {
+    "name": "Santiago",
+    "kind": "city",
+    "lat": -33.45,
+    "lon": -70.66,
+    "q": "Santiago, Chile"
+  },
+  "miami": {
+    "name": "Miami",
+    "kind": "city",
+    "lat": 25.76,
+    "lon": -80.19,
+    "q": "Miami"
+  },
+  "malmo": {
+    "name": "Malmö",
+    "kind": "city",
+    "lat": 55.6,
+    "lon": 13.0,
+    "q": "Malmö"
+  },
+  "nantucket": {
+    "name": "Nantucket",
+    "kind": "region",
+    "lat": 41.28,
+    "lon": -70.1,
+    "q": "Nantucket"
+  },
+  "sudur-kyrrahaf": {
+    "name": "Suður-Kyrrahaf",
+    "kind": "water",
+    "lat": -0.67,
+    "lon": -119.0,
+    "skipVerify": true
+  },
+  "valparaiso": {
+    "name": "Valparaíso",
+    "kind": "city",
+    "lat": -33.05,
+    "lon": -71.62,
+    "q": "Valparaíso"
+  },
+  "sydney": {
+    "name": "Sydney",
+    "kind": "city",
+    "lat": -33.87,
+    "lon": 151.21,
+    "q": "Sydney"
+  },
+  "bretland": {
+    "name": "Bretland",
+    "kind": "country",
+    "lat": 54.0,
+    "lon": -2.5,
+    "q": "United Kingdom"
+  },
+  "persafloi": {
+    "name": "Persaflói",
+    "kind": "water",
+    "lat": 26.66,
+    "lon": 56.04,
+    "q": "Persian Gulf"
+  },
+  "salem": {
+    "name": "Salem, Massachusetts",
+    "kind": "city",
+    "lat": 42.52,
+    "lon": -70.9,
+    "q": "Salem, Massachusetts"
+  },
+  "laramie": {
+    "name": "Laramie, Wyoming",
+    "kind": "city",
+    "lat": 41.31,
+    "lon": -105.59,
+    "q": "Laramie, Wyoming"
+  },
+  "paskaeyja": {
+    "name": "Páskaeyja (Rapa Nui)",
+    "kind": "region",
+    "lat": -27.11,
+    "lon": -109.35,
+    "q": "Easter Island"
   }
 }

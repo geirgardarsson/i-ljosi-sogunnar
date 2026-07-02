@@ -5157,7 +5157,8 @@
     "subject": "Gull finnst í Sutter's Mill 1848",
     "series": {
       "key": "gullaedid-kalifornia",
-      "part": 1
+      "part": 1,
+      "of": 2
     },
     "places": [
       {
@@ -5172,5 +5173,715 @@
       }
     ],
     "confidence": "high"
+  },
+  "7hqks7": {
+    "subject": "Gullgrafarastraumurinn til Kaliforníu og örlög frumbyggjanna",
+    "series": {
+      "key": "gullaedid-kalifornia",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "san-francisco",
+        "role": "primary",
+        "note": "Borgin margfaldaðist á gullæðisárunum"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1848,
+        "end": 1860,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks8": {
+    "subject": "Ada Blackjack og leiðangurinn til Wrangel-eyju",
+    "series": {
+      "key": "ada-blackjack",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "wrangel-eyja",
+        "role": "primary",
+        "note": "Leiðangur á vegum Vilhjálms Stefánssonar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1921,
+        "end": 1923
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks9": {
+    "subject": "Ada Blackjack ein eftir á Wrangel-eyju",
+    "series": {
+      "key": "ada-blackjack",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "wrangel-eyja",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1921,
+        "end": 1923
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksa": {
+    "subject": "Borpallinum Alexander Kielland hvolfir á Norðursjó 1980",
+    "places": [
+      {
+        "ref": "nordursjor",
+        "role": "primary",
+        "note": "Ekofisk-svæðið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1980,
+        "end": 1980
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksb": {
+    "subject": "Hvarf Emanuelu Orlandi í Vatíkaninu 1983",
+    "places": [
+      {
+        "ref": "rom",
+        "role": "primary",
+        "note": "Bjó innan Vatíkansins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 1983
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksc": {
+    "subject": "Madagaskar frá landnámi til Ranavalonu drottningar",
+    "series": {
+      "key": "madagaskar",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "antananarivo",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 500,
+        "end": 1828,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqksd": {
+    "subject": "Valdatíð Ranavalonu drottningar á Madagaskar",
+    "series": {
+      "key": "madagaskar",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "antananarivo",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1828,
+        "end": 1861
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkse": {
+    "subject": "Valdarán hersins í Chile 11. september 1973",
+    "places": [
+      {
+        "ref": "santiago",
+        "role": "primary",
+        "note": "Árásin á La Moneda-höllina"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1970,
+        "end": 1973
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksf": {
+    "subject": "Anita Bryant og herferðin gegn réttindum hinsegin fólks",
+    "places": [
+      {
+        "ref": "miami",
+        "role": "primary",
+        "note": "Save Our Children-herferðin í Miami-Dade"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1977,
+        "end": 1980
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksg": {
+    "subject": "Danskir gyðingar undir hernámi Þjóðverja",
+    "series": {
+      "key": "gydingar-danmerkur",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kaupmannahofn",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1940,
+        "end": 1943
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksh": {
+    "subject": "Björgun dönsku gyðinganna yfir Eyrarsund",
+    "series": {
+      "key": "gydingar-danmerkur",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kaupmannahofn",
+        "role": "primary"
+      },
+      {
+        "ref": "malmo",
+        "role": "secondary",
+        "note": "Flóttinn yfir Eyrarsund til Svíþjóðar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1943,
+        "end": 1945
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksi": {
+    "subject": "Hvalskipið Essex leggur úr höfn frá Nantucket",
+    "series": {
+      "key": "essex",
+      "part": 1,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "nantucket",
+        "role": "primary",
+        "note": "Heimahöfn og miðstöð hvalveiðanna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1819,
+        "end": 1820
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksj": {
+    "subject": "Búrhvalur sökkvir Essex í Suður-Kyrrahafi",
+    "series": {
+      "key": "essex",
+      "part": 2,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "sudur-kyrrahaf",
+        "role": "primary",
+        "note": "Skipið sökk um 3.700 km vestur af Suður-Ameríku"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1820,
+        "end": 1820
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksk": {
+    "subject": "Hrakningar áhafnar Essex í björgunarbátunum",
+    "series": {
+      "key": "essex",
+      "part": 3,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "sudur-kyrrahaf",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1820,
+        "end": 1821
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksl": {
+    "subject": "Björgun síðustu skipverja Essex",
+    "series": {
+      "key": "essex",
+      "part": 4,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "sudur-kyrrahaf",
+        "role": "primary"
+      },
+      {
+        "ref": "valparaiso",
+        "role": "secondary",
+        "note": "Eftirlifendur fluttir þangað"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1821,
+        "end": 1821
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksm": {
+    "subject": "Frumbyggjar Ástralíu og fyrstu kynni af aðkomumönnum",
+    "series": {
+      "key": "frumbyggjar-astraliu",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "sydney",
+        "role": "primary",
+        "note": "Cook í Botany Bay 1770"
+      }
+    ],
+    "spans": [
+      {
+        "start": -60000,
+        "end": 1788,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqksn": {
+    "subject": "Fyrstu ár bresku fanganýlendunnar í Ástralíu",
+    "series": {
+      "key": "frumbyggjar-astraliu",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "sydney",
+        "role": "primary",
+        "note": "Fanganýlendan í Port Jackson"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1788,
+        "end": 1800
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkso": {
+    "subject": "Andspyrna frumbyggja gegn landtöku Breta",
+    "series": {
+      "key": "frumbyggjar-astraliu",
+      "part": 3
+    },
+    "places": [
+      {
+        "ref": "sydney",
+        "role": "primary",
+        "note": "Uppreisn Pemulwuy"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1788,
+        "end": 1802
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksp": {
+    "subject": "Apollo 8: fyrsta mannaða ferðin á braut um tunglið",
+    "places": [
+      {
+        "ref": "kennedy-space-center",
+        "role": "primary",
+        "note": "Skotið á loft 21. desember 1968"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1968,
+        "end": 1968
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksq": {
+    "subject": "Kúariðufaraldurinn í breskum nautgripum",
+    "series": {
+      "key": "kuarida",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "bretland",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1984,
+        "end": 1990
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksr": {
+    "subject": "Kúariða og Creutzfeldt-Jakob: áhrifin á fólk",
+    "series": {
+      "key": "kuarida",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "bretland",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1990,
+        "end": 2000
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkss": {
+    "subject": "Bungaree, túlkur og fyrsti Ástralinn til að sigla umhverfis álfuna",
+    "series": {
+      "key": "frumbyggjar-astraliu",
+      "part": 4
+    },
+    "places": [
+      {
+        "ref": "sydney",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1775,
+        "end": 1830
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkst": {
+    "subject": "Bandarískt herskip skýtur niður Iran Air 655 árið 1988",
+    "places": [
+      {
+        "ref": "persafloi",
+        "role": "primary",
+        "note": "USS Vincennes við Hormuz-sund"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1988,
+        "end": 1988
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksu": {
+    "subject": "Galdrafárið í Salem hefst",
+    "series": {
+      "key": "salem",
+      "part": 1,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "salem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1692,
+        "end": 1693
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqksv": {
+    "subject": "Nýjar nornaásakanir í Salem",
+    "series": {
+      "key": "salem",
+      "part": 2,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "salem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1692,
+        "end": 1693
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt0": {
+    "subject": "Galdrafárið breiðist út um Nýja England",
+    "series": {
+      "key": "salem",
+      "part": 3,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "salem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1692,
+        "end": 1693
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt1": {
+    "subject": "Réttarhöldin og aftökurnar í Salem",
+    "series": {
+      "key": "salem",
+      "part": 4,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "salem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1692,
+        "end": 1693
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt2": {
+    "subject": "Endalok galdrafársins í Salem",
+    "series": {
+      "key": "salem",
+      "part": 5,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "salem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1692,
+        "end": 1693
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt3": {
+    "subject": "Morðið á Matthew Shepard og áhrif þess",
+    "places": [
+      {
+        "ref": "laramie",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1998,
+        "end": 1998
+      },
+      {
+        "start": 2009,
+        "end": 2009
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt4": {
+    "subject": "Páskaeyja: landnám, moai-stytturnar og komu Evrópumanna",
+    "series": {
+      "key": "paskaeyja",
+      "part": 1,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "paskaeyja",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1200,
+        "end": 1722,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkt5": {
+    "subject": "Hörmungar Páskeyinga á 19. öld: þrælaveiðar og drepsóttir",
+    "series": {
+      "key": "paskaeyja",
+      "part": 2,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "paskaeyja",
+        "role": "primary",
+        "note": "Þrælaveiðar Perúmanna 1862–63"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1800,
+        "end": 1877,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt6": {
+    "subject": "Trúboðar og ævintýramaðurinn Dutrou-Bornier á Páskaeyju",
+    "series": {
+      "key": "paskaeyja",
+      "part": 3,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "paskaeyja",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1864,
+        "end": 1877
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt7": {
+    "subject": "Sauðfjárbúið mikla og endalok sjálfstæðis Páskaeyju",
+    "series": {
+      "key": "paskaeyja",
+      "part": 4,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "paskaeyja",
+        "role": "primary",
+        "note": "Chile innlimaði eyjuna 1888"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1877,
+        "end": 1888
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkt8": {
+    "subject": "Rapa Nui á 20. öld",
+    "series": {
+      "key": "paskaeyja",
+      "part": 5,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "paskaeyja",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1888,
+        "end": 2024,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
   }
 }
