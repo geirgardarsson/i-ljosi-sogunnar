@@ -6,6 +6,7 @@
   "description": "Episodes of 'Í ljósi sögunnar' on a world map and timeline",
   "scripts": {
     "fetch-catalog": "tsx scripts/fetch-catalog.ts",
+    "build-episodes": "tsx scripts/build-episodes.ts",
     "verify-places": "tsx scripts/verify-places.ts",
     "next-batch": "python3 scripts/next-batch.py",
     "merge-batch": "python3 scripts/merge-batch.py"
