@@ -844,7 +844,8 @@
     "kind": "region",
     "lat": 13.0,
     "lon": 25.0,
-    "q": "Darfur, Sudan"
+    "q": "Darfur, Sudan",
+    "skipVerify": true
   },
   "juba": {
     "name": "Juba",
@@ -907,7 +908,7 @@
     "kind": "region",
     "lat": -6.2,
     "lon": 155.3,
-    "q": "Bougainville"
+    "q": "Bougainville, Papua New Guinea"
   },
   "sakhalin": {
     "name": "Sakhalin",
@@ -999,5 +1000,215 @@
     "lat": 81.6,
     "lon": -61.7,
     "skipVerify": true
+  },
+  "kamtsjatka": {
+    "name": "Kamtsjatka",
+    "kind": "region",
+    "lat": 56.0,
+    "lon": 159.0,
+    "q": "Kamchatka"
+  },
+  "birni-nkonni": {
+    "name": "Birni-N'Konni",
+    "kind": "city",
+    "lat": 13.79,
+    "lon": 5.25,
+    "q": "Birni-N'Konni"
+  },
+  "tsjadvatn": {
+    "name": "Tsjadvatn",
+    "kind": "water",
+    "lat": 13.0,
+    "lon": 14.0,
+    "q": "Lake Chad"
+  },
+  "kaliningrad": {
+    "name": "Kalíníngrad (Königsberg)",
+    "kind": "city",
+    "lat": 54.71,
+    "lon": 20.45,
+    "q": "Kaliningrad"
+  },
+  "lyme-regis": {
+    "name": "Lyme Regis",
+    "kind": "city",
+    "lat": 50.73,
+    "lon": -2.94,
+    "q": "Lyme Regis"
+  },
+  "paris": {
+    "name": "París",
+    "kind": "city",
+    "lat": 48.86,
+    "lon": 2.35,
+    "q": "Paris"
+  },
+  "florens": {
+    "name": "Flórens",
+    "kind": "city",
+    "lat": 43.77,
+    "lon": 11.26,
+    "q": "Florence"
+  },
+  "berkeley-england": {
+    "name": "Berkeley, Gloucestershire",
+    "kind": "city",
+    "lat": 51.69,
+    "lon": -2.46,
+    "q": "Berkeley, Gloucestershire"
+  },
+  "aksum": {
+    "name": "Aksúm",
+    "kind": "city",
+    "lat": 14.12,
+    "lon": 38.72,
+    "q": "Axum"
+  },
+  "gondar": {
+    "name": "Gondar",
+    "kind": "city",
+    "lat": 12.6,
+    "lon": 37.47,
+    "q": "Gondar"
+  },
+  "magdala": {
+    "name": "Magdala (Amba Mariam)",
+    "kind": "landmark",
+    "lat": 11.09,
+    "lon": 39.24,
+    "skipVerify": true
+  },
+  "sidi-bouzid": {
+    "name": "Sidi Bouzid",
+    "kind": "city",
+    "lat": 35.04,
+    "lon": 9.48,
+    "q": "Sidi Bouzid"
+  },
+  "tunis": {
+    "name": "Túnisborg",
+    "kind": "city",
+    "lat": 36.8,
+    "lon": 10.18,
+    "q": "Tunis"
+  },
+  "jeddah": {
+    "name": "Jedda",
+    "kind": "city",
+    "lat": 21.49,
+    "lon": 39.19,
+    "q": "Jeddah"
+  },
+  "kabul": {
+    "name": "Kabúl",
+    "kind": "city",
+    "lat": 34.53,
+    "lon": 69.17,
+    "q": "Kabul"
+  },
+  "abbottabad": {
+    "name": "Abbottabad",
+    "kind": "city",
+    "lat": 34.15,
+    "lon": 73.22,
+    "q": "Abbottabad"
+  },
+  "helsinki": {
+    "name": "Helsinki",
+    "kind": "city",
+    "lat": 60.17,
+    "lon": 24.94,
+    "q": "Helsinki"
+  },
+  "tampere": {
+    "name": "Tampere",
+    "kind": "city",
+    "lat": 61.5,
+    "lon": 23.76,
+    "q": "Tampere"
+  },
+  "jamestown": {
+    "name": "Jamestown, Virginia",
+    "kind": "landmark",
+    "lat": 37.21,
+    "lon": -76.78,
+    "q": "Jamestown, Virginia"
+  },
+  "gravesend": {
+    "name": "Gravesend",
+    "kind": "city",
+    "lat": 51.44,
+    "lon": 0.37,
+    "q": "Gravesend, England"
+  },
+  "adwa": {
+    "name": "Adwa",
+    "kind": "city",
+    "lat": 14.17,
+    "lon": 38.9,
+    "q": "Adwa"
+  },
+  "addis-ababa": {
+    "name": "Addis Ababa",
+    "kind": "city",
+    "lat": 9.03,
+    "lon": 38.74,
+    "q": "Addis Ababa"
+  },
+  "bellingshausenhaf": {
+    "name": "Bellingshausen-haf",
+    "kind": "water",
+    "lat": -71.0,
+    "lon": -85.0,
+    "q": "Bellingshausen Sea"
+  },
+  "astana": {
+    "name": "Astana",
+    "kind": "city",
+    "lat": 51.17,
+    "lon": 71.43,
+    "q": "Astana"
+  },
+  "quetta": {
+    "name": "Quetta",
+    "kind": "city",
+    "lat": 30.18,
+    "lon": 67.0,
+    "q": "Quetta"
+  },
+  "buenos-aires": {
+    "name": "Buenos Aires",
+    "kind": "city",
+    "lat": -34.6,
+    "lon": -58.38,
+    "q": "Buenos Aires"
+  },
+  "bandar-seri-begawan": {
+    "name": "Bandar Seri Begawan",
+    "kind": "city",
+    "lat": 4.89,
+    "lon": 114.94,
+    "q": "Bandar Seri Begawan"
+  },
+  "nantes": {
+    "name": "Nantes",
+    "kind": "city",
+    "lat": 47.22,
+    "lon": -1.55,
+    "q": "Nantes"
+  },
+  "bahamaeyjar": {
+    "name": "Bahamaeyjar",
+    "kind": "region",
+    "lat": 23.4,
+    "lon": -74.0,
+    "q": "Bahamas"
+  },
+  "tokyo": {
+    "name": "Tókýó",
+    "kind": "city",
+    "lat": 35.68,
+    "lon": 139.69,
+    "q": "Tokyo"
   }
 }

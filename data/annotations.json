@@ -3767,5 +3767,714 @@
       }
     ],
     "confidence": "high"
+  },
+  "7hqkq3": {
+    "subject": "McMartin-málið: leikskólinn og djöfladýrkunarmóðursýkin",
+    "places": [
+      {
+        "ref": "los-angeles",
+        "role": "primary",
+        "note": "Leikskólinn í Manhattan Beach"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 1990
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq4": {
+    "subject": "Ester Blenda Nordström, frumkvöðull sænskrar rannsóknarblaðamennsku",
+    "series": {
+      "key": "ester-blenda",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "stokkholmur",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1891,
+        "end": 1917
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq5": {
+    "subject": "Ester Blenda: borgarastríð, Ameríkuferðir og Kamtsjatka",
+    "series": {
+      "key": "ester-blenda",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "stokkholmur",
+        "role": "primary"
+      },
+      {
+        "ref": "kamtsjatka",
+        "role": "secondary",
+        "note": "Langdvöl þar á 3. áratugnum"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1917,
+        "end": 1948
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq6": {
+    "subject": "Nagorno-Karabakh: deilan blossar upp á ný 2020",
+    "places": [
+      {
+        "ref": "nagorno-karabakh",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1988,
+        "end": 1994
+      },
+      {
+        "start": 2020,
+        "end": 2020
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq7": {
+    "subject": "Voulet-Chanoine-leiðangurinn: grimmdarverk í nafni Frakklands",
+    "places": [
+      {
+        "ref": "birni-nkonni",
+        "role": "primary",
+        "note": "Fjöldamorðin 1899"
+      },
+      {
+        "ref": "tsjadvatn",
+        "role": "secondary",
+        "note": "Áfangastaður leiðangursins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1898,
+        "end": 1899
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq8": {
+    "subject": "Rafherbergið: horfna gersemi Rússakeisara",
+    "places": [
+      {
+        "ref": "sankti-petursborg",
+        "role": "primary",
+        "note": "Katrínarhöllin í Tsarskoje Selo"
+      },
+      {
+        "ref": "kaliningrad",
+        "role": "secondary",
+        "note": "Síðast séð í Königsberg 1945"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1701,
+        "end": 1716
+      },
+      {
+        "start": 1941,
+        "end": 1945
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq9": {
+    "subject": "Mary Anning, móðir steingervingafræðinnar",
+    "places": [
+      {
+        "ref": "lyme-regis",
+        "role": "primary",
+        "note": "Steingervingafjaran við Lyme Regis"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1799,
+        "end": 1847
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqa": {
+    "subject": "Þjófnaðurinn á Monu Lisu 1911",
+    "places": [
+      {
+        "ref": "paris",
+        "role": "primary",
+        "note": "Louvre-safnið"
+      },
+      {
+        "ref": "florens",
+        "role": "secondary",
+        "note": "Málverkið fannst þar 1913"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1911,
+        "end": 1913
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqb": {
+    "subject": "Edward Jenner og fyrsta bólusetningin",
+    "places": [
+      {
+        "ref": "berkeley-england",
+        "role": "primary",
+        "note": "Bólusetti þar fyrsta sjúklinginn 1796"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1749,
+        "end": 1823
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqc": {
+    "subject": "Chagos-eyjar: brottflutningur íbúanna og baráttan fyrir endurkomu",
+    "repeatOf": "7hqkom",
+    "places": [
+      {
+        "ref": "diego-garcia",
+        "role": "primary",
+        "note": "Bandaríska herstöðin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1965,
+        "end": 2019,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqd": {
+    "subject": "Eþíópía: fyrstu konungsríkin og Aksúm-veldið",
+    "series": {
+      "key": "ethiopia",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "aksum",
+        "role": "primary",
+        "note": "Aksúm-veldið"
+      }
+    ],
+    "spans": [
+      {
+        "start": -100,
+        "end": 1550,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkqe": {
+    "subject": "Eþíópía: frá stríðunum við Adal til Gondar-keisaranna",
+    "series": {
+      "key": "ethiopia",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "gondar",
+        "role": "primary",
+        "note": "Höfuðborg keisaranna frá 17. öld"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1529,
+        "end": 1855,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkqf": {
+    "subject": "Tewodros 2. keisari sameinar Eþíópíu",
+    "series": {
+      "key": "ethiopia",
+      "part": 3
+    },
+    "places": [
+      {
+        "ref": "magdala",
+        "role": "primary",
+        "note": "Virki Tewodrosar; umsátur Breta 1868"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1855,
+        "end": 1868
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqg": {
+    "subject": "Skrílslæti, fyllerí og jólabönn í sögu jólahaldsins",
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Jólabann púrítana á 17. öld"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1500,
+        "end": 1900,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkqh": {
+    "subject": "Byltingin í Túnis og upphaf arabíska vorsins",
+    "places": [
+      {
+        "ref": "sidi-bouzid",
+        "role": "primary",
+        "note": "Sjálfsíkveikja Mohameds Bouazizi"
+      },
+      {
+        "ref": "tunis",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2010,
+        "end": 2011
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqi": {
+    "subject": "Stríðið 1812 og bruninn í Washington",
+    "places": [
+      {
+        "ref": "washington-dc",
+        "role": "primary",
+        "note": "Hvíta húsið og þinghúsið brennd 1814"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1812,
+        "end": 1815
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqj": {
+    "subject": "Æska Osama bin Laden og stríðið í Afganistan",
+    "series": {
+      "key": "osama-bin-laden",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "jeddah",
+        "role": "primary",
+        "note": "Fjölskylduveldið í Jedda"
+      },
+      {
+        "ref": "kabul",
+        "role": "secondary",
+        "note": "Þátttaka í mujahideen-stríðinu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1957,
+        "end": 1989,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkqk": {
+    "subject": "Osama bin Laden: al-Kaída og leiðin að 11. september",
+    "series": {
+      "key": "osama-bin-laden",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "kabul",
+        "role": "primary",
+        "note": "Bækistöðvar í skjóli talibana"
+      },
+      {
+        "ref": "new-york",
+        "role": "secondary",
+        "note": "Árásirnar 11. september 2001"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1989,
+        "end": 2001,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkql": {
+    "subject": "Leitin að Osama bin Laden og endalokin í Abbottabad",
+    "series": {
+      "key": "osama-bin-laden",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "abbottabad",
+        "role": "primary",
+        "note": "Felustaðurinn þar sem hann var felldur 2011"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2001,
+        "end": 2011
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqm": {
+    "subject": "Ferdinand og Imelda Marcos og fall þeirra 1986",
+    "places": [
+      {
+        "ref": "manila",
+        "role": "primary",
+        "note": "People Power-mótmælin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1965,
+        "end": 1986
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqn": {
+    "subject": "Finnska borgarastyrjöldin 1918",
+    "places": [
+      {
+        "ref": "helsinki",
+        "role": "primary"
+      },
+      {
+        "ref": "tampere",
+        "role": "secondary",
+        "note": "Blóðugasta orrusta stríðsins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1918,
+        "end": 1918
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqo": {
+    "subject": "Raunveruleg ævi Pocahontas",
+    "places": [
+      {
+        "ref": "jamestown",
+        "role": "primary",
+        "note": "Enska landnámið"
+      },
+      {
+        "ref": "gravesend",
+        "role": "secondary",
+        "note": "Lést þar 1617"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1596,
+        "end": 1617
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqp": {
+    "subject": "Eþíópía: Jóhannes 4., Menelik 2. og sigurinn á Ítölum",
+    "series": {
+      "key": "ethiopia",
+      "part": 4
+    },
+    "places": [
+      {
+        "ref": "adwa",
+        "role": "primary",
+        "note": "Sigurinn á Ítölum 1896"
+      },
+      {
+        "ref": "addis-ababa",
+        "role": "secondary",
+        "note": "Menelik stofnaði borgina"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1872,
+        "end": 1913
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqq": {
+    "subject": "Haile Selassie og seinna stríðið við Ítali",
+    "series": {
+      "key": "ethiopia",
+      "part": 5
+    },
+    "places": [
+      {
+        "ref": "addis-ababa",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1916,
+        "end": 1941
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqr": {
+    "subject": "Eþíópía á 20. öld: síðari valdaár Haile Selassie",
+    "series": {
+      "key": "ethiopia",
+      "part": 6
+    },
+    "places": [
+      {
+        "ref": "addis-ababa",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1941,
+        "end": 1974,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkqs": {
+    "subject": "Belgica-leiðangurinn: fyrsta veturseta á Suðurskautssvæðinu",
+    "places": [
+      {
+        "ref": "bellingshausenhaf",
+        "role": "primary",
+        "note": "Skipið frosið fast í hafísnum 1898–99"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1897,
+        "end": 1899
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqt": {
+    "subject": "Kasakstan og valdatíð Núrsultans Nasarbajev",
+    "places": [
+      {
+        "ref": "astana",
+        "role": "primary",
+        "note": "Höfuðborgin sem Nasarbajev reisti"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1989,
+        "end": 2019
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqu": {
+    "subject": "Meena, stofnandi RAWA, og barátta afganskra kvenna",
+    "places": [
+      {
+        "ref": "kabul",
+        "role": "primary",
+        "note": "Stofnaði RAWA 1977"
+      },
+      {
+        "ref": "quetta",
+        "role": "secondary",
+        "note": "Myrt þar 1987"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1956,
+        "end": 1987
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkqv": {
+    "subject": "Flótti Adolfs Eichmann og felustaðurinn í Argentínu",
+    "series": {
+      "key": "eichmann",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "buenos-aires",
+        "role": "primary",
+        "note": "Faldi sig þar sem Ricardo Klement"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1945,
+        "end": 1960
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr0": {
+    "subject": "Mossad rænir Eichmann og réttarhöldin í Jerúsalem",
+    "series": {
+      "key": "eichmann",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "jerusalem",
+        "role": "primary",
+        "note": "Réttarhöldin 1961–62"
+      },
+      {
+        "ref": "buenos-aires",
+        "role": "secondary",
+        "note": "Rænt þar af Mossad 1960"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1960,
+        "end": 1962
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr1": {
+    "subject": "Soldáninn í Brúnei og bróðir hans",
+    "places": [
+      {
+        "ref": "bandar-seri-begawan",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1967,
+        "end": 2021,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr2": {
+    "subject": "Hvarf Dupont de Ligonnès-fjölskyldunnar í Nantes 2011",
+    "places": [
+      {
+        "ref": "nantes",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2011,
+        "end": 2011
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr3": {
+    "subject": "Flutningaskipið El Faro ferst í fellibyl 2015",
+    "places": [
+      {
+        "ref": "bahamaeyjar",
+        "role": "primary",
+        "note": "Sökk í fellibylnum Joaquin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2015,
+        "end": 2015
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr4": {
+    "subject": "Aum Shinrikyo: uppgangur sértrúarsafnaðar Shoko Asahara",
+    "series": {
+      "key": "aum-shinrikyo",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "tokyo",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1984,
+        "end": 1995
+      }
+    ],
+    "confidence": "high"
   }
 }
