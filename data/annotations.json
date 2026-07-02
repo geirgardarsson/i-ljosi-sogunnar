@@ -1,0 +1,210 @@
+{
+  "6m1bm1": {
+    "subject": "Saga Sádi-Arabíu: stofnun konungsríkisins og uppgangur þess á alþjóðavettvangi",
+    "places": [
+      { "ref": "riad", "role": "primary", "note": "Höfuðborgin sem Ibn Saud hertók 1902" },
+      { "ref": "mekka", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1902, "end": 2016, "approx": true }],
+    "confidence": "medium"
+  },
+  "6m1bm2": {
+    "subject": "Aldarlöng saga eiturlyfjasmyglara í Mexíkó",
+    "places": [
+      { "ref": "sinaloa", "role": "primary", "note": "Vagga mexíkósku smyglveldanna" },
+      { "ref": "mexikoborg", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1910, "end": 2016, "approx": true }],
+    "confidence": "medium"
+  },
+  "6m1bm3": {
+    "subject": "Íranska kjarnorkuáætlunin frá upphafi til kjarnorkusamningsins",
+    "places": [
+      { "ref": "teheran", "role": "primary" },
+      { "ref": "natanz", "role": "secondary", "note": "Auðgunarstöðin" }
+    ],
+    "spans": [{ "start": 1950, "end": 2016 }],
+    "confidence": "high"
+  },
+  "6m1bm4": {
+    "subject": "Egypska byltingin 2011 og fall Hosni Mubarak",
+    "places": [{ "ref": "kairo", "role": "primary", "note": "Tahrir-torg, miðpunktur mótmælanna" }],
+    "spans": [{ "start": 1981, "end": 2011 }],
+    "confidence": "high"
+  },
+  "6m1bm5": {
+    "subject": "Forsetakosningarnar í Bandaríkjunum 1948: óvæntur sigur Trumans á Dewey",
+    "places": [{ "ref": "washington-dc", "role": "primary" }],
+    "spans": [{ "start": 1948, "end": 1948 }],
+    "confidence": "high"
+  },
+  "6m1bm6": {
+    "subject": "Æska Vladimírs Pútíns, KGB-ferillinn og leiðin til valda",
+    "places": [
+      { "ref": "sankti-petursborg", "role": "primary", "note": "Fæddist og ólst upp í Leníngrad" },
+      { "ref": "dresden", "role": "secondary", "note": "KGB-árin 1985–1990" },
+      { "ref": "moskva", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1952, "end": 2000 }],
+    "confidence": "high"
+  },
+  "6m1bm7": {
+    "subject": "Morðið á Olof Palme forsætisráðherra Svíþjóðar 1986",
+    "series": { "key": "olof-palme", "part": 1, "of": 2 },
+    "places": [{ "ref": "stokkholmur", "role": "primary", "note": "Skotinn á horni Sveavägen og Tunnelgatan" }],
+    "spans": [{ "start": 1986, "end": 1986 }],
+    "confidence": "high"
+  },
+  "6m1bm8": {
+    "subject": "Rannsóknin á morðinu á Olof Palme og samsæriskenningarnar",
+    "series": { "key": "olof-palme", "part": 2, "of": 2 },
+    "places": [{ "ref": "stokkholmur", "role": "primary" }],
+    "spans": [{ "start": 1986, "end": 2016, "approx": true }],
+    "confidence": "high"
+  },
+  "6m1bm9": {
+    "subject": "Ættarsaga Trump-fjölskyldunnar: gullæðið í Klondike og fasteignaveldið í New York",
+    "series": { "key": "donald-trump", "part": 1, "of": 2 },
+    "places": [
+      { "ref": "new-york", "role": "primary" },
+      { "ref": "klondike", "role": "secondary", "note": "Hótel- og vændishúsarekstur afans í gullæðinu" }
+    ],
+    "spans": [{ "start": 1885, "end": 1971, "approx": true }],
+    "confidence": "medium"
+  },
+  "6m1bma": {
+    "subject": "Jarðskjálftinn, flóðbylgjan og kjarnorkuslysið í Japan 11. mars 2011",
+    "places": [
+      { "ref": "fukushima-daiichi", "role": "primary" },
+      { "ref": "sendai", "role": "secondary", "note": "Flóðbylgjan skall á Tohoku-ströndinni" }
+    ],
+    "spans": [{ "start": 2011, "end": 2011 }],
+    "confidence": "high"
+  },
+  "6m1bmb": {
+    "subject": "Æska Donalds Trumps og upphaf viðskiptaferilsins",
+    "series": { "key": "donald-trump", "part": 2, "of": 2 },
+    "places": [{ "ref": "new-york", "role": "primary" }],
+    "spans": [{ "start": 1946, "end": 1990, "approx": true }],
+    "confidence": "medium"
+  },
+  "6m1bmc": {
+    "subject": "Radovan Karadzic: Bosníustríðið, flóttinn og stríðsglæpadómurinn",
+    "places": [
+      { "ref": "sarajevo", "role": "primary" },
+      { "ref": "belgrad", "role": "secondary", "note": "Faldi sig þar sem grasalæknir" },
+      { "ref": "haag", "role": "secondary", "note": "Stríðsglæpadómstóllinn" }
+    ],
+    "spans": [
+      { "start": 1992, "end": 1995 },
+      { "start": 1996, "end": 2016 }
+    ],
+    "confidence": "high"
+  },
+  "6m1bmd": {
+    "subject": "Deilur Armena og Asera um Nagorno-Karabakh",
+    "places": [{ "ref": "nagorno-karabakh", "role": "primary" }],
+    "spans": [
+      { "start": 1988, "end": 1994 },
+      { "start": 2016, "end": 2016 }
+    ],
+    "confidence": "high"
+  },
+  "6m1bme": {
+    "subject": "Saga Líbíu á tuttugustu öld",
+    "places": [
+      { "ref": "tripoli", "role": "primary" },
+      { "ref": "benghazi", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1911, "end": 1999, "approx": true }],
+    "confidence": "medium"
+  },
+  "6m1bmf": {
+    "subject": "Dilma Rousseff: skæruliðinn sem varð forseti Brasilíu",
+    "places": [
+      { "ref": "brasilia", "role": "primary" },
+      { "ref": "sao-paulo", "role": "secondary", "note": "Fangelsuð og pyntuð þar á dögum herforingjastjórnarinnar" }
+    ],
+    "spans": [{ "start": 1947, "end": 2016 }],
+    "confidence": "high"
+  },
+  "6m1bmg": {
+    "subject": "Tsjernóbyl-slysið 26. apríl 1986",
+    "places": [{ "ref": "tsjernobyl", "role": "primary" }],
+    "spans": [{ "start": 1986, "end": 1986 }],
+    "confidence": "high"
+  },
+  "6m1bmh": {
+    "subject": "Ævi og ferill Receps Tayyips Erdogans",
+    "places": [
+      { "ref": "istanbul", "role": "primary", "note": "Fæddist þar og varð borgarstjóri 1994" },
+      { "ref": "ankara", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1954, "end": 2016 }],
+    "confidence": "high"
+  },
+  "6m1bmi": {
+    "subject": "Æska og námsár Hillary Clinton og upphaf sambandsins við Bill",
+    "places": [
+      { "ref": "chicago", "role": "primary", "note": "Ólst upp í Park Ridge, úthverfi Chicago" },
+      { "ref": "new-haven", "role": "secondary", "note": "Laganám við Yale, kynntist Bill þar" }
+    ],
+    "spans": [{ "start": 1947, "end": 1975 }],
+    "confidence": "high"
+  },
+  "6m1bmj": {
+    "subject": "Nauðungarflutningar Stalíns á Krímtatörum til Úsbekistans 1944",
+    "places": [
+      { "ref": "krimskagi", "role": "primary" },
+      { "ref": "tashkent", "role": "secondary", "note": "Þjóðin flutt nauðug til Úsbekistans" }
+    ],
+    "spans": [{ "start": 1944, "end": 1948 }],
+    "confidence": "high"
+  },
+  "6m1bmk": {
+    "subject": "Saga nígerísku öfgasamtakanna Boko Haram",
+    "places": [
+      { "ref": "maiduguri", "role": "primary", "note": "Samtökin stofnuð þar 2002" },
+      { "ref": "chibok", "role": "secondary", "note": "Fjöldarán skólastúlkna 2014" }
+    ],
+    "spans": [{ "start": 2002, "end": 2016 }],
+    "confidence": "high"
+  },
+  "6m1bml": {
+    "subject": "Morðin á nepölsku konungsfjölskyldunni 2001",
+    "places": [{ "ref": "katmandu", "role": "primary", "note": "Narayanhity-konungshöllin" }],
+    "spans": [{ "start": 2001, "end": 2001 }],
+    "confidence": "high"
+  },
+  "6m1bmm": {
+    "subject": "Rodrigo Duterte, umdeildur forseti Filippseyja",
+    "places": [
+      { "ref": "davao", "role": "primary", "note": "Borgarstjóri þar um áratugaskeið" },
+      { "ref": "manila", "role": "secondary" }
+    ],
+    "spans": [{ "start": 1945, "end": 2016 }],
+    "confidence": "high"
+  },
+  "6m1bmn": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 23 af 52“, 24. júní 2016)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "6m1bmo": {
+    "subject": "Victoria Woodhull, fyrsta konan í forsetaframboð í Bandaríkjunum",
+    "places": [{ "ref": "new-york", "role": "primary", "note": "Verðbréfasala á Wall Street og framboðið 1872" }],
+    "spans": [{ "start": 1838, "end": 1927 }],
+    "confidence": "high"
+  },
+  "6m1bmp": {
+    "subject": "Skipting Indlands 1947 og stofnun Indlands og Pakistans",
+    "places": [
+      { "ref": "nyja-deli", "role": "primary" },
+      { "ref": "lahore", "role": "secondary", "note": "Punjab klofnaði; blóðugustu átökin þar um kring" }
+    ],
+    "spans": [{ "start": 1947, "end": 1948 }],
+    "confidence": "high"
+  }
+}

@@ -64,7 +64,8 @@ the coordinates.
     "name": "Houtman Abrolhos",             // display name (Icelandic where one exists)
     "kind": "landmark",                     // city | region | country | landmark | water
     "lat": -28.72, "lon": 113.78,
-    "zoom": 7                               // optional: sensible flyTo zoom for this kind of place
+    "zoom": 7,                              // optional: sensible flyTo zoom for this kind of place
+    "q": "Houtman Abrolhos"                 // optional: geocoder query when the display name is an Icelandic exonym
   },
   "stokkholmur": { "name": "Stokkhólmur", "kind": "city", "lat": 59.33, "lon": 18.07 }
 }
