@@ -52,6 +52,9 @@ function wireHeader(): void {
 
 function applyTheme(): void {
   document.documentElement.dataset.theme = store.theme;
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute("content", store.dark ? "#201a12" : "#f7f1e2");
 }
 
 function wireAbout(): void {
@@ -90,7 +93,7 @@ async function main(): Promise<void> {
   const data = (await res.json()) as EpisodesFile;
   store.init(data.episodes);
 
-  initMap(document.getElementById("map")!);
+  await initMap(document.getElementById("map")!);
   initTimeline(document.getElementById("timeline") as unknown as SVGSVGElement);
   initPanel(document.getElementById("panel")!);
   initList(document.getElementById("list")!);

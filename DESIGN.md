@@ -138,8 +138,12 @@ static fetch.
 ```
 
 Desktop: map dominant, detail panel slides in from the right, timeline is a
-fixed ~120px band at the bottom. Mobile: full-bleed map, detail panel becomes
-a bottom sheet, timeline collapses to ~72px.
+fixed ~120px band at the bottom. The „Listi" toggle opens a ~380px *drawer on
+the left* (compact sortable rows) so list and map are visible together —
+hovering a row rings its marker. Mobile: full-bleed map, detail panel becomes
+a bottom sheet, the list drawer goes fullscreen (picking an episode closes it
+and lands on the map + detail sheet), timeline collapses to ~84px with
+finger-sized brush-handle hit areas on coarse pointers.
 
 ## 3. Timeline
 
@@ -177,9 +181,12 @@ a bottom sheet, timeline collapses to ~72px.
 
 ## 4. Map
 
-- **Basemap**: OpenFreeMap vector tiles (free, keyless) with a muted
-  grayscale style in both light and dark mode — the basemap is chrome; only
-  markers carry color.
+- **Basemap**: OpenFreeMap vector tiles (free, keyless), recolored at runtime
+  into an antique-atlas look (`src/basemap.ts`): every paint color of the
+  stock positron/dark style is remapped onto sepia/teal/sage anchor ramps,
+  preserving each color's lightness so the style's visual hierarchy survives.
+  Land becomes parchment `#f0e9d8` (light) / warm near-black `#1d1812` (dark).
+  The basemap stays chrome; only markers carry saturated color.
 - **Markers**: one per episode at its primary place. 10 px dot, 2 px
   surface-colored ring so overlapping dots stay separable, ≥ 24 px invisible
   hit target, slight lift on hover.
@@ -194,10 +201,13 @@ a bottom sheet, timeline collapses to ~72px.
 
   Steps obey the ordinal floor (lightest ≥ step 250 on light, darkest ≤ step
   600 on dark). Validated 2026-07-02 against the actual OpenFreeMap land
-  colors (positron `#f2f3f0`, dark `#0c0c0c`) with
-  `node scripts/validate_palette.js "<steps>" --ordinal --surface <land-hex>`:
+  colors (positron `#f2f3f0`, dark `#0c0c0c`) with the dataviz skill's
+  `validate_palette.js "<steps>" --ordinal --surface <land-hex>`:
   the original 250-start light ramp failed the 2:1 light-end contrast floor on
   positron land, so the light ramp shifted one step darker (300–700).
+  Re-validated the same day against the *antique* land colors (`#f0e9d8` /
+  `#1d1812` after the basemap recolor) — all checks still pass, both ramps
+  unchanged.
   A small legend (era → swatch) is always visible; color is never the only
   channel — the timeline position and the year chips repeat the information.
 - **Clustering**: MapLibre GeoJSON source with `cluster: true`. Cluster chips
@@ -221,10 +231,11 @@ a bottom sheet, timeline collapses to ~72px.
   brushes the timeline to it), place chips (hover pans the map), RÚV
   description, `<audio>` player on the direct MP3, links to RÚV and Spotify,
   series navigation („Hluti 2 af 2", prev/next part).
-- **„Listi" toggle**: a sortable list/table of all episodes (title, year
-  spans, places, date aired) that honors the same filters. This is the
-  accessibility fallback (every value reachable without hover) and the
-  low-bandwidth/mobile-friendly view in one.
+- **„Listi" toggle**: a sortable drawer of all episodes (title, year spans,
+  primary place, date aired) that honors the same filters and shows beside
+  the map (fullscreen over it on mobile). This is the accessibility fallback
+  (every value reachable without hover) and the low-bandwidth/mobile-friendly
+  view in one.
 - Keyboard: markers are focusable in firstrun order; Enter opens the panel;
   brush handles respond to arrow keys.
 
@@ -232,7 +243,10 @@ a bottom sheet, timeline collapses to ~72px.
 
 Interface strings in Icelandic (episode data is Icelandic; mixing chrome
 languages would look off): „Leita", „Öll tímabil", „Listi", „Hluti X af Y",
-„f.Kr.", era names as in §4. Code, comments, and docs in English.
+„f.Kr.", „Um þennan vef", era names as in §4. Code, comments, and docs in
+English. The „Um" dialog carries the RÚV disclaimer (unofficial fan project,
+episode content © RÚV/Vera Illugadóttir) and points corrections to the
+GitHub issues page.
 
 ## 7. Stack
 

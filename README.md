@@ -22,6 +22,7 @@ lives in [DESIGN.md](DESIGN.md).
 | Series & rebroadcasts | ✅ 64 series grouped; 15 repeats marked with `repeatOf` |
 | Merge/build script → `public/data/episodes.json` | ✅ `npm run build-episodes` (validates invariants) |
 | Webapp (map, timeline, panel, list view) | ✅ Vite + TS, MapLibre + OpenFreeMap, SVG timeline, dark mode |
+| UI/UX pass (antique theme, list drawer, mobile, about) | ✅ 2026-07-02 |
 | Deploy (GitHub Pages) | ⬜ workflow ready (`.github/workflows/deploy.yml`), Pages not yet enabled |
 
 ### Remaining steps
@@ -38,8 +39,13 @@ lives in [DESIGN.md](DESIGN.md).
 
 ### App notes
 
+- The whole app wears an antique-atlas look: the OpenFreeMap basemap is
+  recolored at runtime (`src/basemap.ts`) onto parchment/sepia/teal ramps,
+  and the chrome is parchment + serif. See DESIGN.md §4.
 - Era marker colors are the ordinal blue ramp from DESIGN.md §4, validated
-  against the actual OpenFreeMap land colors (light ramp = steps 300–700).
+  against the actual (antique-transformed) land colors `#f0e9d8`/`#1d1812`.
+- „Listi" is a drawer beside the map (fullscreen over it on mobile, where
+  picking an episode closes the list onto the map + detail sheet).
 - Timeline segments were tuned to the real span distribution — 1900+ holds
   258 of 329 mapped episodes and gets 40 % of the pixels; everything before
   3000 f.Kr. is clamped into a thin „forsaga" band.

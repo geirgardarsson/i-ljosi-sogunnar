@@ -14,10 +14,15 @@ export const ERA_RAMP: Record<"light" | "dark", string[]> = {
   dark: ["#cde2fb", "#86b6ef", "#3987e5", "#256abf", "#184f95"],
 };
 
-/** Actual land color of each basemap style — marker rings must match it. */
+/**
+ * Land color of each basemap after the antique transform in basemap.ts
+ * (stock positron #f2f3f0 → parchment, dark #0c0c0c → warm near-black) —
+ * marker rings and halos must match it. Ramps re-validated against these
+ * 2026-07-02 (validate_palette.js --ordinal): all checks pass.
+ */
 export const LAND_COLOR: Record<"light" | "dark", string> = {
-  light: "#f2f3f0",
-  dark: "#0c0c0c",
+  light: "#f0e9d8",
+  dark: "#1d1812",
 };
 
 export function eraIndex(ep: Episode): number {

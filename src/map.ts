@@ -1,20 +1,17 @@
 import maplibregl from "maplibre-gl";
 import type { GeoJSONSource, MapLayerMouseEvent } from "maplibre-gl";
 import { store } from "./state";
+import { antiqueStyle } from "./basemap";
 import { ERA_LABELS, ERA_RAMP, LAND_COLOR, eraIndex } from "./eras";
 import type { Episode, PlaceKind } from "./types";
 import { fmtSpans } from "./util";
 import { hideTooltip, showTooltip, type TooltipLine } from "./tooltip";
 
-const STYLE_URL: Record<"light" | "dark", string> = {
-  light: "https://tiles.openfreemap.org/styles/positron",
-  dark: "https://tiles.openfreemap.org/styles/dark",
-};
-
-/** Neutral cluster chip (DESIGN.md §4) — inverted in dark mode for visibility. */
+/** Neutral cluster chip (DESIGN.md §4) — sepia ink on the antique basemap,
+ * inverted in dark mode for visibility. */
 const CHIP: Record<"light" | "dark", { fill: string; text: string }> = {
-  light: { fill: "#333d4a", text: "#ffffff" },
-  dark: { fill: "#d7dde6", text: "#16181d" },
+  light: { fill: "#4a3a25", text: "#f7f1e2" },
+  dark: { fill: "#e0d4b6", text: "#201a12" },
 };
 
 /** Sensible flyTo zoom per gazetteer kind (place.zoom overrides). */
@@ -517,14 +514,14 @@ function renderLegend(): void {
   );
 }
 
-export function initMap(container: HTMLElement): void {
+export async function initMap(container: HTMLElement): Promise<void> {
   groups = buildGroups(store.episodes);
   groupByKey = new Map(groups.map((g) => [g.key, g]));
   groupByEpisodeId = new Map(groups.flatMap((g) => g.episodes.map((e) => [e.id, g])));
 
   map = new maplibregl.Map({
     container,
-    style: STYLE_URL[store.theme],
+    style: await antiqueStyle(store.theme),
     center: [10, 25],
     zoom: 1.4,
   });
@@ -651,11 +648,13 @@ export function initMap(container: HTMLElement): void {
   store.on("select", reflectSelection);
   store.on("hover", reflectExternalHover);
   store.on("theme", () => {
-    map.setStyle(STYLE_URL[store.theme]);
-    map.once("styledata", () => {
-      // setStyle drops custom sources/layers; rebuild them on the new style.
-      addLayers();
-      renderLegend();
+    void antiqueStyle(store.theme).then((style) => {
+      map.setStyle(style);
+      map.once("styledata", () => {
+        // setStyle drops custom sources/layers; rebuild them on the new style.
+        addLayers();
+        renderLegend();
+      });
     });
   });
 
