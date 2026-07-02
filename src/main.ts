@@ -3,6 +3,8 @@ import "./style.css";
 import { store } from "./state";
 import { initMap } from "./map";
 import { initTimeline } from "./timeline";
+import { initPanel } from "./panel";
+import { initList } from "./list";
 import { ERA_PRESETS } from "./eras";
 import type { EpisodesFile } from "./types";
 
@@ -68,6 +70,8 @@ async function main(): Promise<void> {
 
   initMap(document.getElementById("map")!);
   initTimeline(document.getElementById("timeline") as unknown as SVGSVGElement);
+  initPanel(document.getElementById("panel")!);
+  initList(document.getElementById("list")!);
 }
 
 main().catch((err: unknown) => {
