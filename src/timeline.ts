@@ -26,7 +26,8 @@ const SEGMENTS: { from: number; to: number; share: number }[] = [
 const TICK_YEARS = [-3000, 0, 1000, 1500, 1800, 1900, 1950, 2000];
 const BIN_PX = 8;
 const MARGIN = { left: 10, right: 10, top: 6, bottom: 20 };
-const HANDLE_HIT = 7; // px each side of a brush edge that grabs the handle
+/** Px each side of a brush edge that grabs the handle — finger-sized on touch. */
+const HANDLE_HIT = window.matchMedia?.("(pointer: coarse)").matches ? 16 : 7;
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 

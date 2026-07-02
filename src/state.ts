@@ -25,7 +25,8 @@ class Store {
   selectedId: string | null = null;
   selectFly = true;
   hover: Hover | null = null;
-  view: "map" | "list" = "map";
+  /** The „Listi" drawer — a panel beside (desktop) or over (mobile) the map. */
+  listOpen = false;
   dark = window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false;
 
   private listeners: Partial<Record<EventName, Set<() => void>>> = {};
@@ -65,8 +66,8 @@ class Store {
     this.emit("hover");
   }
 
-  setView(view: "map" | "list"): void {
-    this.view = view;
+  setListOpen(open: boolean): void {
+    this.listOpen = open;
     this.emit("view");
   }
 

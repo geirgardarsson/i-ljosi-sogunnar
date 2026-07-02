@@ -471,70 +471,86 @@ main {
   font-size: 0.9rem;
 }
 
-/* ── List view ───────────────────────────────────────────────── */
+/* ── List drawer ─────────────────────────────────────────────── */
 
 .list-view {
-  flex: 1;
-  overflow: auto;
+  width: 380px;
+  flex: none;
+  overflow-y: auto;
   background: var(--surface);
-  padding: 0 16px 24px;
+  border-right: 1px solid var(--border);
+}
+
+.list-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 12px 10px;
 }
 
 .list-count {
   color: var(--ink-muted);
-  font-size: 0.85rem;
-  margin: 12px 2px;
+  font-size: 0.8rem;
+  margin: 0 0 6px;
 }
 
-.list-table {
-  border-collapse: collapse;
+.list-sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.list-sort-chip[aria-pressed="true"] {
+  background: var(--chip);
+  color: var(--chip-text);
+  border-color: var(--chip);
+}
+
+.list-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 24px;
+}
+
+.list-row {
+  display: block;
   width: 100%;
-  font-size: 0.9rem;
-}
-
-.list-table th {
-  text-align: left;
-  position: sticky;
-  top: 0;
-  background: var(--surface);
-  border-bottom: 2px solid var(--border);
-  padding: 0;
-}
-
-.list-table th button {
   border: 0;
-  background: none;
-  font: inherit;
-  font-weight: 600;
-  color: var(--ink);
-  padding: 8px 10px;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  white-space: nowrap;
-}
-
-.list-table td {
   border-bottom: 1px solid var(--border);
-  padding: 7px 10px;
-  vertical-align: top;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
-.list-table tr.selected td {
-  background: var(--brush-fill);
-}
-
-.list-table tr:hover td {
+.list-row:hover {
   background: var(--surface-2);
 }
 
-.list-title {
-  font-weight: 500;
+.list-row.selected {
+  background: var(--brush-fill);
 }
 
-.list-repeat,
-.list-series {
-  font-size: 0.75rem;
+.list-row-title {
+  display: block;
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+.list-row-meta {
+  display: block;
+  margin-top: 2px;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+}
+
+.list-tag {
+  font-size: 0.72rem;
+  font-weight: normal;
   color: var(--ink-muted);
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -555,7 +571,17 @@ main {
   }
 
   #timeline-band {
-    height: 76px;
+    height: 84px;
+  }
+
+  /* The list covers the map fullscreen; picking an episode closes it
+     (list.ts) so the map + detail sheet take over. */
+  .list-view {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    border-right: 0;
+    z-index: 6;
   }
 
   .panel {

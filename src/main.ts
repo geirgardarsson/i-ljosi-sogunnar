@@ -41,17 +41,12 @@ function wireHeader(): void {
   store.on("theme", applyTheme);
 
   const viewToggle = document.getElementById("view-toggle") as HTMLButtonElement;
-  viewToggle.addEventListener("click", () =>
-    store.setView(store.view === "map" ? "list" : "map"),
-  );
+  viewToggle.setAttribute("aria-controls", "list");
+  viewToggle.addEventListener("click", () => store.setListOpen(!store.listOpen));
   store.on("view", () => {
-    const list = document.getElementById("list")!;
-    const mapEl = document.getElementById("map")!;
-    const showList = store.view === "list";
-    list.hidden = !showList;
-    mapEl.style.display = showList ? "none" : "";
-    viewToggle.setAttribute("aria-pressed", String(showList));
-    viewToggle.textContent = showList ? "Kort" : "Listi";
+    document.getElementById("list")!.hidden = !store.listOpen;
+    viewToggle.setAttribute("aria-pressed", String(store.listOpen));
+    viewToggle.setAttribute("aria-expanded", String(store.listOpen));
   });
 }
 
