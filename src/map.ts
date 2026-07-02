@@ -4,7 +4,7 @@ import { store } from "./state";
 import { ERA_LABELS, ERA_RAMP, LAND_COLOR, eraIndex } from "./eras";
 import type { Episode, PlaceKind } from "./types";
 import { fmtSpans } from "./util";
-import { hideTooltip, showTooltip } from "./tooltip";
+import { hideTooltip, showTooltip, type TooltipLine } from "./tooltip";
 
 const STYLE_URL: Record<"light" | "dark", string> = {
   light: "https://tiles.openfreemap.org/styles/positron",
@@ -369,15 +369,15 @@ function setHoverRing(gs: MarkerGroup[]): void {
   });
 }
 
-function groupTooltipLines(g: MarkerGroup): string[] {
+function groupTooltipLines(g: MarkerGroup): TooltipLine[] {
   const rep = g.episodes[0];
   const title =
     g.episodes.length > 1 ? `${rep.title} · ${g.episodes.length} hlutar` : rep.title;
-  const lines = [title, g.years ? `${g.placeName} · ${g.years}` : g.placeName];
+  const lines: TooltipLine[] = [title, g.years ? `${g.placeName} · ${g.years}` : g.placeName];
   // A note explains the episode's tie to the place; only safe to show when
   // the marker stands for a single episode (series parts have their own).
   const note = rep.places.find((p) => p.role === "primary")?.note;
-  if (g.episodes.length === 1 && note) lines.push(note);
+  if (g.episodes.length === 1 && note) lines.push({ note });
   return lines;
 }
 
@@ -580,9 +580,10 @@ export function initMap(container: HTMLElement): void {
     ep: Episode | undefined,
     name: string,
     note: string,
-  ): string[] => {
-    const lines = ep ? [ep.title] : [];
-    lines.push(note ? `${name} — ${note}` : `${name} — tengdur staður`);
+  ): TooltipLine[] => {
+    const lines: TooltipLine[] = ep ? [ep.title] : [];
+    lines.push(`${name} — tengdur staður`);
+    if (note) lines.push({ note });
     return lines;
   };
 

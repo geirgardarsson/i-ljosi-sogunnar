@@ -1,18 +1,25 @@
 /**
  * One shared tooltip element. Content is set line-by-line with textContent —
  * episode titles/descriptions come from RÚV and are treated as untrusted.
+ * Curator notes pass as `{ note: text }` and render italic (style.css).
  */
+export type TooltipLine = string | { note: string };
+
 const el = document.createElement("div");
 el.className = "tooltip";
 el.setAttribute("role", "tooltip");
 el.hidden = true;
 document.body.append(el);
 
-export function showTooltip(lines: string[], x: number, y: number): void {
+export function showTooltip(lines: TooltipLine[], x: number, y: number): void {
   el.replaceChildren(
     ...lines.map((line) => {
       const div = document.createElement("div");
-      div.textContent = line;
+      if (typeof line === "string") div.textContent = line;
+      else {
+        div.textContent = line.note;
+        div.className = "tooltip-note";
+      }
       return div;
     }),
   );

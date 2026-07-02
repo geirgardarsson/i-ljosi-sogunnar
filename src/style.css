@@ -152,6 +152,10 @@ main {
   margin-top: 2px;
 }
 
+.tooltip .tooltip-note {
+  font-style: italic;
+}
+
 /* Chooser popup for co-located markers */
 .maplibregl-popup-content {
   background: var(--surface);
@@ -374,6 +378,7 @@ main {
 .chip-note {
   display: block;
   font-size: 0.72rem;
+  font-style: italic;
   opacity: 0.75;
   max-width: 220px;
   white-space: normal;
