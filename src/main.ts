@@ -59,8 +59,27 @@ function applyTheme(): void {
   document.documentElement.dataset.theme = store.theme;
 }
 
+function wireAbout(): void {
+  const dialog = document.getElementById("about") as HTMLDialogElement;
+  document
+    .getElementById("about-open")!
+    .addEventListener("click", () => dialog.showModal());
+  document
+    .getElementById("about-close")!
+    .addEventListener("click", () => dialog.close());
+  // Click on the ::backdrop closes; it registers on the dialog element but
+  // lands outside its box, unlike clicks in the dialog's own padding.
+  dialog.addEventListener("click", (e) => {
+    const r = dialog.getBoundingClientRect();
+    const inside =
+      e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    if (!inside) dialog.close();
+  });
+}
+
 function wireKeyboard(): void {
   document.addEventListener("keydown", (e) => {
+    if (document.querySelector("dialog[open]")) return; // Escape belongs to the dialog
     if (e.key === "Escape" && store.selectedId) store.select(null);
   });
 }
@@ -68,6 +87,7 @@ function wireKeyboard(): void {
 async function main(): Promise<void> {
   applyTheme();
   wireHeader();
+  wireAbout();
   wireKeyboard();
 
   const res = await fetch(`${import.meta.env.BASE_URL}data/episodes.json`);

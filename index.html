@@ -14,6 +14,7 @@
         <select id="era-preset" aria-label="Tímabil"></select>
         <button id="view-toggle" aria-pressed="false">Listi</button>
         <button id="theme-toggle" aria-label="Skipta á milli ljóss og dökks hams">◐</button>
+        <button id="about-open" aria-label="Um vefinn">Um</button>
       </header>
       <main>
         <div id="map" aria-label="Kort af sögustöðum þáttanna"></div>
@@ -24,6 +25,34 @@
         <svg id="timeline"></svg>
       </footer>
     </div>
+    <dialog id="about" class="about" aria-labelledby="about-title">
+      <button id="about-close" class="dialog-close" aria-label="Loka">×</button>
+      <h2 id="about-title">Um þennan vef</h2>
+      <p>
+        Vefurinn raðar þáttum útvarpsþáttarins
+        <em>Í ljósi sögunnar</em> eftir Veru Illugadóttur á heimskort og
+        tímalínu eftir sögusviði hvers þáttar.
+      </p>
+      <p>
+        Þetta er óopinbert aðdáendaverkefni og ekki á vegum RÚV. Allt efni
+        þáttanna — titlar, lýsingar, hljóð og myndir — tilheyrir RÚV og er
+        sótt beint þaðan.
+      </p>
+      <p>
+        Staðir og ártöl eru handskráð viðbót og geta verið ónákvæm.
+        Ábendingar og leiðréttingar eru vel þegnar á
+        <a
+          href="https://github.com/geirgardarsson/i-ljosi-sogunnar/issues"
+          target="_blank"
+          rel="noopener"
+          >GitHub ↗</a
+        >.
+      </p>
+      <p class="about-credits">
+        Kortagrunnur: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>
+        · © OpenStreetMap-höfundar · hnattstöður frá Nominatim.
+      </p>
+    </dialog>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
