@@ -1580,5 +1580,117 @@
     "lat": 41.73,
     "lon": -49.95,
     "skipVerify": true
+  },
+  "hamburg": {
+    "name": "Hamborg",
+    "kind": "city",
+    "lat": 53.55,
+    "lon": 9.99,
+    "q": "Hamburg"
+  },
+  "berbera": {
+    "name": "Berbera",
+    "kind": "city",
+    "lat": 10.44,
+    "lon": 45.01,
+    "q": "Berbera"
+  },
+  "viktoriuvatn": {
+    "name": "Viktoríuvatn",
+    "kind": "water",
+    "lat": -1.0,
+    "lon": 33.0,
+    "q": "Lake Victoria"
+  },
+  "tanganyikavatn": {
+    "name": "Tanganyikavatn",
+    "kind": "water",
+    "lat": -6.0,
+    "lon": 29.5,
+    "q": "Lake Tanganyika"
+  },
+  "orange-nj": {
+    "name": "Orange, New Jersey",
+    "kind": "city",
+    "lat": 40.77,
+    "lon": -74.23,
+    "q": "Orange, New Jersey"
+  },
+  "ata": {
+    "name": "'Ata, Tonga",
+    "kind": "region",
+    "lat": -22.33,
+    "lon": -176.2,
+    "skipVerify": true
+  },
+  "ypres": {
+    "name": "Ypres",
+    "kind": "city",
+    "lat": 50.85,
+    "lon": 2.89,
+    "q": "Ypres"
+  },
+  "mogadishu": {
+    "name": "Mógadisjú",
+    "kind": "city",
+    "lat": 2.04,
+    "lon": 45.34,
+    "q": "Mogadishu"
+  },
+  "sofia": {
+    "name": "Sofía",
+    "kind": "city",
+    "lat": 42.7,
+    "lon": 23.32,
+    "q": "Sofia"
+  },
+  "ilulissat": {
+    "name": "Ilulissat",
+    "kind": "city",
+    "lat": 69.22,
+    "lon": -51.1,
+    "q": "Ilulissat"
+  },
+  "naujaat": {
+    "name": "Naujaat (Repulse Bay)",
+    "kind": "city",
+    "lat": 66.52,
+    "lon": -86.23,
+    "q": "Naujaat"
+  },
+  "uppsala": {
+    "name": "Uppsalir",
+    "kind": "city",
+    "lat": 59.86,
+    "lon": 17.64,
+    "q": "Uppsala"
+  },
+  "tristan-da-cunha": {
+    "name": "Tristan da Cunha",
+    "kind": "region",
+    "lat": -37.11,
+    "lon": -12.28,
+    "q": "Tristan da Cunha"
+  },
+  "chiclayo": {
+    "name": "Chiclayo",
+    "kind": "city",
+    "lat": -6.77,
+    "lon": -79.84,
+    "q": "Chiclayo"
+  },
+  "houtman-abrolhos": {
+    "name": "Houtman Abrolhos",
+    "kind": "region",
+    "lat": -28.72,
+    "lon": 113.78,
+    "q": "Houtman Abrolhos"
+  },
+  "jakarta": {
+    "name": "Jakarta (Batavía)",
+    "kind": "city",
+    "lat": -6.13,
+    "lon": 106.81,
+    "q": "Jakarta"
   }
 }

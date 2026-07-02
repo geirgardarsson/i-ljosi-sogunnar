@@ -6609,5 +6609,706 @@
       }
     ],
     "confidence": "high"
+  },
+  "b78sd1": {
+    "subject": "Stern kynnir „dagbækur Hitlers“ 1983",
+    "series": {
+      "key": "hitler-dagbaekur",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "hamburg",
+        "role": "primary",
+        "note": "Höfuðstöðvar Stern"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1981,
+        "end": 1983
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd2": {
+    "subject": "Efasemdir um dagbækur Hitlers",
+    "series": {
+      "key": "hitler-dagbaekur",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "hamburg",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 1983
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd3": {
+    "subject": "Fölsunin afhjúpuð: Konrad Kujau og réttarhöldin",
+    "series": {
+      "key": "hitler-dagbaekur",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "hamburg",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 1985
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd4": {
+    "subject": "Burton og Speke í Sómalílandi",
+    "series": {
+      "key": "nilarleit",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "berbera",
+        "role": "primary",
+        "note": "Leiðangurinn 1854–55 endaði með árás í Berbera"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1854,
+        "end": 1855
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd5": {
+    "subject": "Leiðangurinn að vötnum Austur-Afríku",
+    "series": {
+      "key": "nilarleit",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "viktoriuvatn",
+        "role": "primary",
+        "note": "Speke taldi vatnið upptök Nílar"
+      },
+      {
+        "ref": "tanganyikavatn",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1856,
+        "end": 1859
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd6": {
+    "subject": "Deilan um upptök Nílar og endalok Speke",
+    "series": {
+      "key": "nilarleit",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "viktoriuvatn",
+        "role": "primary",
+        "note": "Ripon-fossar staðfestir sem upptökin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1860,
+        "end": 1864
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd7": {
+    "subject": "Ránið á Ópinu 1994",
+    "places": [
+      {
+        "ref": "oslo",
+        "role": "primary",
+        "note": "Þjóðarlistasafnið, á opnunardegi Ólympíuleikanna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1994,
+        "end": 1994
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd8": {
+    "subject": "Radíumstúlkurnar og sjálflýsandi úrin",
+    "series": {
+      "key": "radium",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "orange-nj",
+        "role": "primary",
+        "note": "Verksmiðja US Radium"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1917,
+        "end": 1927,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd9": {
+    "subject": "Barátta radíumstúlknanna fyrir réttlæti",
+    "series": {
+      "key": "radium",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "orange-nj",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1925,
+        "end": 1939
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sda": {
+    "subject": "Tonga-drengirnir: fimmtán mánuðir á eyðieyju",
+    "places": [
+      {
+        "ref": "ata",
+        "role": "primary",
+        "note": "Eyðieyjan 'Ata þar sem drengirnir lifðu af 1965–66"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1965,
+        "end": 1966
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sdb": {
+    "subject": "Amundsen flýgur yfir Norðurpólinn í loftskipinu Norge",
+    "places": [
+      {
+        "ref": "nordurpollinn",
+        "role": "primary",
+        "note": "Norge flaug yfir pólinn 12. maí 1926"
+      },
+      {
+        "ref": "svalbard",
+        "role": "secondary",
+        "note": "Lagt upp frá Ny-Ålesund"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1925,
+        "end": 1926
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sdc": {
+    "subject": "Hinsta ferð Amundsens: björgunarleiðangurinn 1928",
+    "places": [
+      {
+        "ref": "svalbard",
+        "role": "primary",
+        "note": "Loftskipið Italia brotlenti á ísnum"
+      },
+      {
+        "ref": "barentshaf",
+        "role": "secondary",
+        "note": "Flugvél Amundsens hvarf á leiðinni"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1928,
+        "end": 1928
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sdd": {
+    "subject": "Jólavopnahléið á vesturvígstöðvunum 1914",
+    "places": [
+      {
+        "ref": "ypres",
+        "role": "primary",
+        "note": "Skotgrafirnar í Flæmingjalandi"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1914,
+        "end": 1914
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qu1": {
+    "subject": "Saga Sómalíu: fornöld og miðaldir",
+    "series": {
+      "key": "somalia",
+      "part": 1,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "mogadishu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 900,
+        "end": 1889,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qu2": {
+    "subject": "Sómalía á nýlendutímanum",
+    "series": {
+      "key": "somalia",
+      "part": 2,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "mogadishu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1889,
+        "end": 1960,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qu3": {
+    "subject": "Sjálfstætt Sómalía og valdatíð Siads Barre",
+    "series": {
+      "key": "somalia",
+      "part": 3,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "mogadishu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1960,
+        "end": 1991,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qu4": {
+    "subject": "Borgarastyrjöldin í Sómalíu",
+    "series": {
+      "key": "somalia",
+      "part": 4,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "mogadishu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1991,
+        "end": 2000,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qu5": {
+    "subject": "Sómalía á 21. öld",
+    "series": {
+      "key": "somalia",
+      "part": 5,
+      "of": 5
+    },
+    "places": [
+      {
+        "ref": "mogadishu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2000,
+        "end": 2026,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qu6": {
+    "subject": "Rachel Carson og Raddir vorsins þagna",
+    "places": [
+      {
+        "ref": "washington-dc",
+        "role": "primary",
+        "note": "Starfaði hjá Fish and Wildlife Service"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1907,
+        "end": 1964
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qu7": {
+    "subject": "Georgi Markov: rithöfundurinn sem flúði Búlgaríu",
+    "series": {
+      "key": "markov",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary"
+      },
+      {
+        "ref": "sofia",
+        "role": "secondary",
+        "note": "Flúði Búlgaríu 1969"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1929,
+        "end": 1978
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qu8": {
+    "subject": "Regnhlífarmorðið á Waterloo-brú",
+    "series": {
+      "key": "markov",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Stunginn með eitraðri regnhlíf á Waterloo-brú"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1978,
+        "end": 2008,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qu9": {
+    "subject": "Knud Rasmussen og Arnarulunnguaq",
+    "series": {
+      "key": "knud-rasmussen",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "ilulissat",
+        "role": "primary",
+        "note": "Fæðingarbær Rasmussens"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1879,
+        "end": 1921
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qua": {
+    "subject": "Fimmti Thule-leiðangurinn um heimskautaslóðir Kanada",
+    "series": {
+      "key": "knud-rasmussen",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "naujaat",
+        "role": "primary",
+        "note": "Vetrarbækistöð leiðangursins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1921,
+        "end": 1923
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qub": {
+    "subject": "Leiðangurslok í Alaska",
+    "series": {
+      "key": "knud-rasmussen",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "nome",
+        "role": "primary",
+        "note": "Leiðangrinum lauk þar 1924"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1923,
+        "end": 1924
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8quc": {
+    "subject": "Rawa Majid, Kúrdíski refurinn",
+    "series": {
+      "key": "refurinn",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "uppsala",
+        "role": "primary",
+        "note": "Foxtrot-gengið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1986,
+        "end": 2023,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qud": {
+    "subject": "Gengjastríð Refsins og Jarðarbersins",
+    "series": {
+      "key": "refurinn",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "uppsala",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2023,
+        "end": 2026,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8que": {
+    "subject": "PFLP rænir fjórum þotum til Dawson's Field",
+    "series": {
+      "key": "dawsons-field",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "zarqa",
+        "role": "primary",
+        "note": "Eyðimerkurflugvöllurinn í Jórdaníu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1970,
+        "end": 1970
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8quf": {
+    "subject": "Flugránin og svarti september í Jórdaníu",
+    "series": {
+      "key": "dawsons-field",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "zarqa",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1970,
+        "end": 1971
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qug": {
+    "subject": "Tristan da Cunha, afskekktasta byggð heims",
+    "places": [
+      {
+        "ref": "tristan-da-cunha",
+        "role": "primary",
+        "note": "Eldgosið 1961 og brottflutningur íbúanna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1810,
+        "end": 2026,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8quh": {
+    "subject": "Leó 14.: frá Chicago í hásæti Péturs",
+    "places": [
+      {
+        "ref": "rom",
+        "role": "primary",
+        "note": "Kjörinn páfi í Vatíkaninu 2025"
+      },
+      {
+        "ref": "chicago",
+        "role": "secondary",
+        "note": "Fæddist þar 1955"
+      },
+      {
+        "ref": "chiclayo",
+        "role": "secondary",
+        "note": "Trúboðs- og biskupsárin í Perú"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1955,
+        "end": 2025
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8qui": {
+    "subject": "Batavía: glæsiskip Austur-Indíafélagsins strandar",
+    "series": {
+      "key": "batavia",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "houtman-abrolhos",
+        "role": "primary",
+        "note": "Strandstaðurinn 1629"
+      },
+      {
+        "ref": "amsterdam",
+        "role": "secondary",
+        "note": "Heimahöfnin"
+      },
+      {
+        "ref": "jakarta",
+        "role": "secondary",
+        "note": "Áfangastaðurinn, þá Batavía"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1628,
+        "end": 1629
+      }
+    ],
+    "confidence": "high"
+  },
+  "bk8quj": {
+    "subject": "Uppreisn og blóðbað skipbrotsmanna Batavíu",
+    "series": {
+      "key": "batavia",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "houtman-abrolhos",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1629,
+        "end": 1630
+      }
+    ],
+    "confidence": "high"
   }
 }

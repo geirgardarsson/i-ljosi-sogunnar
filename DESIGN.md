@@ -148,8 +148,12 @@ a bottom sheet, timeline collapses to ~72px.
 90 % of episodes in the last 5 % of pixels.
 
 - **Piecewise-linear scale.** Fixed breakpoints, each segment gets a pixel
-  share; within a segment years map linearly. Starting proposal (tune once the
-  real span distribution is known after annotation):
+  share; within a segment years map linearly. Note: the annotated data
+  contains one span starting at -60000 (Aboriginal Australia) and a handful
+  before -1000; the oldest segment should clamp/compress everything before
+  ~-3000 into a thin "forsaga" band rather than extend the axis linearly.
+  Starting proposal (tune once the real span distribution is known after
+  annotation):
 
   | segment | ≤ 0 | 0–1000 | 1000–1500 | 1500–1800 | 1800–1900 | 1900–2026 |
   |---|---|---|---|---|---|---|
