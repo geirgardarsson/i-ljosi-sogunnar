@@ -38,6 +38,7 @@ interface MarkerGroup {
   lat: number;
   era: number;
   years: string;
+  placeName: string;
 }
 
 let map: maplibregl.Map;
@@ -45,6 +46,9 @@ let groups: MarkerGroup[] = [];
 let groupByKey = new Map<string, MarkerGroup>();
 let groupByEpisodeId = new Map<string, MarkerGroup>();
 let legendEl: HTMLElement;
+/** Cached tooltip for the last-hovered cluster — cluster ids are only stable
+ * until the next setData, so refreshMatches invalidates this. */
+let clusterTip: { id: number; lines: string[] } | null = null;
 
 function buildGroups(episodes: Episode[]): MarkerGroup[] {
   const byKey = new Map<string, Episode[]>();
@@ -70,6 +74,7 @@ function buildGroups(episodes: Episode[]): MarkerGroup[] {
       years: starts.length
         ? fmtSpans([{ start: Math.min(...starts), end: Math.max(...ends) }])
         : "",
+      placeName: primary.name,
     };
   });
 }
@@ -227,6 +232,7 @@ function emptyFC(): GeoJSON.FeatureCollection {
 }
 
 function refreshMatches(): void {
+  clusterTip = null;
   (map.getSource("episodes") as GeoJSONSource | undefined)?.setData(toGeoJSON());
 }
 
@@ -252,7 +258,7 @@ function reflectSelection(): void {
       {
         type: "Feature",
         geometry: { type: "Point", coordinates: [p.lon, p.lat] },
-        properties: { role: "secondary", color },
+        properties: { role: "secondary", color, name: p.name, note: p.note ?? "" },
       },
       {
         type: "Feature",
@@ -318,7 +324,23 @@ function groupTooltipLines(g: MarkerGroup): string[] {
   const rep = g.episodes[0];
   const title =
     g.episodes.length > 1 ? `${rep.title} · ${g.episodes.length} hlutar` : rep.title;
-  return g.years ? [title, g.years] : [title];
+  return [title, g.years ? `${g.placeName} · ${g.years}` : g.placeName];
+}
+
+/** Tooltip for a cluster chip: episode total + the places inside it. */
+function clusterTooltipLines(gs: MarkerGroup[]): string[] {
+  const total = gs.reduce((n, g) => n + g.episodes.length, 0);
+  const perPlace = new Map<string, number>();
+  for (const g of gs) {
+    perPlace.set(g.placeName, (perPlace.get(g.placeName) ?? 0) + g.episodes.length);
+  }
+  const places = [...perPlace.entries()].sort((a, b) => b[1] - a[1]);
+  const shown = places
+    .slice(0, 3)
+    .map(([name, n]) => (places.length > 1 && n > 1 ? `${name} (${n})` : name));
+  const placeLine =
+    shown.join(", ") + (places.length > 3 ? ` og ${places.length - 3} fleiri` : "");
+  return [`${total} ${total === 1 ? "þáttur" : "þættir"}`, placeLine];
 }
 
 /** Chooser popup when several marker groups sit on the same pixel/coords. */
@@ -472,12 +494,46 @@ export function initMap(container: HTMLElement): void {
     hideTooltip();
     store.setHover(null);
   });
-  map.on("mousemove", "clusters", () => {
+  // Cluster tooltips need an async leaf lookup; cache per cluster id and
+  // drop results that resolve after the pointer has moved on.
+  let hoveredClusterId: number | null = null;
+  map.on("mousemove", "clusters", (e) => {
     map.getCanvas().style.cursor = "pointer";
+    const feature = e.features?.[0];
+    if (!feature) return;
+    const clusterId = feature.properties.cluster_id as number;
+    const { clientX, clientY } = e.originalEvent;
+    hoveredClusterId = clusterId;
+    if (clusterTip?.id === clusterId) {
+      showTooltip(clusterTip.lines, clientX, clientY);
+      return;
+    }
+    const source = map.getSource("episodes") as GeoJSONSource;
+    void source.getClusterLeaves(clusterId, Infinity, 0).then((leaves) => {
+      if (hoveredClusterId !== clusterId) return;
+      const gs = (leaves as GeoJSON.Feature[])
+        .map((l) => groupByKey.get((l.properties as { key: string }).key)!)
+        .filter(Boolean);
+      clusterTip = { id: clusterId, lines: clusterTooltipLines(gs) };
+      showTooltip(clusterTip.lines, clientX, clientY);
+    });
   });
   map.on("mouseleave", "clusters", () => {
     map.getCanvas().style.cursor = "";
+    hoveredClusterId = null;
+    hideTooltip();
   });
+
+  map.on("mousemove", "sel-secondaries", (e) => {
+    const props = e.features?.[0]?.properties as { name?: string; note?: string } | undefined;
+    if (!props?.name) return;
+    showTooltip(
+      [props.name, props.note || "Tengdur staður"],
+      e.originalEvent.clientX,
+      e.originalEvent.clientY,
+    );
+  });
+  map.on("mouseleave", "sel-secondaries", hideTooltip);
   map.on("click", "markers", onMarkerClick);
   map.on("click", "clusters", (e) => {
     void onClusterClick(e);
@@ -497,6 +553,9 @@ export function initMap(container: HTMLElement): void {
 
   buildLegend(container);
   buildKeyboardMarkers(container);
+
+  // Dev-only handle for browser-automation tests.
+  if (import.meta.env.DEV) (window as { __map?: maplibregl.Map }).__map = map;
 }
 
 /** Pan the map to a place without selecting anything (place-chip hover). */
