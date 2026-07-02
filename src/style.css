@@ -1,0 +1,272 @@
+:root {
+  --surface: #ffffff;
+  --surface-2: #f4f4f2;
+  --ink: #1c1e21;
+  --ink-muted: #5c6470;
+  --border: #dfe1df;
+  --accent: #256abf;
+  --chip: #333d4a;
+  --chip-text: #ffffff;
+  --brush-fill: rgba(57, 135, 229, 0.18);
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] {
+  --surface: #16181d;
+  --surface-2: #1d2026;
+  --ink: #e8eaed;
+  --ink-muted: #9aa3af;
+  --border: #2a2e35;
+  --accent: #5598e7;
+  --chip: #d7dde6;
+  --chip-text: #16181d;
+  --brush-fill: rgba(134, 182, 239, 0.2);
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
+
+/* ── Header / filter row ─────────────────────────────────────── */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  z-index: 5;
+}
+
+.topbar h1 {
+  font-size: 1.05rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.topbar h1 .sub {
+  color: var(--ink-muted);
+  font-weight: normal;
+}
+
+#search {
+  flex: 1;
+  max-width: 320px;
+  min-width: 100px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font: inherit;
+}
+
+.topbar select,
+.topbar button {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.topbar button[aria-pressed="true"] {
+  background: var(--chip);
+  color: var(--chip-text);
+  border-color: var(--chip);
+}
+
+/* ── Main: map + panel + list ────────────────────────────────── */
+
+main {
+  position: relative;
+  display: flex;
+  min-height: 0;
+}
+
+#map {
+  flex: 1;
+  min-width: 0;
+}
+
+.legend {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 11px;
+  box-shadow: var(--shadow);
+  z-index: 3;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.6;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 12px;
+  max-width: 280px;
+  box-shadow: var(--shadow);
+}
+
+.tooltip div + div {
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+/* Chooser popup for co-located markers */
+.maplibregl-popup-content {
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 6px;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: var(--surface) !important;
+}
+
+.chooser {
+  display: flex;
+  flex-direction: column;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.chooser button {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chooser button:hover,
+.chooser button:focus-visible {
+  background: var(--surface-2);
+}
+
+.chooser-years {
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+/* ── Timeline band ───────────────────────────────────────────── */
+
+#timeline-band {
+  height: 130px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+#timeline {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ── Detail panel ────────────────────────────────────────────── */
+
+.panel {
+  width: 360px;
+  flex: none;
+  overflow-y: auto;
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+}
+
+/* ── List view ───────────────────────────────────────────────── */
+
+.list-view {
+  flex: 1;
+  overflow: auto;
+  background: var(--surface);
+}
+
+/* ── Mobile ──────────────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  .topbar {
+    flex-wrap: wrap;
+    padding: 6px 10px;
+  }
+
+  .topbar h1 .sub {
+    display: none;
+  }
+
+  #timeline-band {
+    height: 76px;
+  }
+
+  .panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    max-height: 55dvh;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 14px 14px 0 0;
+    box-shadow: var(--shadow);
+    z-index: 10;
+  }
+
+  .legend {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

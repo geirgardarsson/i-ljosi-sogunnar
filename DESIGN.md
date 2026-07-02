@@ -189,13 +189,15 @@ a bottom sheet, timeline collapses to ~72px.
 
   | bucket | Fornöld ≤ 500 | 500–1500 | 1500–1800 | 1800–1900 | 1900 → |
   |---|---|---|---|---|---|
-  | light mode | `#86b6ef` (250) | `#5598e7` (350) | `#2a78d6` (450) | `#1c5cab` (550) | `#104281` (650) |
+  | light mode | `#6da7ec` (300) | `#3987e5` (400) | `#256abf` (500) | `#184f95` (600) | `#0d366b` (700) |
   | dark mode | `#cde2fb` (100) | `#86b6ef` (250) | `#3987e5` (400) | `#256abf` (500) | `#184f95` (600) |
 
   Steps obey the ordinal floor (lightest ≥ step 250 on light, darkest ≤ step
-  600 on dark). **At implementation, validate against the actual basemap land
-  color**, not the default chart surface:
-  `node scripts/validate_palette.js "<steps>" --ordinal --surface <land-hex>`.
+  600 on dark). Validated 2026-07-02 against the actual OpenFreeMap land
+  colors (positron `#f2f3f0`, dark `#0c0c0c`) with
+  `node scripts/validate_palette.js "<steps>" --ordinal --surface <land-hex>`:
+  the original 250-start light ramp failed the 2:1 light-end contrast floor on
+  positron land, so the light ramp shifted one step darker (300–700).
   A small legend (era → swatch) is always visible; color is never the only
   channel — the timeline position and the year chips repeat the information.
 - **Clustering**: MapLibre GeoJSON source with `cluster: true`. Cluster chips
