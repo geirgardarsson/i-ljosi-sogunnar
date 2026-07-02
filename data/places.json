@@ -1,40 +1,472 @@
 {
-  "riad": { "name": "Ríad", "kind": "city", "lat": 24.71, "lon": 46.68, "q": "Riyadh" },
-  "mekka": { "name": "Mekka", "kind": "city", "lat": 21.39, "lon": 39.86, "q": "Mecca" },
-  "sinaloa": { "name": "Sinaloa", "kind": "region", "lat": 25.0, "lon": -107.5, "q": "Sinaloa, Mexico" },
-  "mexikoborg": { "name": "Mexíkóborg", "kind": "city", "lat": 19.43, "lon": -99.13, "q": "Mexico City" },
-  "teheran": { "name": "Teheran", "kind": "city", "lat": 35.69, "lon": 51.39, "q": "Tehran" },
-  "natanz": { "name": "Natanz", "kind": "city", "lat": 33.51, "lon": 51.92, "q": "Natanz, Iran" },
-  "kairo": { "name": "Kaíró", "kind": "city", "lat": 30.04, "lon": 31.24, "q": "Cairo" },
-  "washington-dc": { "name": "Washington DC", "kind": "city", "lat": 38.9, "lon": -77.04, "q": "Washington, D.C." },
-  "sankti-petursborg": { "name": "Sankti Pétursborg", "kind": "city", "lat": 59.93, "lon": 30.34, "q": "Saint Petersburg" },
-  "dresden": { "name": "Dresden", "kind": "city", "lat": 51.05, "lon": 13.74 },
-  "moskva": { "name": "Moskva", "kind": "city", "lat": 55.76, "lon": 37.62, "q": "Moscow" },
-  "stokkholmur": { "name": "Stokkhólmur", "kind": "city", "lat": 59.33, "lon": 18.07, "q": "Stockholm" },
-  "new-york": { "name": "New York", "kind": "city", "lat": 40.71, "lon": -74.01, "q": "New York City" },
-  "klondike": { "name": "Klondike (Dawson City)", "kind": "region", "lat": 64.06, "lon": -139.43, "q": "Dawson City, Yukon" },
-  "fukushima-daiichi": { "name": "Fukushima-kjarnorkuverið", "kind": "landmark", "lat": 37.421, "lon": 141.033, "q": "Fukushima Daiichi" },
-  "sendai": { "name": "Sendai", "kind": "city", "lat": 38.27, "lon": 140.87 },
-  "sarajevo": { "name": "Sarajevó", "kind": "city", "lat": 43.86, "lon": 18.41, "q": "Sarajevo" },
-  "belgrad": { "name": "Belgrad", "kind": "city", "lat": 44.81, "lon": 20.46, "q": "Belgrade" },
-  "haag": { "name": "Haag", "kind": "city", "lat": 52.07, "lon": 4.3, "q": "The Hague" },
-  "nagorno-karabakh": { "name": "Nagorno-Karabakh", "kind": "region", "lat": 39.82, "lon": 46.75, "q": "Stepanakert" },
-  "tripoli": { "name": "Trípólí", "kind": "city", "lat": 32.89, "lon": 13.19, "q": "Tripoli, Libya" },
-  "benghazi": { "name": "Bengasí", "kind": "city", "lat": 32.12, "lon": 20.07, "q": "Benghazi" },
-  "brasilia": { "name": "Brasilía", "kind": "city", "lat": -15.79, "lon": -47.88, "q": "Brasilia, Distrito Federal, Brazil" },
-  "sao-paulo": { "name": "São Paulo", "kind": "city", "lat": -23.55, "lon": -46.63 },
-  "tsjernobyl": { "name": "Tsjernóbyl-kjarnorkuverið", "kind": "landmark", "lat": 51.389, "lon": 30.1, "q": "Chernobyl Nuclear Power Plant" },
-  "istanbul": { "name": "Istanbúl", "kind": "city", "lat": 41.01, "lon": 28.98, "q": "Istanbul" },
-  "ankara": { "name": "Ankara", "kind": "city", "lat": 39.93, "lon": 32.86 },
-  "chicago": { "name": "Chicago", "kind": "city", "lat": 41.88, "lon": -87.63 },
-  "new-haven": { "name": "New Haven", "kind": "city", "lat": 41.31, "lon": -72.93, "q": "New Haven, Connecticut" },
-  "krimskagi": { "name": "Krímskagi", "kind": "region", "lat": 45.3, "lon": 34.4, "q": "Crimea" },
-  "tashkent": { "name": "Tasjkent", "kind": "city", "lat": 41.3, "lon": 69.24, "q": "Tashkent" },
-  "maiduguri": { "name": "Maiduguri", "kind": "city", "lat": 11.83, "lon": 13.15 },
-  "chibok": { "name": "Chibok", "kind": "city", "lat": 10.87, "lon": 12.85, "q": "Chibok, Nigeria" },
-  "katmandu": { "name": "Katmandú", "kind": "city", "lat": 27.71, "lon": 85.32, "q": "Kathmandu" },
-  "davao": { "name": "Davaó", "kind": "city", "lat": 7.07, "lon": 125.61, "q": "Davao City" },
-  "manila": { "name": "Maníla", "kind": "city", "lat": 14.6, "lon": 120.98, "q": "Manila" },
-  "nyja-deli": { "name": "Nýja-Delí", "kind": "city", "lat": 28.61, "lon": 77.21, "q": "New Delhi" },
-  "lahore": { "name": "Lahore", "kind": "city", "lat": 31.55, "lon": 74.34 }
+  "riad": {
+    "name": "Ríad",
+    "kind": "city",
+    "lat": 24.71,
+    "lon": 46.68,
+    "q": "Riyadh"
+  },
+  "mekka": {
+    "name": "Mekka",
+    "kind": "city",
+    "lat": 21.39,
+    "lon": 39.86,
+    "q": "Mecca"
+  },
+  "sinaloa": {
+    "name": "Sinaloa",
+    "kind": "region",
+    "lat": 25.0,
+    "lon": -107.5,
+    "q": "Sinaloa, Mexico"
+  },
+  "mexikoborg": {
+    "name": "Mexíkóborg",
+    "kind": "city",
+    "lat": 19.43,
+    "lon": -99.13,
+    "q": "Mexico City"
+  },
+  "teheran": {
+    "name": "Teheran",
+    "kind": "city",
+    "lat": 35.69,
+    "lon": 51.39,
+    "q": "Tehran"
+  },
+  "natanz": {
+    "name": "Natanz",
+    "kind": "city",
+    "lat": 33.51,
+    "lon": 51.92,
+    "q": "Natanz, Iran"
+  },
+  "kairo": {
+    "name": "Kaíró",
+    "kind": "city",
+    "lat": 30.04,
+    "lon": 31.24,
+    "q": "Cairo"
+  },
+  "washington-dc": {
+    "name": "Washington DC",
+    "kind": "city",
+    "lat": 38.9,
+    "lon": -77.04,
+    "q": "Washington, D.C."
+  },
+  "sankti-petursborg": {
+    "name": "Sankti Pétursborg",
+    "kind": "city",
+    "lat": 59.93,
+    "lon": 30.34,
+    "q": "Saint Petersburg"
+  },
+  "dresden": {
+    "name": "Dresden",
+    "kind": "city",
+    "lat": 51.05,
+    "lon": 13.74
+  },
+  "moskva": {
+    "name": "Moskva",
+    "kind": "city",
+    "lat": 55.76,
+    "lon": 37.62,
+    "q": "Moscow"
+  },
+  "stokkholmur": {
+    "name": "Stokkhólmur",
+    "kind": "city",
+    "lat": 59.33,
+    "lon": 18.07,
+    "q": "Stockholm"
+  },
+  "new-york": {
+    "name": "New York",
+    "kind": "city",
+    "lat": 40.71,
+    "lon": -74.01,
+    "q": "New York City"
+  },
+  "klondike": {
+    "name": "Klondike (Dawson City)",
+    "kind": "region",
+    "lat": 64.06,
+    "lon": -139.43,
+    "q": "Dawson City, Yukon"
+  },
+  "fukushima-daiichi": {
+    "name": "Fukushima-kjarnorkuverið",
+    "kind": "landmark",
+    "lat": 37.421,
+    "lon": 141.033,
+    "q": "Fukushima Daiichi"
+  },
+  "sendai": {
+    "name": "Sendai",
+    "kind": "city",
+    "lat": 38.27,
+    "lon": 140.87
+  },
+  "sarajevo": {
+    "name": "Sarajevó",
+    "kind": "city",
+    "lat": 43.86,
+    "lon": 18.41,
+    "q": "Sarajevo"
+  },
+  "belgrad": {
+    "name": "Belgrad",
+    "kind": "city",
+    "lat": 44.81,
+    "lon": 20.46,
+    "q": "Belgrade"
+  },
+  "haag": {
+    "name": "Haag",
+    "kind": "city",
+    "lat": 52.07,
+    "lon": 4.3,
+    "q": "The Hague"
+  },
+  "nagorno-karabakh": {
+    "name": "Nagorno-Karabakh",
+    "kind": "region",
+    "lat": 39.82,
+    "lon": 46.75,
+    "q": "Stepanakert"
+  },
+  "tripoli": {
+    "name": "Trípólí",
+    "kind": "city",
+    "lat": 32.89,
+    "lon": 13.19,
+    "q": "Tripoli, Libya"
+  },
+  "benghazi": {
+    "name": "Bengasí",
+    "kind": "city",
+    "lat": 32.12,
+    "lon": 20.07,
+    "q": "Benghazi"
+  },
+  "brasilia": {
+    "name": "Brasilía",
+    "kind": "city",
+    "lat": -15.79,
+    "lon": -47.88,
+    "q": "Brasilia, Distrito Federal, Brazil"
+  },
+  "sao-paulo": {
+    "name": "São Paulo",
+    "kind": "city",
+    "lat": -23.55,
+    "lon": -46.63
+  },
+  "tsjernobyl": {
+    "name": "Tsjernóbyl-kjarnorkuverið",
+    "kind": "landmark",
+    "lat": 51.389,
+    "lon": 30.1,
+    "q": "Chernobyl Nuclear Power Plant"
+  },
+  "istanbul": {
+    "name": "Istanbúl",
+    "kind": "city",
+    "lat": 41.01,
+    "lon": 28.98,
+    "q": "Istanbul"
+  },
+  "ankara": {
+    "name": "Ankara",
+    "kind": "city",
+    "lat": 39.93,
+    "lon": 32.86
+  },
+  "chicago": {
+    "name": "Chicago",
+    "kind": "city",
+    "lat": 41.88,
+    "lon": -87.63
+  },
+  "new-haven": {
+    "name": "New Haven",
+    "kind": "city",
+    "lat": 41.31,
+    "lon": -72.93,
+    "q": "New Haven, Connecticut"
+  },
+  "krimskagi": {
+    "name": "Krímskagi",
+    "kind": "region",
+    "lat": 45.3,
+    "lon": 34.4,
+    "q": "Crimea"
+  },
+  "tashkent": {
+    "name": "Tasjkent",
+    "kind": "city",
+    "lat": 41.3,
+    "lon": 69.24,
+    "q": "Tashkent"
+  },
+  "maiduguri": {
+    "name": "Maiduguri",
+    "kind": "city",
+    "lat": 11.83,
+    "lon": 13.15
+  },
+  "chibok": {
+    "name": "Chibok",
+    "kind": "city",
+    "lat": 10.87,
+    "lon": 12.85,
+    "q": "Chibok, Nigeria"
+  },
+  "katmandu": {
+    "name": "Katmandú",
+    "kind": "city",
+    "lat": 27.71,
+    "lon": 85.32,
+    "q": "Kathmandu"
+  },
+  "davao": {
+    "name": "Davaó",
+    "kind": "city",
+    "lat": 7.07,
+    "lon": 125.61,
+    "q": "Davao City"
+  },
+  "manila": {
+    "name": "Maníla",
+    "kind": "city",
+    "lat": 14.6,
+    "lon": 120.98,
+    "q": "Manila"
+  },
+  "nyja-deli": {
+    "name": "Nýja-Delí",
+    "kind": "city",
+    "lat": 28.61,
+    "lon": 77.21,
+    "q": "New Delhi"
+  },
+  "lahore": {
+    "name": "Lahore",
+    "kind": "city",
+    "lat": 31.55,
+    "lon": 74.34
+  },
+  "athen": {
+    "name": "Aþena",
+    "kind": "city",
+    "lat": 37.98,
+    "lon": 23.73,
+    "q": "Athens, Greece"
+  },
+  "budapest": {
+    "name": "Búdapest",
+    "kind": "city",
+    "lat": 47.5,
+    "lon": 19.04
+  },
+  "bagdad": {
+    "name": "Bagdad",
+    "kind": "city",
+    "lat": 33.31,
+    "lon": 44.36,
+    "q": "Baghdad"
+  },
+  "zarqa": {
+    "name": "Zarqa",
+    "kind": "city",
+    "lat": 32.07,
+    "lon": 36.09,
+    "q": "Zarqa, Jordan"
+  },
+  "mosul": {
+    "name": "Mósúl",
+    "kind": "city",
+    "lat": 36.34,
+    "lon": 43.13,
+    "q": "Mosul"
+  },
+  "raqqa": {
+    "name": "Raqqa",
+    "kind": "city",
+    "lat": 35.95,
+    "lon": 39.01,
+    "q": "Raqqa, Syria"
+  },
+  "king-william-eyja": {
+    "name": "King William-eyja",
+    "kind": "region",
+    "lat": 69.0,
+    "lon": -97.5,
+    "q": "King William Island"
+  },
+  "pjongjang": {
+    "name": "Pjongjang",
+    "kind": "city",
+    "lat": 39.03,
+    "lon": 125.75,
+    "q": "Pyongyang"
+  },
+  "aleppo": {
+    "name": "Aleppó",
+    "kind": "city",
+    "lat": 36.2,
+    "lon": 37.16,
+    "q": "Aleppo"
+  },
+  "bangkok": {
+    "name": "Bangkok",
+    "kind": "city",
+    "lat": 13.76,
+    "lon": 100.5
+  },
+  "naru": {
+    "name": "Nárú",
+    "kind": "country",
+    "lat": -0.53,
+    "lon": 166.93,
+    "q": "Nauru"
+  },
+  "windhoek": {
+    "name": "Windhoek",
+    "kind": "city",
+    "lat": -22.56,
+    "lon": 17.08
+  },
+  "managva": {
+    "name": "Managva",
+    "kind": "city",
+    "lat": 12.14,
+    "lon": -86.25,
+    "q": "Managua"
+  },
+  "smolensk": {
+    "name": "Smolensk",
+    "kind": "city",
+    "lat": 54.78,
+    "lon": 32.05
+  },
+  "tasmania": {
+    "name": "Tasmanía",
+    "kind": "region",
+    "lat": -42.0,
+    "lon": 146.6,
+    "q": "Tasmania"
+  },
+  "seul": {
+    "name": "Seúl",
+    "kind": "city",
+    "lat": 37.57,
+    "lon": 126.98,
+    "q": "Seoul"
+  },
+  "taipei": {
+    "name": "Taípei",
+    "kind": "city",
+    "lat": 25.03,
+    "lon": 121.57,
+    "q": "Taipei"
+  },
+  "berkeley": {
+    "name": "Berkeley",
+    "kind": "city",
+    "lat": 37.87,
+    "lon": -122.27,
+    "q": "Berkeley, California"
+  },
+  "tallinn": {
+    "name": "Tallinn",
+    "kind": "city",
+    "lat": 59.44,
+    "lon": 24.75
+  },
+  "skagerrak": {
+    "name": "Skagerrak",
+    "kind": "water",
+    "lat": 58.3,
+    "lon": 9.5,
+    "q": "Skagerrak"
+  },
+  "oslo": {
+    "name": "Ósló",
+    "kind": "city",
+    "lat": 59.91,
+    "lon": 10.75,
+    "q": "Oslo"
+  },
+  "damaskus": {
+    "name": "Damaskus",
+    "kind": "city",
+    "lat": 33.51,
+    "lon": 36.29,
+    "q": "Damascus, Syria"
+  },
+  "qardaha": {
+    "name": "Qardaha",
+    "kind": "city",
+    "lat": 35.45,
+    "lon": 36.06,
+    "q": "Qardaha, Syria"
+  },
+  "rakhine": {
+    "name": "Rakhine-hérað",
+    "kind": "region",
+    "lat": 20.5,
+    "lon": 93.5,
+    "q": "Rakhine, Myanmar"
+  },
+  "bukarest": {
+    "name": "Búkarest",
+    "kind": "city",
+    "lat": 44.43,
+    "lon": 26.1,
+    "q": "Bucharest"
+  },
+  "timisoara": {
+    "name": "Timisoara",
+    "kind": "city",
+    "lat": 45.75,
+    "lon": 21.23,
+    "q": "Timișoara"
+  },
+  "manzanar": {
+    "name": "Manzanar-fangabúðirnar",
+    "kind": "landmark",
+    "lat": 36.73,
+    "lon": -118.15,
+    "q": "Manzanar, California"
+  },
+  "pearl-harbor": {
+    "name": "Pearl Harbor",
+    "kind": "landmark",
+    "lat": 21.35,
+    "lon": -157.94,
+    "q": "Pearl Harbor"
+  },
+  "svalbard": {
+    "name": "Svalbarði",
+    "kind": "region",
+    "lat": 78.5,
+    "lon": 16.0,
+    "q": "Svalbard"
+  },
+  "sanaa": {
+    "name": "Sanaa",
+    "kind": "city",
+    "lat": 15.35,
+    "lon": 44.21,
+    "q": "Sana'a"
+  },
+  "aden": {
+    "name": "Aden",
+    "kind": "city",
+    "lat": 12.79,
+    "lon": 45.02
+  }
 }

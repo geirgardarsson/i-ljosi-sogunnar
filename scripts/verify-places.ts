@@ -38,7 +38,9 @@ function haversineKm(aLat: number, aLon: number, bLat: number, bLon: number): nu
 }
 
 const places = JSON.parse(readFileSync("data/places.json", "utf-8")) as Record<string, Place>;
-const entries = Object.entries(places);
+// Optional slug args limit the check to just-added places (full run: no args)
+const only = new Set(process.argv.slice(2));
+const entries = Object.entries(places).filter(([slug]) => !only.size || only.has(slug));
 console.log(`Verifying ${entries.length} places against Nominatim…`);
 
 let flags = 0;
