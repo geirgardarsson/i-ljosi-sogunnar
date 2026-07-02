@@ -727,5 +727,130 @@
     "lat": 33.65,
     "lon": -90.2,
     "q": "Money, Mississippi"
+  },
+  "qumran": {
+    "name": "Qumran",
+    "kind": "landmark",
+    "lat": 31.74,
+    "lon": 35.46,
+    "q": "Qumran"
+  },
+  "stamford": {
+    "name": "Stamford, Connecticut",
+    "kind": "city",
+    "lat": 41.05,
+    "lon": -73.54,
+    "q": "Stamford, Connecticut"
+  },
+  "kuala-lumpur": {
+    "name": "Kúala Lúmpúr",
+    "kind": "city",
+    "lat": 3.14,
+    "lon": 101.69,
+    "q": "Kuala Lumpur"
+  },
+  "san-francisco": {
+    "name": "San Francisco",
+    "kind": "city",
+    "lat": 37.77,
+    "lon": -122.42,
+    "q": "San Francisco"
+  },
+  "indianapolis": {
+    "name": "Indianapolis",
+    "kind": "city",
+    "lat": 39.77,
+    "lon": -86.16
+  },
+  "jonestown": {
+    "name": "Jonestown",
+    "kind": "landmark",
+    "lat": 7.71,
+    "lon": -59.9,
+    "q": "Jonestown, Guyana"
+  },
+  "bursa": {
+    "name": "Bursa",
+    "kind": "city",
+    "lat": 40.19,
+    "lon": 29.06,
+    "q": "Bursa"
+  },
+  "lockerbie": {
+    "name": "Lockerbie",
+    "kind": "city",
+    "lat": 55.12,
+    "lon": -3.36,
+    "q": "Lockerbie"
+  },
+  "yambuku": {
+    "name": "Yambuku",
+    "kind": "city",
+    "lat": 2.83,
+    "lon": 22.23,
+    "q": "Yambuku"
+  },
+  "caracas": {
+    "name": "Karakas",
+    "kind": "city",
+    "lat": 10.49,
+    "lon": -66.88,
+    "q": "Caracas"
+  },
+  "konungadalurinn": {
+    "name": "Konungadalurinn",
+    "kind": "landmark",
+    "lat": 25.74,
+    "lon": 32.6,
+    "q": "Valley of the Kings"
+  },
+  "pitcairn": {
+    "name": "Pitcairn-eyja",
+    "kind": "region",
+    "lat": -25.07,
+    "lon": -130.1,
+    "q": "Pitcairn Islands"
+  },
+  "diego-garcia": {
+    "name": "Diego Garcia",
+    "kind": "region",
+    "lat": -7.31,
+    "lon": 72.41,
+    "q": "Diego Garcia"
+  },
+  "ross-eyja": {
+    "name": "Ross-eyja",
+    "kind": "region",
+    "lat": -77.53,
+    "lon": 168.13,
+    "q": "Ross Island"
+  },
+  "sudurpolinn": {
+    "name": "Suðurpóllinn",
+    "kind": "landmark",
+    "lat": -90.0,
+    "lon": 0.0,
+    "q": "South Pole"
+  },
+  "khartum": {
+    "name": "Khartúm",
+    "kind": "city",
+    "lat": 15.55,
+    "lon": 32.53,
+    "q": "Khartoum"
+  },
+  "darfur": {
+    "name": "Darfúr",
+    "kind": "region",
+    "lat": 13.0,
+    "lon": 25.0,
+    "q": "Darfur"
+  },
+  "juba": {
+    "name": "Juba",
+    "kind": "city",
+    "lat": 4.85,
+    "lon": 31.58,
+    "q": "Juba"
   }
 }

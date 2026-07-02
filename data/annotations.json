@@ -2430,5 +2430,705 @@
       }
     ],
     "confidence": "high"
+  },
+  "7hqko0": {
+    "subject": "Fundur Dauðahafshandritanna í Qumran",
+    "series": {
+      "key": "daudahafshandritin",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "qumran",
+        "role": "primary",
+        "note": "Handritin fundust í hellum við Dauðahafið"
+      }
+    ],
+    "spans": [
+      {
+        "start": -250,
+        "end": 70,
+        "approx": true
+      },
+      {
+        "start": 1946,
+        "end": 1947
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko1": {
+    "subject": "Dauðahafshandritin: sala, smáauglýsing og blekkingarleikur",
+    "series": {
+      "key": "daudahafshandritin",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "qumran",
+        "role": "primary"
+      },
+      {
+        "ref": "jerusalem",
+        "role": "secondary",
+        "note": "Handritin enduðu að mestu í Ísrael"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1947,
+        "end": 1967
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko2": {
+    "subject": "Oxycontin, Purdue Pharma og upphaf ópíóíðafaraldursins",
+    "places": [
+      {
+        "ref": "stamford",
+        "role": "primary",
+        "note": "Höfuðstöðvar Purdue Pharma"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1996,
+        "end": 2018
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko3": {
+    "subject": "1MDB-hneykslið: milljarðaþjófnaður úr malasískum ríkissjóði",
+    "places": [
+      {
+        "ref": "kuala-lumpur",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2009,
+        "end": 2018
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko4": {
+    "subject": "Saga konungsfjölskyldunnar í Sádi-Arabíu",
+    "places": [
+      {
+        "ref": "riad",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1902,
+        "end": 2018,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqko5": {
+    "subject": "Valdarán hersins í Brasilíu 1964 og herforingjastjórnin",
+    "places": [
+      {
+        "ref": "brasilia",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1964,
+        "end": 1985
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko6": {
+    "subject": "Jim Jones og Peoples Temple: uppgangur sértrúarsafnaðarins",
+    "series": {
+      "key": "jim-jones",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "san-francisco",
+        "role": "primary",
+        "note": "Höfuðstöðvar safnaðarins á 8. áratugnum"
+      },
+      {
+        "ref": "indianapolis",
+        "role": "secondary",
+        "note": "Jones hóf feril sinn í Indiana"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1931,
+        "end": 1977,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko7": {
+    "subject": "Fjöldasjálfsmorðin í Jonestown 1978",
+    "series": {
+      "key": "jim-jones",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "jonestown",
+        "role": "primary",
+        "note": "Bækistöðvar safnaðarins í frumskógi Gvæjana"
+      },
+      {
+        "ref": "san-francisco",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1974,
+        "end": 1978
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko8": {
+    "subject": "Ota Benga: maðurinn sem hafður var til sýnis í dýragarði",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Sýndur í Bronx-dýragarðinum 1906"
+      },
+      {
+        "ref": "kinshasa",
+        "role": "secondary",
+        "note": "Numinn á brott frá Kongó"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1904,
+        "end": 1916
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqko9": {
+    "subject": "Upphafsár Ottómanveldisins á Anatólíuskaga",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "bursa",
+        "role": "primary",
+        "note": "Fyrsta höfuðborg Ottómanveldisins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1299,
+        "end": 1402
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoa": {
+    "subject": "Fall Konstantínópel 1453",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary",
+        "note": "Konstantínópel, höfuðborg Býsansveldis"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1453,
+        "end": 1453
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkob": {
+    "subject": "Lockerbie-tilræðið: Pan Am flug 103",
+    "places": [
+      {
+        "ref": "lockerbie",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1988,
+        "end": 1988
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoc": {
+    "subject": "Landvinningar Tyrkjasoldána: Mehmet 2., Bajesíd 2. og Selím grimmi",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 3
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1453,
+        "end": 1520
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkod": {
+    "subject": "Súleiman mikli og Roxelana",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 4
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary",
+        "note": "Topkapı-höllin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1520,
+        "end": 1566
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoe": {
+    "subject": "Fyrsti skráði ebólufaraldurinn, Yambuku 1976",
+    "places": [
+      {
+        "ref": "yambuku",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1976,
+        "end": 1976
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkof": {
+    "subject": "Ævi auðjöfursins George Soros",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Vogunarsjóðsveldið"
+      },
+      {
+        "ref": "budapest",
+        "role": "secondary",
+        "note": "Fæddist þar 1930, lifði af hernám nasista"
+      },
+      {
+        "ref": "london",
+        "role": "secondary",
+        "note": "Felldi pundið á svörtum miðvikudegi 1992"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1930,
+        "end": 2019
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkog": {
+    "subject": "Landnám Spánverja í Venesúela",
+    "places": [
+      {
+        "ref": "caracas",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1498,
+        "end": 1830,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkoh": {
+    "subject": "Howard Carter finnur gröf Tútankamons 1922",
+    "places": [
+      {
+        "ref": "konungadalurinn",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": -1332,
+        "end": -1323
+      },
+      {
+        "start": 1922,
+        "end": 1925
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoi": {
+    "subject": "Pitcairn: uppreisnarmenn Bounty og dómsmálin tveimur öldum síðar",
+    "places": [
+      {
+        "ref": "pitcairn",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1789,
+        "end": 1790
+      },
+      {
+        "start": 2004,
+        "end": 2004
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoj": {
+    "subject": "Tyrkneska kvennaveldið: valdamiklar konur við hirð soldáns",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 5
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1566,
+        "end": 1650,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkok": {
+    "subject": "Tyrkneska kvennaveldið: Kösem, áhrifamesta kona tyrkneskrar sögu",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 6
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1590,
+        "end": 1651,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkol": {
+    "subject": "Maurice Hilleman, afkastamesti bóluefnasmiður sögunnar",
+    "places": [
+      {
+        "ref": "philadelphia",
+        "role": "primary",
+        "note": "Starfaði hjá Merck við Philadelphiu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1919,
+        "end": 2005
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkom": {
+    "subject": "Chagos-eyjar: brottflutningur íbúanna og baráttan fyrir endurkomu",
+    "places": [
+      {
+        "ref": "diego-garcia",
+        "role": "primary",
+        "note": "Bandaríska herstöðin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1965,
+        "end": 2019,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkon": {
+    "subject": "Suðurpólskapphlaupið: fyrirrennarar Scotts og undirbúningurinn",
+    "series": {
+      "key": "sudurpollinn",
+      "part": 1,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "ross-eyja",
+        "role": "primary",
+        "note": "Bækistöðvar bresku leiðangranna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1901,
+        "end": 1910
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoo": {
+    "subject": "Suðurpólskapphlaupið: Amundsen og norsku heimskautakannanirnir",
+    "series": {
+      "key": "sudurpollinn",
+      "part": 2,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "oslo",
+        "role": "primary",
+        "note": "Heimahöfn Fram-leiðangranna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1893,
+        "end": 1910
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkop": {
+    "subject": "Suðurpólskapphlaupið: fyrsta sumarið og „versta ferðalag heims“",
+    "series": {
+      "key": "sudurpollinn",
+      "part": 3,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "ross-eyja",
+        "role": "primary",
+        "note": "Cape Evans og mörgæsaleiðangurinn að Cape Crozier"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1911,
+        "end": 1911
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkoq": {
+    "subject": "Kapphlaupið á Suðurpólinn og endalok Scott-leiðangursins",
+    "series": {
+      "key": "sudurpollinn",
+      "part": 4,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "sudurpolinn",
+        "role": "primary"
+      },
+      {
+        "ref": "ross-eyja",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1911,
+        "end": 1912
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkor": {
+    "subject": "Sarajevó-handritið: gyðingahandrit sem bjargað var aftur og aftur",
+    "repeatOf": "72tl21",
+    "places": [
+      {
+        "ref": "sarajevo",
+        "role": "primary"
+      },
+      {
+        "ref": "barcelona",
+        "role": "secondary",
+        "note": "Handritið skrifað á Spáni"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1400,
+        "end": 1500,
+        "approx": true
+      },
+      {
+        "start": 1941,
+        "end": 1945
+      },
+      {
+        "start": 1992,
+        "end": 1995
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkos": {
+    "subject": "Saga Súdans: Egyptar, Bretar og uppreisn Mahdísins",
+    "series": {
+      "key": "sudan",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "khartum",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1820,
+        "end": 1899
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkot": {
+    "subject": "Súdan frá sjálfstæði 1956 að valdaráni al-Bashirs 1989",
+    "series": {
+      "key": "sudan",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "khartum",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1956,
+        "end": 1989
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkou": {
+    "subject": "Þýsk-bandaríska bandalagið: nasistahreyfing í Bandaríkjunum",
+    "repeatOf": "72tl2h",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Fjöldafundurinn í Madison Square Garden 1939"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1936,
+        "end": 1941
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkov": {
+    "subject": "Súdan: borgarastyrjöldin, Darfúr og klofningur landsins",
+    "series": {
+      "key": "sudan",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "khartum",
+        "role": "primary"
+      },
+      {
+        "ref": "darfur",
+        "role": "secondary",
+        "note": "Stríðið í Darfúr"
+      },
+      {
+        "ref": "juba",
+        "role": "secondary",
+        "note": "Höfuðborg Suður-Súdans frá 2011"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 2011
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp0": {
+    "subject": "Æska og uppvöxtur Borisar Johnson",
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1964,
+        "end": 2019
+      }
+    ],
+    "confidence": "high"
   }
 }
