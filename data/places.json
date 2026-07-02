@@ -584,5 +584,148 @@
     "lat": 36.59,
     "lon": 109.49,
     "q": "Yan'an"
+  },
+  "papua-nyja-ginea": {
+    "name": "Papúa Nýja-Gínea",
+    "kind": "country",
+    "lat": -6.5,
+    "lon": 145.0,
+    "q": "Papua New Guinea"
+  },
+  "kinshasa": {
+    "name": "Kinshasa",
+    "kind": "city",
+    "lat": -4.32,
+    "lon": 15.31
+  },
+  "brussel": {
+    "name": "Brussel",
+    "kind": "city",
+    "lat": 50.85,
+    "lon": 4.35,
+    "q": "Brussels"
+  },
+  "lubumbashi": {
+    "name": "Lubumbashi",
+    "kind": "city",
+    "lat": -11.66,
+    "lon": 27.48
+  },
+  "kennedy-space-center": {
+    "name": "Kennedy-geimferðamiðstöðin",
+    "kind": "landmark",
+    "lat": 28.57,
+    "lon": -80.65,
+    "q": "Kennedy Space Center"
+  },
+  "islamabad": {
+    "name": "Islamabad",
+    "kind": "city",
+    "lat": 33.69,
+    "lon": 73.06
+  },
+  "andamanhaf": {
+    "name": "Andamanhaf",
+    "kind": "water",
+    "lat": 10.0,
+    "lon": 96.0,
+    "q": "Andaman Sea"
+  },
+  "philadelphia": {
+    "name": "Philadelphia",
+    "kind": "city",
+    "lat": 39.95,
+    "lon": -75.17
+  },
+  "jedwabne": {
+    "name": "Jedwabne",
+    "kind": "city",
+    "lat": 53.29,
+    "lon": 22.3,
+    "q": "Jedwabne, Poland"
+  },
+  "waco": {
+    "name": "Waco",
+    "kind": "city",
+    "lat": 31.55,
+    "lon": -97.15,
+    "q": "Waco, Texas"
+  },
+  "tsavo": {
+    "name": "Tsavo",
+    "kind": "region",
+    "lat": -2.99,
+    "lon": 38.47,
+    "q": "Tsavo, Kenya"
+  },
+  "lima": {
+    "name": "Líma",
+    "kind": "city",
+    "lat": -12.05,
+    "lon": -77.04,
+    "q": "Lima, Peru"
+  },
+  "timbuktu": {
+    "name": "Timbúktú",
+    "kind": "city",
+    "lat": 16.77,
+    "lon": -3.01,
+    "q": "Timbuktu"
+  },
+  "st-croix": {
+    "name": "St. Croix",
+    "kind": "region",
+    "lat": 17.73,
+    "lon": -64.78,
+    "q": "Saint Croix, U.S. Virgin Islands"
+  },
+  "kaupmannahofn": {
+    "name": "Kaupmannahöfn",
+    "kind": "city",
+    "lat": 55.68,
+    "lon": 12.57,
+    "q": "Copenhagen"
+  },
+  "karuizawa": {
+    "name": "Karuizawa",
+    "kind": "city",
+    "lat": 36.35,
+    "lon": 138.6,
+    "q": "Karuizawa"
+  },
+  "eystrasalt": {
+    "name": "Eystrasalt",
+    "kind": "water",
+    "lat": 59.4,
+    "lon": 21.7,
+    "q": "Baltic Sea"
+  },
+  "los-angeles": {
+    "name": "Los Angeles",
+    "kind": "city",
+    "lat": 34.05,
+    "lon": -118.24,
+    "q": "Los Angeles"
+  },
+  "zurich": {
+    "name": "Zürich",
+    "kind": "city",
+    "lat": 47.37,
+    "lon": 8.54,
+    "q": "Zurich"
+  },
+  "sater": {
+    "name": "Säter",
+    "kind": "city",
+    "lat": 60.35,
+    "lon": 15.75,
+    "q": "Säter, Sweden"
+  },
+  "money-mississippi": {
+    "name": "Money, Mississippi",
+    "kind": "city",
+    "lat": 33.65,
+    "lon": -90.2,
+    "q": "Money, Mississippi"
   }
 }

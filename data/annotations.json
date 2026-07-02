@@ -1731,5 +1731,704 @@
       }
     ],
     "confidence": "high"
+  },
+  "72tl2s": {
+    "subject": "Kúrú: dularfulli sjúkdómurinn í Nýju-Gíneu og vísindamaðurinn sem leysti gátuna",
+    "places": [
+      {
+        "ref": "papua-nyja-ginea",
+        "role": "primary",
+        "note": "Fore-þjóðin á hálendinu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1950,
+        "end": 1976,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2t": {
+    "subject": "Jerúsalem frá fornöld til aldamóta 1900",
+    "series": {
+      "key": "jerusalem",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "jerusalem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": -1000,
+        "end": 1900,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "72tl2u": {
+    "subject": "Jerúsalem á tuttugustu öld fram að stofnun Ísraelsríkis",
+    "series": {
+      "key": "jerusalem",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "jerusalem",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1900,
+        "end": 1948
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2v": {
+    "subject": "Saga sambúðar katta og manna",
+    "places": [
+      {
+        "ref": "kairo",
+        "role": "primary",
+        "note": "Kattadýrkun Forn-Egypta"
+      }
+    ],
+    "spans": [
+      {
+        "start": -7500,
+        "end": 1963,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkn1": {
+    "subject": "Íranska byltingin 1978–1979",
+    "places": [
+      {
+        "ref": "teheran",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1978,
+        "end": 1979
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn2": {
+    "subject": "Fríríkið Kongó: einkanýlenda Leópolds II Belgakonungs",
+    "series": {
+      "key": "kongo",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "kinshasa",
+        "role": "primary",
+        "note": "Þá Léopoldville"
+      },
+      {
+        "ref": "brussel",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1885,
+        "end": 1908
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn3": {
+    "subject": "Kongó-krísan: sjálfstæði 1960 og upplausnin sem fylgdi",
+    "series": {
+      "key": "kongo",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "kinshasa",
+        "role": "primary"
+      },
+      {
+        "ref": "lubumbashi",
+        "role": "secondary",
+        "note": "Aðskilnaðarríkið Katanga"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1960,
+        "end": 1965
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn4": {
+    "subject": "Mobutu Sese Seko og Kongóstyrjaldirnar miklu",
+    "series": {
+      "key": "kongo",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "kinshasa",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1965,
+        "end": 2003
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn5": {
+    "subject": "Geimskutlan Kólumbía ferst 1. febrúar 2003",
+    "places": [
+      {
+        "ref": "kennedy-space-center",
+        "role": "primary",
+        "note": "Skutlan splundraðist á leið til lendingar þar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2003,
+        "end": 2003
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn6": {
+    "subject": "A.Q. Khan: faðir pakistönsku kjarnorkusprengjunnar og sölumaður dauðans",
+    "places": [
+      {
+        "ref": "islamabad",
+        "role": "primary",
+        "note": "Khan-rannsóknarstofurnar í Kahuta"
+      },
+      {
+        "ref": "teheran",
+        "role": "secondary"
+      },
+      {
+        "ref": "pjongjang",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1972,
+        "end": 2004
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn7": {
+    "subject": "Sprengjutilræðið gegn Korean Air 858 árið 1987",
+    "places": [
+      {
+        "ref": "andamanhaf",
+        "role": "primary",
+        "note": "Þotan fórst yfir Andamanhafi"
+      },
+      {
+        "ref": "seul",
+        "role": "secondary",
+        "note": "Ólympíuleikarnir 1988 taldir kveikjan"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1987,
+        "end": 1988
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn8": {
+    "subject": "Uppvöxtur Benjamíns Netanyahu og leið hans til valda",
+    "places": [
+      {
+        "ref": "jerusalem",
+        "role": "primary"
+      },
+      {
+        "ref": "philadelphia",
+        "role": "secondary",
+        "note": "Ólst að hluta upp í úthverfi Philadelphiu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1949,
+        "end": 2018
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkn9": {
+    "subject": "Fjöldamorðin á gyðingum í Jedwabne 1941 og uppgjörið sextíu árum síðar",
+    "places": [
+      {
+        "ref": "jedwabne",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1941,
+        "end": 1941
+      },
+      {
+        "start": 2000,
+        "end": 2001
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkna": {
+    "subject": "Umsátrið um Mount Carmel-búgarðinn við Waco 1993",
+    "places": [
+      {
+        "ref": "waco",
+        "role": "primary",
+        "note": "Mount Carmel-búgarður Branch Davidian-safnaðarins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1993,
+        "end": 1993
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknb": {
+    "subject": "Eitrunin fyrir Alexander Litvinenko í Lundúnum",
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Byrlað pólon-210 í tebolla 2006"
+      },
+      {
+        "ref": "moskva",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1998,
+        "end": 2006
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknc": {
+    "subject": "Mannætuljónin í Tsavo 1898",
+    "places": [
+      {
+        "ref": "tsavo",
+        "role": "primary",
+        "note": "Járnbrautarlagningin yfir Tsavo-ána"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1898,
+        "end": 1898
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknd": {
+    "subject": "Alberto Fujimori, forseti Perú 1990–2000",
+    "places": [
+      {
+        "ref": "lima",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1990,
+        "end": 2000
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkne": {
+    "subject": "Björgun Timbúktú-handritanna undan íslamistum 2012",
+    "places": [
+      {
+        "ref": "timbuktu",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1300,
+        "end": 1600,
+        "approx": true
+      },
+      {
+        "start": 2012,
+        "end": 2013
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknf": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 15 af 52“, 20. apríl 2018)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "7hqkng": {
+    "subject": "Dönsku Vestur-Indíur og Fireburn-uppreisn Queen Mary 1878",
+    "places": [
+      {
+        "ref": "st-croix",
+        "role": "primary",
+        "note": "Fireburn-uppreisnin"
+      },
+      {
+        "ref": "kaupmannahofn",
+        "role": "secondary",
+        "note": "Stytta af Queen Mary reist 2018"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1672,
+        "end": 1917,
+        "approx": true
+      },
+      {
+        "start": 1878,
+        "end": 1878
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknh": {
+    "subject": "Sameinaði rauði herinn: japanskir byltingarmenn tortíma sjálfum sér",
+    "places": [
+      {
+        "ref": "karuizawa",
+        "role": "primary",
+        "note": "Hreinsanirnar í fjallakofanum og umsátrið um Asama-sanso 1972"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1971,
+        "end": 1972
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkni": {
+    "subject": "MS Estonia ferst á Eystrasalti 1994",
+    "places": [
+      {
+        "ref": "eystrasalt",
+        "role": "primary",
+        "note": "Sökk í illviðri suður af Utö"
+      },
+      {
+        "ref": "tallinn",
+        "role": "secondary"
+      },
+      {
+        "ref": "stokkholmur",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1994,
+        "end": 1994
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknj": {
+    "subject": "Morðið á Robert F. Kennedy 1968",
+    "places": [
+      {
+        "ref": "los-angeles",
+        "role": "primary",
+        "note": "Skotinn á Ambassador-hótelinu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1925,
+        "end": 1968
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknk": {
+    "subject": "„Engillinn“ Ashraf Marwan: tengdasonur Nassers í þjónustu Mossad",
+    "series": {
+      "key": "ashraf-marwan",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kairo",
+        "role": "primary"
+      },
+      {
+        "ref": "london",
+        "role": "secondary",
+        "note": "Bauð Mossad þjónustu sína þar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1944,
+        "end": 1973
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknl": {
+    "subject": "Ashraf Marwan, Yom Kippur-stríðið og dularfullur dauðdagi",
+    "series": {
+      "key": "ashraf-marwan",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kairo",
+        "role": "primary"
+      },
+      {
+        "ref": "london",
+        "role": "secondary",
+        "note": "Féll af svölum íbúðar sinnar 2007"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1973,
+        "end": 1973
+      },
+      {
+        "start": 2007,
+        "end": 2007
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknm": {
+    "subject": "Spillingarsaga FIFA og upphaf bandarísku rannsóknarinnar",
+    "series": {
+      "key": "fifa",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "zurich",
+        "role": "primary",
+        "note": "Höfuðstöðvar FIFA; handtökurnar 2015"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1974,
+        "end": 2015,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknn": {
+    "subject": "Rannsókn FBI og skattstofunnar á fjármálum FIFA",
+    "series": {
+      "key": "fifa",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Rannsóknin rekin frá Brooklyn"
+      },
+      {
+        "ref": "zurich",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2011,
+        "end": 2015
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkno": {
+    "subject": "Útrýming Tasmaníutígursins",
+    "repeatOf": "6m1bne",
+    "places": [
+      {
+        "ref": "tasmania",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1803,
+        "end": 1936
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqknr": {
+    "subject": "Radovan Karadzic: Bosníustríðið, flóttinn og stríðsglæpadómurinn",
+    "repeatOf": "6m1bmc",
+    "places": [
+      {
+        "ref": "sarajevo",
+        "role": "primary"
+      },
+      {
+        "ref": "belgrad",
+        "role": "secondary",
+        "note": "Faldi sig þar sem grasalæknir"
+      },
+      {
+        "ref": "haag",
+        "role": "secondary",
+        "note": "Stríðsglæpadómstóllinn"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1992,
+        "end": 1995
+      },
+      {
+        "start": 1996,
+        "end": 2016
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkns": {
+    "subject": "Thomas Quick: „versti raðmorðingi Norðurlanda“ verður til",
+    "series": {
+      "key": "thomas-quick",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "sater",
+        "role": "primary",
+        "note": "Réttargeðdeildin í Säter þar sem játningarnar hófust"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1950,
+        "end": 1993,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqknt": {
+    "subject": "Réttarhöldin yfir Thomas Quick: dæmdur fyrir átta morð",
+    "series": {
+      "key": "thomas-quick",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "sater",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1992,
+        "end": 2001,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqknu": {
+    "subject": "Thomas Quick dregur játningarnar til baka og er sýknaður",
+    "series": {
+      "key": "thomas-quick",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "sater",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2001,
+        "end": 2013,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqknv": {
+    "subject": "Morðið á Emmett Till 1955",
+    "places": [
+      {
+        "ref": "money-mississippi",
+        "role": "primary"
+      },
+      {
+        "ref": "chicago",
+        "role": "secondary",
+        "note": "Heimaborg Tills; opna kistan við útförina vakti þjóðarathygli"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1955,
+        "end": 1955
+      }
+    ],
+    "confidence": "high"
   }
 }
