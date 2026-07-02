@@ -371,6 +371,15 @@ main {
   border-color: var(--chip);
 }
 
+.chip-note {
+  display: block;
+  font-size: 0.72rem;
+  opacity: 0.75;
+  max-width: 220px;
+  white-space: normal;
+  text-align: left;
+}
+
 .linklike {
   border: 0;
   background: none;

@@ -95,6 +95,33 @@ function toGeoJSON(): GeoJSON.FeatureCollection {
   };
 }
 
+/**
+ * Secondary places render as small always-visible rings (from zoom 3 up) —
+ * one feature per episode × secondary place, so several episodes touching
+ * the same place stack and the hover/click handlers collect them all.
+ */
+function secondariesGeoJSON(): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = [];
+  for (const ep of store.episodes) {
+    if (ep.repeatOf) continue;
+    for (const p of ep.places) {
+      if (p.role !== "secondary") continue;
+      features.push({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [p.lon, p.lat] },
+        properties: {
+          id: ep.id,
+          era: eraIndex(ep),
+          name: p.name,
+          note: p.note ?? "",
+          match: store.matches(ep) ? 1 : 0,
+        },
+      });
+    }
+  }
+  return { type: "FeatureCollection", features };
+}
+
 function addLayers(): void {
   const theme = store.theme;
   const ramp = ERA_RAMP[theme];
@@ -108,8 +135,29 @@ function addLayers(): void {
     clusterMaxZoom: 12,
     clusterProperties: { matched: ["+", ["get", "match"]] },
   });
+  map.addSource("secondaries", { type: "geojson", data: secondariesGeoJSON() });
   map.addSource("hover", { type: "geojson", data: emptyFC() });
   map.addSource("selection", { type: "geojson", data: emptyFC() });
+
+  // Below everything episode-related: subordinate rings for secondary places.
+  map.addLayer({
+    id: "secondaries",
+    type: "circle",
+    source: "secondaries",
+    minzoom: 3,
+    paint: {
+      "circle-radius": 3.5,
+      "circle-color": LAND_COLOR[theme],
+      "circle-stroke-width": 1.5,
+      "circle-stroke-color": [
+        "match", ["get", "era"],
+        0, ramp[0], 1, ramp[1], 2, ramp[2], 3, ramp[3],
+        ramp[4],
+      ],
+      "circle-opacity": ["case", ["==", ["get", "match"], 1], 0.9, 0.1],
+      "circle-stroke-opacity": ["case", ["==", ["get", "match"], 1], 0.9, 0.1],
+    },
+  });
 
   map.addLayer({
     id: "clusters",
@@ -234,6 +282,7 @@ function emptyFC(): GeoJSON.FeatureCollection {
 function refreshMatches(): void {
   clusterTip = null;
   (map.getSource("episodes") as GeoJSONSource | undefined)?.setData(toGeoJSON());
+  (map.getSource("secondaries") as GeoJSONSource | undefined)?.setData(secondariesGeoJSON());
 }
 
 function reflectSelection(): void {
@@ -324,7 +373,12 @@ function groupTooltipLines(g: MarkerGroup): string[] {
   const rep = g.episodes[0];
   const title =
     g.episodes.length > 1 ? `${rep.title} · ${g.episodes.length} hlutar` : rep.title;
-  return [title, g.years ? `${g.placeName} · ${g.years}` : g.placeName];
+  const lines = [title, g.years ? `${g.placeName} · ${g.years}` : g.placeName];
+  // A note explains the episode's tie to the place; only safe to show when
+  // the marker stands for a single episode (series parts have their own).
+  const note = rep.places.find((p) => p.role === "primary")?.note;
+  if (g.episodes.length === 1 && note) lines.push(note);
+  return lines;
 }
 
 /** Tooltip for a cluster chip: episode total + the places inside it. */
@@ -343,26 +397,24 @@ function clusterTooltipLines(gs: MarkerGroup[]): string[] {
   return [`${total} ${total === 1 ? "þáttur" : "þættir"}`, placeLine];
 }
 
-/** Chooser popup when several marker groups sit on the same pixel/coords. */
-function openChooser(lngLat: maplibregl.LngLatLike, gs: MarkerGroup[]): void {
+/** Chooser popup when several episodes sit on the same pixel/coords. */
+function openChooser(lngLat: maplibregl.LngLatLike, episodes: Episode[]): void {
   const wrap = document.createElement("div");
   wrap.className = "chooser";
-  for (const g of gs) {
-    for (const ep of g.episodes) {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      const title = document.createElement("span");
-      title.textContent = ep.title;
-      const years = document.createElement("span");
-      years.className = "chooser-years";
-      years.textContent = fmtSpans(ep.spans);
-      btn.append(title, years);
-      btn.addEventListener("click", () => {
-        popup.remove();
-        store.select(ep.id, { fly: false });
-      });
-      wrap.append(btn);
-    }
+  for (const ep of episodes) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    const title = document.createElement("span");
+    title.textContent = ep.title;
+    const years = document.createElement("span");
+    years.className = "chooser-years";
+    years.textContent = fmtSpans(ep.spans);
+    btn.append(title, years);
+    btn.addEventListener("click", () => {
+      popup.remove();
+      store.select(ep.id, { fly: false });
+    });
+    wrap.append(btn);
   }
   const popup = new maplibregl.Popup({ closeButton: false, maxWidth: "320px" })
     .setLngLat(lngLat)
@@ -378,7 +430,7 @@ function onMarkerClick(e: MapLayerMouseEvent): void {
   if (gs.length === 1 && gs[0].episodes.length === 1) {
     store.select(gs[0].episodes[0].id, { fly: false });
   } else {
-    openChooser(e.lngLat, gs);
+    openChooser(e.lngLat, gs.flatMap((g) => g.episodes));
   }
 }
 
@@ -395,7 +447,7 @@ async function onClusterClick(e: MapLayerMouseEvent): Promise<void> {
     const gs = leaves
       .map((l) => groupByKey.get((l.properties as { key: string }).key)!)
       .filter(Boolean);
-    openChooser(e.lngLat, gs);
+    openChooser(e.lngLat, gs.flatMap((g) => g.episodes));
   } else {
     map.easeTo({ center, zoom });
   }
@@ -524,16 +576,71 @@ export function initMap(container: HTMLElement): void {
     hideTooltip();
   });
 
+  const secondaryTooltipLines = (
+    ep: Episode | undefined,
+    name: string,
+    note: string,
+  ): string[] => {
+    const lines = ep ? [ep.title] : [];
+    lines.push(note ? `${name} — ${note}` : `${name} — tengdur staður`);
+    return lines;
+  };
+
   map.on("mousemove", "sel-secondaries", (e) => {
     const props = e.features?.[0]?.properties as { name?: string; note?: string } | undefined;
     if (!props?.name) return;
+    const ep = store.selectedId ? store.byId.get(store.selectedId) : undefined;
     showTooltip(
-      [props.name, props.note || "Tengdur staður"],
+      secondaryTooltipLines(ep, props.name, props.note ?? ""),
       e.originalEvent.clientX,
       e.originalEvent.clientY,
     );
   });
   map.on("mouseleave", "sel-secondaries", hideTooltip);
+
+  // Primary markers and clusters own the pointer when they overlap a ring.
+  const overPrimary = (point: MapLayerMouseEvent["point"]): boolean =>
+    map.queryRenderedFeatures(point, { layers: ["markers", "clusters"] }).length > 0;
+
+  map.on("mousemove", "secondaries", (e) => {
+    if (overPrimary(e.point)) return;
+    map.getCanvas().style.cursor = "pointer";
+    const feats = map.queryRenderedFeatures(e.point, { layers: ["secondaries"] });
+    const ids = [...new Set(feats.map((f) => f.properties.id as string))];
+    if (ids.length === 0) return;
+    const { clientX, clientY } = e.originalEvent;
+    if (ids.length === 1) {
+      const ep = store.byId.get(ids[0]);
+      const props = feats[0].properties as { name: string; note: string };
+      showTooltip(secondaryTooltipLines(ep, props.name, props.note), clientX, clientY);
+    } else {
+      const name = (feats[0].properties as { name: string }).name;
+      showTooltip([`${ids.length} þættir tengjast þessum stað`, name], clientX, clientY);
+    }
+    // Ring the primary markers these episodes belong to.
+    const ringed = new Set<MarkerGroup>();
+    for (const id of ids) {
+      const g = groupByEpisodeId.get(id);
+      if (g) ringed.add(g);
+    }
+    setHoverRing([...ringed]);
+    store.setHover({ ids, source: "map" });
+  });
+  map.on("mouseleave", "secondaries", () => {
+    map.getCanvas().style.cursor = "";
+    setHoverRing([]);
+    hideTooltip();
+    store.setHover(null);
+  });
+  map.on("click", "secondaries", (e) => {
+    if (overPrimary(e.point)) return;
+    const feats = map.queryRenderedFeatures(e.point, { layers: ["secondaries"] });
+    const eps = [...new Set(feats.map((f) => f.properties.id as string))]
+      .map((id) => store.byId.get(id))
+      .filter((ep): ep is Episode => !!ep);
+    if (eps.length === 1) store.select(eps[0].id, { fly: false });
+    else if (eps.length > 1) openChooser(e.lngLat, eps);
+  });
   map.on("click", "markers", onMarkerClick);
   map.on("click", "clusters", (e) => {
     void onClusterClick(e);

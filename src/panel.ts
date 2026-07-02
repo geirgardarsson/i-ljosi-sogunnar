@@ -93,7 +93,7 @@ function render(): void {
         `chip chip-place${place.role === "primary" ? " primary" : ""}`,
         place.name,
       );
-      if (place.note) chip.title = place.note;
+      if (place.note) chip.append(el("span", "chip-note", place.note));
       chip.addEventListener("mouseenter", () => panToPlace(place.lon, place.lat));
       chip.addEventListener("focus", () => panToPlace(place.lon, place.lat));
       chips.append(chip);
