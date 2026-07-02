@@ -1,0 +1,16 @@
+{
+  "name": "i-ljosi-sogunnar",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Episodes of 'Í ljósi sögunnar' on a world map and timeline",
+  "scripts": {
+    "fetch-catalog": "tsx scripts/fetch-catalog.ts",
+    "verify-places": "tsx scripts/verify-places.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
