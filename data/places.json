@@ -1461,5 +1461,124 @@
     "lat": -27.11,
     "lon": -109.35,
     "q": "Easter Island"
+  },
+  "beslan": {
+    "name": "Beslan",
+    "kind": "city",
+    "lat": 43.19,
+    "lon": 44.54,
+    "q": "Beslan"
+  },
+  "oakland": {
+    "name": "Oakland",
+    "kind": "city",
+    "lat": 37.8,
+    "lon": -122.27,
+    "q": "Oakland, California"
+  },
+  "chennai": {
+    "name": "Chennai",
+    "kind": "city",
+    "lat": 13.08,
+    "lon": 80.27,
+    "q": "Chennai"
+  },
+  "kingston-jamaika": {
+    "name": "Kingston, Jamaíka",
+    "kind": "city",
+    "lat": 18.02,
+    "lon": -76.8,
+    "q": "Kingston, Jamaica"
+  },
+  "nordurpollinn": {
+    "name": "Norðurpóllinn",
+    "kind": "landmark",
+    "lat": 90.0,
+    "lon": 0.0,
+    "skipVerify": true
+  },
+  "chester": {
+    "name": "Chester",
+    "kind": "city",
+    "lat": 53.19,
+    "lon": -2.89,
+    "q": "Chester, England"
+  },
+  "weddellhaf": {
+    "name": "Weddell-haf",
+    "kind": "water",
+    "lat": -73.0,
+    "lon": -45.0,
+    "q": "Weddell Sea"
+  },
+  "fila-ey": {
+    "name": "Fílaey (Elephant Island)",
+    "kind": "region",
+    "lat": -61.13,
+    "lon": -55.12,
+    "q": "Elephant Island"
+  },
+  "sudur-georgia": {
+    "name": "Suður-Georgía",
+    "kind": "region",
+    "lat": -54.28,
+    "lon": -36.51,
+    "q": "South Georgia"
+  },
+  "pretoria": {
+    "name": "Pretoría",
+    "kind": "city",
+    "lat": -25.75,
+    "lon": 28.19,
+    "q": "Pretoria"
+  },
+  "osutaka": {
+    "name": "Osutaka-hryggur",
+    "kind": "landmark",
+    "lat": 36.0,
+    "lon": 138.69,
+    "skipVerify": true
+  },
+  "frankfurt": {
+    "name": "Frankfurt",
+    "kind": "city",
+    "lat": 50.11,
+    "lon": 8.68,
+    "q": "Frankfurt"
+  },
+  "auschwitz": {
+    "name": "Auschwitz (Oświęcim)",
+    "kind": "landmark",
+    "lat": 50.03,
+    "lon": 19.18,
+    "q": "Oświęcim"
+  },
+  "st-kilda": {
+    "name": "Sankti Kilda",
+    "kind": "region",
+    "lat": 57.81,
+    "lon": -8.57,
+    "q": "Hirta"
+  },
+  "st-thomas-ontario": {
+    "name": "St. Thomas, Ontario",
+    "kind": "city",
+    "lat": 42.78,
+    "lon": -81.19,
+    "q": "St. Thomas, Ontario"
+  },
+  "auckland-eyjar": {
+    "name": "Auckland-eyjar",
+    "kind": "region",
+    "lat": -50.7,
+    "lon": 166.1,
+    "q": "Auckland Islands"
+  },
+  "titanic-flak": {
+    "name": "Flak Titanic, Norður-Atlantshaf",
+    "kind": "water",
+    "lat": 41.73,
+    "lon": -49.95,
+    "skipVerify": true
   }
 }

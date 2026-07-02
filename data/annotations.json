@@ -5883,5 +5883,731 @@
       }
     ],
     "confidence": "medium"
+  },
+  "7hqkt9": {
+    "subject": "Andrew Wakefield og upphaf MMR-hræðslunnar",
+    "series": {
+      "key": "wakefield",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Royal Free-sjúkrahúsið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1995,
+        "end": 1998
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkta": {
+    "subject": "Fall Wakefields og lífseigar afleiðingar kenninganna",
+    "series": {
+      "key": "wakefield",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1998,
+        "end": 2010
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktb": {
+    "subject": "Gíslatakan í barnaskólanum í Beslan 2004",
+    "series": {
+      "key": "beslan",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "beslan",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2004,
+        "end": 2004
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktc": {
+    "subject": "Blóðug endalok gíslatökunnar í Beslan",
+    "series": {
+      "key": "beslan",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "beslan",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2004,
+        "end": 2004
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktd": {
+    "subject": "Ættir Kamölu Harris og fyrstu árin",
+    "series": {
+      "key": "kamala-harris",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "oakland",
+        "role": "primary",
+        "note": "Fædd og uppalin þar"
+      },
+      {
+        "ref": "chennai",
+        "role": "secondary",
+        "note": "Ættir móðurinnar"
+      },
+      {
+        "ref": "kingston-jamaika",
+        "role": "secondary",
+        "note": "Ættir föðurins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1964,
+        "end": 1986,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkte": {
+    "subject": "Námsár Kamölu Harris og saksóknaraferillinn",
+    "series": {
+      "key": "kamala-harris",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "san-francisco",
+        "role": "primary",
+        "note": "Saksóknari þar og síðar dómsmálaráðherra Kaliforníu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1986,
+        "end": 2011,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktf": {
+    "subject": "Frederick Cook hylltur í Kaupmannahöfn fyrir norðurpólsafrekið",
+    "series": {
+      "key": "frederick-cook",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kaupmannahofn",
+        "role": "primary",
+        "note": "Móttökurnar í september 1909"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1908,
+        "end": 1909
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktg": {
+    "subject": "Efasemdir um Cook og deilan við Peary",
+    "series": {
+      "key": "frederick-cook",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "kaupmannahofn",
+        "role": "primary"
+      },
+      {
+        "ref": "nordurpollinn",
+        "role": "secondary",
+        "note": "Hvorugur komst líklega alla leið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1909,
+        "end": 1911
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkth": {
+    "subject": "Sally Clark sökuð um að myrða syni sína",
+    "series": {
+      "key": "sally-clark",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "chester",
+        "role": "primary",
+        "note": "Réttarhöldin 1999"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1996,
+        "end": 1999
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkti": {
+    "subject": "Sally Clark sýknuð eftir dómsmorð",
+    "series": {
+      "key": "sally-clark",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "chester",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1999,
+        "end": 2007
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktj": {
+    "subject": "Fangabúðavist Bandaríkjamanna af japönskum ættum í seinni heimsstyrjöld",
+    "repeatOf": "72tl1o",
+    "places": [
+      {
+        "ref": "manzanar",
+        "role": "primary",
+        "note": "Þekktustu fangabúðirnar"
+      },
+      {
+        "ref": "pearl-harbor",
+        "role": "secondary",
+        "note": "Árásin 1941 sem hratt af stað ofsóknunum"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1941,
+        "end": 1945
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktk": {
+    "subject": "Shackleton í Discovery-leiðangrinum",
+    "series": {
+      "key": "shackleton",
+      "part": 1,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "ross-eyja",
+        "role": "primary",
+        "note": "Discovery-leiðangur Scotts 1901–03"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1901,
+        "end": 1903
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktl": {
+    "subject": "Nimrod-leiðangur Shackletons",
+    "series": {
+      "key": "shackleton",
+      "part": 2,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "ross-eyja",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1907,
+        "end": 1908
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktm": {
+    "subject": "Shackleton kemst 180 km frá Suðurpólnum",
+    "series": {
+      "key": "shackleton",
+      "part": 3,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "sudurpolinn",
+        "role": "primary",
+        "note": "Sneri við 180 km frá pólnum í janúar 1909"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1908,
+        "end": 1914
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktn": {
+    "subject": "Endurance festist í ís Weddell-hafs",
+    "series": {
+      "key": "shackleton",
+      "part": 4,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "weddellhaf",
+        "role": "primary",
+        "note": "Skipið brotnaði og sökk í ísnum 1915"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1914,
+        "end": 1915
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkto": {
+    "subject": "Áhöfn Endurance strandaglópar á Fílaey",
+    "series": {
+      "key": "shackleton",
+      "part": 5,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "fila-ey",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1916,
+        "end": 1916
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqktp": {
+    "subject": "Bátsferðin til Suður-Georgíu og björgun allra",
+    "series": {
+      "key": "shackleton",
+      "part": 6,
+      "of": 6
+    },
+    "places": [
+      {
+        "ref": "sudur-georgia",
+        "role": "primary",
+        "note": "Gönguferðin yfir eyjuna til hvalstöðvarinnar í Stromness"
+      },
+      {
+        "ref": "fila-ey",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1916,
+        "end": 1917
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sch": {
+    "subject": "Ættir Elons Musk og æskan í Suður-Afríku",
+    "series": {
+      "key": "elon-musk",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "pretoria",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1971,
+        "end": 1989
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sci": {
+    "subject": "Musk flytur vestur: Kanada, Bandaríkin og fyrstu fyrirtækin",
+    "series": {
+      "key": "elon-musk",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "san-francisco",
+        "role": "primary",
+        "note": "Zip2 og PayPal í Kísildalnum"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1989,
+        "end": 2002,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scj": {
+    "subject": "Fjólubláa hættan: ofsóknir gegn hinsegin ríkisstarfsfólki",
+    "places": [
+      {
+        "ref": "washington-dc",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1947,
+        "end": 1969,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sck": {
+    "subject": "Japan Airlines flug 123 ferst á Osutaka-hrygg 1985",
+    "places": [
+      {
+        "ref": "osutaka",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1985,
+        "end": 1985
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scl": {
+    "subject": "Fritz Bauer, saksóknarinn sem elti uppi böðla Auschwitz",
+    "series": {
+      "key": "fritz-bauer",
+      "part": 1,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frankfurt",
+        "role": "primary"
+      },
+      {
+        "ref": "auschwitz",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1903,
+        "end": 1963
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scm": {
+    "subject": "Aðdragandi Auschwitz-réttarhaldanna í Frankfurt",
+    "series": {
+      "key": "fritz-bauer",
+      "part": 2,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frankfurt",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1956,
+        "end": 1963
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scn": {
+    "subject": "Réttarhöldin yfir 22 fyrrum starfsmönnum Auschwitz",
+    "series": {
+      "key": "fritz-bauer",
+      "part": 3,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frankfurt",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1963,
+        "end": 1965
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sco": {
+    "subject": "Dómarnir í Frankfurt og eftirmál réttarhaldanna",
+    "series": {
+      "key": "fritz-bauer",
+      "part": 4,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frankfurt",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1963,
+        "end": 1968
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scp": {
+    "subject": "Sankti Kilda: líf og endalok byggðar á afskekktustu eyjum Bretlands",
+    "places": [
+      {
+        "ref": "st-kilda",
+        "role": "primary",
+        "note": "Byggðin flutt burt 1930"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1697,
+        "end": 1930,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scq": {
+    "subject": "Fíllinn Júmbó slær í gegn í London",
+    "series": {
+      "key": "jumbo",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Dýragarðurinn í Regent's Park"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1861,
+        "end": 1882
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scr": {
+    "subject": "Júmbó í sirkus Barnums og endalokin í Ontario",
+    "series": {
+      "key": "jumbo",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "st-thomas-ontario",
+        "role": "primary",
+        "note": "Varð fyrir lest og drapst 1885"
+      },
+      {
+        "ref": "london",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1882,
+        "end": 1885
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scs": {
+    "subject": "Tvö skip stranda við Auckland-eyju 1864",
+    "series": {
+      "key": "auckland-eyja",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "auckland-eyjar",
+        "role": "primary",
+        "note": "Grafton og Invercauld strönduðu sitt hvorum megin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1864,
+        "end": 1865
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sct": {
+    "subject": "Ólík örlög skipbrotsmannanna á Auckland-eyju",
+    "series": {
+      "key": "auckland-eyja",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "auckland-eyjar",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1864,
+        "end": 1865
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scu": {
+    "subject": "Rose Valland njósnar um listrán nasista",
+    "series": {
+      "key": "rose-valland",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "paris",
+        "role": "primary",
+        "note": "Jeu de Paume-safnið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1940,
+        "end": 1944
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78scv": {
+    "subject": "Rose Valland og endurheimt listaverkanna",
+    "series": {
+      "key": "rose-valland",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "paris",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1944,
+        "end": 1953,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "b78sd0": {
+    "subject": "Leitin að flaki Titanic",
+    "places": [
+      {
+        "ref": "titanic-flak",
+        "role": "primary",
+        "note": "Flakið fannst á 3.800 m dýpi 1985"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1912,
+        "end": 1912
+      },
+      {
+        "start": 1985,
+        "end": 1985
+      }
+    ],
+    "confidence": "high"
   }
 }
