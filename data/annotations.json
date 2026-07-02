@@ -128,7 +128,7 @@
     "series": {
       "key": "olof-palme",
       "part": 1,
-      "of": 2
+      "of": 3
     },
     "places": [
       {
@@ -150,7 +150,7 @@
     "series": {
       "key": "olof-palme",
       "part": 2,
-      "of": 2
+      "of": 3
     },
     "places": [
       {
@@ -3127,6 +3127,643 @@
       {
         "start": 1964,
         "end": 2019
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp1": {
+    "subject": "Amelia Earhart og hvarf hennar yfir Kyrrahafi 1937",
+    "places": [
+      {
+        "ref": "howland-eyja",
+        "role": "primary",
+        "note": "Áfangastaðurinn sem hún náði aldrei"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1897,
+        "end": 1937
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp2": {
+    "subject": "Jean-Bédel Bokassa, keisari Mið-Afríkulýðveldisins",
+    "places": [
+      {
+        "ref": "bangui",
+        "role": "primary",
+        "note": "Krýningin íburðarmikla 1977"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1966,
+        "end": 1979
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp3": {
+    "subject": "Vopnuð andspyrna gyðinga í Vilníus-gettóinu",
+    "series": {
+      "key": "abba-kovner",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "vilnius",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1941,
+        "end": 1943
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp4": {
+    "subject": "MS Estonia ferst á Eystrasalti 1994",
+    "repeatOf": "7hqkni",
+    "places": [
+      {
+        "ref": "eystrasalt",
+        "role": "primary",
+        "note": "Sökk í illviðri suður af Utö"
+      },
+      {
+        "ref": "tallinn",
+        "role": "secondary"
+      },
+      {
+        "ref": "stokkholmur",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1994,
+        "end": 1994
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp5": {
+    "subject": "Skæruliðar gyðinga í skógum Litháens",
+    "series": {
+      "key": "abba-kovner",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "vilnius",
+        "role": "primary",
+        "note": "Flóttinn í Rudniki-skóga"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1943,
+        "end": 1945
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp6": {
+    "subject": "Abba Kovner og hefndaráform gegn Þjóðverjum",
+    "series": {
+      "key": "abba-kovner",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "nurnberg",
+        "role": "primary",
+        "note": "Eitrunaraðgerðin gegn SS-föngum 1946"
+      },
+      {
+        "ref": "vilnius",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1945,
+        "end": 1946
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp7": {
+    "subject": "Fanganýlendan á Andaman-eyjum og örlög frumbyggjanna",
+    "places": [
+      {
+        "ref": "port-blair",
+        "role": "primary",
+        "note": "Cellular Jail-fangelsið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1858,
+        "end": 1945,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp8": {
+    "subject": "Þjóðarmorð Þjóðverja á Hereróum í Suðvestur-Afríku",
+    "repeatOf": "6m1bna",
+    "places": [
+      {
+        "ref": "windhoek",
+        "role": "primary",
+        "note": "Þýska Suðvestur-Afríka, nú Namibía"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1904,
+        "end": 1908
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkp9": {
+    "subject": "Mehmet Köprülü stórvesír og Ottómanveldið um miðja 17. öld",
+    "series": {
+      "key": "ottomanveldid",
+      "part": 7
+    },
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1648,
+        "end": 1661
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpa": {
+    "subject": "Saga Úígúra og ofsóknir kínverskra stjórnvalda",
+    "places": [
+      {
+        "ref": "xinjiang",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1750,
+        "end": 2019,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkpb": {
+    "subject": "Bhopal-slysið 1984",
+    "places": [
+      {
+        "ref": "bhopal",
+        "role": "primary",
+        "note": "Eiturgaslekinn frá verksmiðju Union Carbide"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1984,
+        "end": 1984
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpc": {
+    "subject": "Shapira-málið: umdeilt fornhandrit og dularfull endalok",
+    "places": [
+      {
+        "ref": "london",
+        "role": "primary",
+        "note": "Bauð British Museum handritin 1883"
+      },
+      {
+        "ref": "jerusalem",
+        "role": "secondary",
+        "note": "Forngripaverslun Shapira"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1883,
+        "end": 1884
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpe": {
+    "subject": "Rúmenska byltingin 1989 og síðustu dagar Ceausescus",
+    "repeatOf": "72tl1n",
+    "places": [
+      {
+        "ref": "bukarest",
+        "role": "primary"
+      },
+      {
+        "ref": "timisoara",
+        "role": "secondary",
+        "note": "Byltingin hófst þar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1989,
+        "end": 1989
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpf": {
+    "subject": "Gíslatakan í Dubrovka-leikhúsinu í Moskvu 2002",
+    "repeatOf": "72tl2q",
+    "places": [
+      {
+        "ref": "moskva",
+        "role": "primary",
+        "note": "Dubrovka-leikhúsið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2002,
+        "end": 2002
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpg": {
+    "subject": "Bougainville: náman, stríðið og sjálfstæðisatkvæðagreiðslan",
+    "places": [
+      {
+        "ref": "bougainville",
+        "role": "primary",
+        "note": "Panguna-náman kveikti borgarastyrjöldina"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1969,
+        "end": 2019,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkph": {
+    "subject": "Sovétmenn skjóta niður Korean Air Lines flug 007 árið 1983",
+    "places": [
+      {
+        "ref": "sakhalin",
+        "role": "primary",
+        "note": "Skotin niður við Sakhalin-eyju"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1983,
+        "end": 1983
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpi": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 82 af 52“, 24. janúar 2020)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "7hqkpj": {
+    "subject": "Morðið á Rafik Hariri og borgarastyrjöldin í Líbanon",
+    "series": {
+      "key": "rafik-hariri",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "beirut",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1975,
+        "end": 1990
+      },
+      {
+        "start": 2005,
+        "end": 2005
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpk": {
+    "subject": "Ferill Hariris eftir stríð og rannsóknin á morðinu",
+    "series": {
+      "key": "rafik-hariri",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "beirut",
+        "role": "primary",
+        "note": "Bílsprengjan í miðborginni 2005"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1990,
+        "end": 2020,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpl": {
+    "subject": "Bernie Sanders: Brooklyn, Chicago og Vermont",
+    "places": [
+      {
+        "ref": "burlington",
+        "role": "primary",
+        "note": "Borgarstjóri 1981–89, upphaf stjórnmálaferilsins"
+      },
+      {
+        "ref": "new-york",
+        "role": "secondary",
+        "note": "Æskan í Brooklyn"
+      },
+      {
+        "ref": "chicago",
+        "role": "secondary",
+        "note": "Háskólaár og réttindabarátta"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1941,
+        "end": 2020
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpm": {
+    "subject": "Ránið á Lindbergh-barninu 1932",
+    "places": [
+      {
+        "ref": "hopewell-nj",
+        "role": "primary",
+        "note": "Heimili Lindbergh-fjölskyldunnar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1932,
+        "end": 1936
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpn": {
+    "subject": "Leiðangur Þjóðverja á Nanga Parbat 1934: undirbúningur og upphaf",
+    "series": {
+      "key": "nanga-parbat",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "nanga-parbat",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1934,
+        "end": 1934
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpo": {
+    "subject": "Harmleikurinn á Nanga Parbat 1934",
+    "series": {
+      "key": "nanga-parbat",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "nanga-parbat",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1934,
+        "end": 1934
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpp": {
+    "subject": "Stórtækasti bókaþjófur danskrar sögu og Konunglega bókasafnið",
+    "places": [
+      {
+        "ref": "kaupmannahofn",
+        "role": "primary",
+        "note": "Konunglega bókasafnið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1968,
+        "end": 1978,
+        "approx": true
+      },
+      {
+        "start": 2003,
+        "end": 2004
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpq": {
+    "subject": "Æska og upphaf stjórnmálaferils Joe Bidens",
+    "places": [
+      {
+        "ref": "wilmington",
+        "role": "primary",
+        "note": "Heimaborg Bidens og pólitísk heimahöfn"
+      },
+      {
+        "ref": "scranton",
+        "role": "secondary",
+        "note": "Fæðingarborgin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1942,
+        "end": 2020
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpr": {
+    "subject": "Túrkmenistan og einræðisherrann Saparmurat Niyazov",
+    "places": [
+      {
+        "ref": "ashgabat",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1900,
+        "end": 2006,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkps": {
+    "subject": "Typhoid Mary: smitberinn einkennalausi í New York",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Einangruð á North Brother-eyju"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1900,
+        "end": 1938
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpt": {
+    "subject": "Tenerife-slysið 1977: mannskæðasta flugslys sögunnar",
+    "places": [
+      {
+        "ref": "los-rodeos",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1977,
+        "end": 1977
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpu": {
+    "subject": "Fyrra ópíumstríðið og upphaf breskra yfirráða í Hong Kong",
+    "places": [
+      {
+        "ref": "hong-kong",
+        "role": "primary"
+      },
+      {
+        "ref": "guangzhou",
+        "role": "secondary",
+        "note": "Kanton, miðstöð ópíumverslunarinnar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1839,
+        "end": 1842
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkpv": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 95 af 52“, 5. júní 2020)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "7hqkq0": {
+    "subject": "Skandiamaðurinn Stig Engström útnefndur morðingi Palme",
+    "series": {
+      "key": "olof-palme",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "stokkholmur",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1986,
+        "end": 1986
+      },
+      {
+        "start": 2020,
+        "end": 2020
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq1": {
+    "subject": "Alexander Lukasjenka, forseti Hvíta-Rússlands",
+    "places": [
+      {
+        "ref": "minsk",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1954,
+        "end": 2020
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkq2": {
+    "subject": "Polaris-leiðangurinn og dularfullur dauði Charles Francis Hall",
+    "places": [
+      {
+        "ref": "polaris-bugt",
+        "role": "primary",
+        "note": "Vetrarlægi leiðangursins; Hall lést þar 1871"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1871,
+        "end": 1873
       }
     ],
     "confidence": "high"

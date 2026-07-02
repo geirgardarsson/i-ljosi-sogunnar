@@ -14,6 +14,7 @@ interface Place {
   lat: number;
   lon: number;
   q?: string;
+  skipVerify?: boolean; // hand-checked coords for sites Nominatim doesn't know
 }
 
 // km beyond which a mismatch is worth a human look, by place kind
@@ -45,6 +46,10 @@ console.log(`Verifying ${entries.length} places against Nominatim…`);
 
 let flags = 0;
 for (const [slug, p] of entries) {
+  if (p.skipVerify) {
+    console.log(`skip ${slug} (hand-checked)`);
+    continue;
+  }
   const query = p.q ?? p.name;
   const url =
     "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=" +

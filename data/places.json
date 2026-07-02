@@ -844,7 +844,7 @@
     "kind": "region",
     "lat": 13.0,
     "lon": 25.0,
-    "q": "Darfur"
+    "q": "Darfur, Sudan"
   },
   "juba": {
     "name": "Juba",
@@ -852,5 +852,152 @@
     "lat": 4.85,
     "lon": 31.58,
     "q": "Juba"
+  },
+  "howland-eyja": {
+    "name": "Howland-eyja",
+    "kind": "region",
+    "lat": 0.81,
+    "lon": -176.62,
+    "q": "Howland Island"
+  },
+  "bangui": {
+    "name": "Bangui",
+    "kind": "city",
+    "lat": 4.37,
+    "lon": 18.56,
+    "q": "Bangui"
+  },
+  "vilnius": {
+    "name": "Vilníus",
+    "kind": "city",
+    "lat": 54.69,
+    "lon": 25.28,
+    "q": "Vilnius"
+  },
+  "nurnberg": {
+    "name": "Nürnberg",
+    "kind": "city",
+    "lat": 49.45,
+    "lon": 11.08,
+    "q": "Nuremberg"
+  },
+  "port-blair": {
+    "name": "Port Blair",
+    "kind": "city",
+    "lat": 11.62,
+    "lon": 92.73,
+    "q": "Port Blair"
+  },
+  "xinjiang": {
+    "name": "Xinjiang",
+    "kind": "region",
+    "lat": 41.0,
+    "lon": 85.0,
+    "q": "Xinjiang"
+  },
+  "bhopal": {
+    "name": "Bhopal",
+    "kind": "city",
+    "lat": 23.26,
+    "lon": 77.41,
+    "q": "Bhopal"
+  },
+  "bougainville": {
+    "name": "Bougainville",
+    "kind": "region",
+    "lat": -6.2,
+    "lon": 155.3,
+    "q": "Bougainville"
+  },
+  "sakhalin": {
+    "name": "Sakhalin",
+    "kind": "region",
+    "lat": 50.0,
+    "lon": 143.0,
+    "q": "Sakhalin"
+  },
+  "beirut": {
+    "name": "Beirút",
+    "kind": "city",
+    "lat": 33.89,
+    "lon": 35.5,
+    "q": "Beirut"
+  },
+  "burlington": {
+    "name": "Burlington, Vermont",
+    "kind": "city",
+    "lat": 44.48,
+    "lon": -73.21,
+    "q": "Burlington, Vermont"
+  },
+  "hopewell-nj": {
+    "name": "Hopewell, New Jersey",
+    "kind": "city",
+    "lat": 40.39,
+    "lon": -74.76,
+    "q": "Hopewell, New Jersey"
+  },
+  "nanga-parbat": {
+    "name": "Nanga Parbat",
+    "kind": "landmark",
+    "lat": 35.24,
+    "lon": 74.59,
+    "q": "Nanga Parbat"
+  },
+  "wilmington": {
+    "name": "Wilmington, Delaware",
+    "kind": "city",
+    "lat": 39.75,
+    "lon": -75.55,
+    "q": "Wilmington, Delaware"
+  },
+  "scranton": {
+    "name": "Scranton",
+    "kind": "city",
+    "lat": 41.41,
+    "lon": -75.66,
+    "q": "Scranton, Pennsylvania"
+  },
+  "ashgabat": {
+    "name": "Ashgabat",
+    "kind": "city",
+    "lat": 37.95,
+    "lon": 58.38,
+    "q": "Ashgabat"
+  },
+  "los-rodeos": {
+    "name": "Los Rodeos-flugvöllur",
+    "kind": "landmark",
+    "lat": 28.48,
+    "lon": -16.34,
+    "q": "Tenerife North Airport"
+  },
+  "hong-kong": {
+    "name": "Hong Kong",
+    "kind": "city",
+    "lat": 22.32,
+    "lon": 114.17,
+    "q": "Hong Kong"
+  },
+  "guangzhou": {
+    "name": "Guangzhou",
+    "kind": "city",
+    "lat": 23.13,
+    "lon": 113.26,
+    "q": "Guangzhou"
+  },
+  "minsk": {
+    "name": "Minsk",
+    "kind": "city",
+    "lat": 53.9,
+    "lon": 27.56,
+    "q": "Minsk"
+  },
+  "polaris-bugt": {
+    "name": "Polaris-flói, Norður-Grænland",
+    "kind": "region",
+    "lat": 81.6,
+    "lon": -61.7,
+    "skipVerify": true
   }
 }
