@@ -4476,5 +4476,701 @@
       }
     ],
     "confidence": "high"
+  },
+  "7hqkr5": {
+    "subject": "Aum Shinrikyo og saríngasárásin í Tókýó",
+    "series": {
+      "key": "aum-shinrikyo",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "tokyo",
+        "role": "primary",
+        "note": "Árásin á neðanjarðarlestakerfið 1995"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1994,
+        "end": 1995
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr6": {
+    "subject": "Magnus Hirschfeld, frumkvöðull kynfræðinnar",
+    "places": [
+      {
+        "ref": "berlin",
+        "role": "primary",
+        "note": "Kynfræðistofnunin, eyðilögð af nasistum 1933"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1868,
+        "end": 1935
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr7": {
+    "subject": "Donner-flokkurinn leggur af stað vestur 1846",
+    "series": {
+      "key": "donner",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "donner-pass",
+        "role": "primary",
+        "note": "Fjallaskarðið sem stöðvaði hópinn"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1846,
+        "end": 1847
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr8": {
+    "subject": "Veturseta og mannát Donner-flokksins í Sierra Nevada",
+    "series": {
+      "key": "donner",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "donner-pass",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1846,
+        "end": 1847
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkr9": {
+    "subject": "Norska svartmálmssenan: kirkjubrennur og morð",
+    "places": [
+      {
+        "ref": "oslo",
+        "role": "primary",
+        "note": "Helvete-plötubúðin, miðpunktur senunnar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1991,
+        "end": 1994
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkra": {
+    "subject": "Breski íshafsleiðangurinn á Grænlandsjökli 1930–31",
+    "series": {
+      "key": "breski-ishafsleidangurinn",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "tasiilaq",
+        "role": "primary",
+        "note": "Bækistöð leiðangursins við Angmagssalik"
+      },
+      {
+        "ref": "reykjavik",
+        "role": "secondary",
+        "note": "Viðkoma á Íslandi"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1930,
+        "end": 1931
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrb": {
+    "subject": "Björgun Courtaulds af Grænlandsjökli",
+    "series": {
+      "key": "breski-ishafsleidangurinn",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "tasiilaq",
+        "role": "primary"
+      },
+      {
+        "ref": "reykjavik",
+        "role": "secondary",
+        "note": "Íslendingar ræstir út til bjargar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1930,
+        "end": 1931
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrc": {
+    "subject": "Jonas Salk og bóluefnið gegn mænuveiki",
+    "places": [
+      {
+        "ref": "pittsburgh",
+        "role": "primary",
+        "note": "Rannsóknarstofan við Pittsburgh-háskóla"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1914,
+        "end": 1995
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrd": {
+    "subject": "Nellie Bly og geðsjúkrahælið á Blackwell-eyju",
+    "series": {
+      "key": "nellie-bly",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Þóttist geðveik til að komast inn á hælið 1887"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1864,
+        "end": 1887
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkre": {
+    "subject": "Nellie Bly umhverfis jörðina á 72 dögum",
+    "series": {
+      "key": "nellie-bly",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Upphaf og endir hnattferðarinnar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1889,
+        "end": 1890
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrf": {
+    "subject": "Robert Hanssen, njósnari Sovétríkjanna innan FBI",
+    "places": [
+      {
+        "ref": "washington-dc",
+        "role": "primary",
+        "note": "Handtekinn í Virginíu 2001"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1979,
+        "end": 2001
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrg": {
+    "subject": "Holodomor: hungursneyðin mikla í Úkraínu",
+    "places": [
+      {
+        "ref": "kyiv",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1932,
+        "end": 1933
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrh": {
+    "subject": "Burke og Wills leggja upp frá Melbourne 1860",
+    "series": {
+      "key": "burke-wills",
+      "part": 1,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "melbourne",
+        "role": "primary",
+        "note": "Leiðangurinn lagði af stað með viðhöfn"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1860,
+        "end": 1861
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkri": {
+    "subject": "Burke og Wills þvera Ástralíu",
+    "series": {
+      "key": "burke-wills",
+      "part": 2,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "cooper-creek",
+        "role": "primary",
+        "note": "Búðir 65 við Cooper Creek"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1860,
+        "end": 1861
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrj": {
+    "subject": "Endalok Burke og Wills við Cooper Creek",
+    "series": {
+      "key": "burke-wills",
+      "part": 3,
+      "of": 3
+    },
+    "places": [
+      {
+        "ref": "cooper-creek",
+        "role": "primary",
+        "note": "Dig Tree og dauði leiðangursstjóranna"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1861,
+        "end": 1861
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrk": {
+    "subject": "Þjóðarmorðið á Sirkössum í Kákasus",
+    "places": [
+      {
+        "ref": "sochi",
+        "role": "primary",
+        "note": "Stríðslokin og brottreksturinn 1864"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1817,
+        "end": 1864
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrl": {
+    "subject": "Fram-leiðangur Nansens: undirbúningur og sigling í ísinn",
+    "series": {
+      "key": "fram",
+      "part": 1,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "oslo",
+        "role": "primary",
+        "note": "Fram lagði úr höfn frá Kristianíu 1893"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1893,
+        "end": 1894
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrm": {
+    "subject": "Nansen og Johansen á skíðum í átt að Norðurpólnum",
+    "series": {
+      "key": "fram",
+      "part": 2,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "nordur-ishaf",
+        "role": "primary",
+        "note": "Nyrsta punkti náð: 86°14'N"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1895,
+        "end": 1895
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrn": {
+    "subject": "Leitin að Frans Jósefs-landi og lífið um borð í Fram",
+    "series": {
+      "key": "fram",
+      "part": 3,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frans-josefs-land",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1895,
+        "end": 1896
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkro": {
+    "subject": "Veturseta í holu og heimkoma Fram-leiðangursins",
+    "series": {
+      "key": "fram",
+      "part": 4,
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "frans-josefs-land",
+        "role": "primary",
+        "note": "Þriðji heimskautaveturinn í moldarholu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1895,
+        "end": 1896
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrp": {
+    "subject": "Eldgosið í Mont Pelée eyðir Saint-Pierre 1902",
+    "places": [
+      {
+        "ref": "saint-pierre-martinique",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1902,
+        "end": 1902
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrq": {
+    "subject": "Bankaránið á Norrmalmstorgi og Stokkhólms-heilkennið",
+    "places": [
+      {
+        "ref": "stokkholmur",
+        "role": "primary",
+        "note": "Kreditbanken við Norrmalmstorg"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1973,
+        "end": 1973
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrr": {
+    "subject": "Claude Cahun: list, kynusli og andspyrna á Jersey",
+    "places": [
+      {
+        "ref": "jersey",
+        "role": "primary",
+        "note": "Andspyrnan gegn hernámsliðinu"
+      },
+      {
+        "ref": "paris",
+        "role": "secondary",
+        "note": "Listferillinn í París"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1894,
+        "end": 1954
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrs": {
+    "subject": "Saga Katar: frá sjóræningjaútnára til auðugasta ríkis heims",
+    "places": [
+      {
+        "ref": "doha",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1760,
+        "end": 2022,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "7hqkrt": {
+    "subject": "Konungsríkið Benín: bronsmunir, blóðfórnir og fall þess 1897",
+    "places": [
+      {
+        "ref": "benin-city",
+        "role": "primary",
+        "note": "Refsileiðangur Breta rændi borgina 1897"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1400,
+        "end": 1897,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkru": {
+    "subject": "Minik Wallace fluttur frá Grænlandi til New York",
+    "series": {
+      "key": "minik",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Ameríska náttúrugripasafnið"
+      },
+      {
+        "ref": "qaanaaq",
+        "role": "secondary",
+        "note": "Heimaslóðirnar í Thule"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1897,
+        "end": 1909
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqkrv": {
+    "subject": "Síðari ævi Miniks Wallace",
+    "series": {
+      "key": "minik",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary"
+      },
+      {
+        "ref": "qaanaaq",
+        "role": "secondary",
+        "note": "Sneri heim 1909"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1909,
+        "end": 1918
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks0": {
+    "subject": "Kjarnorkutilraunir Bandaríkjanna á Marshall-eyjum",
+    "places": [
+      {
+        "ref": "bikini",
+        "role": "primary",
+        "note": "Castle Bravo og aðrar tilraunir"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1946,
+        "end": 1958
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks1": {
+    "subject": "Louis Le Prince, gleymdur faðir kvikmyndarinnar",
+    "series": {
+      "key": "le-prince",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "leeds",
+        "role": "primary",
+        "note": "Fyrstu kvikmyndir sögunnar teknar þar 1888"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1841,
+        "end": 1890
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks2": {
+    "subject": "Hvarf Le Prince og grunsemdir ekkjunnar",
+    "series": {
+      "key": "le-prince",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "leeds",
+        "role": "primary"
+      },
+      {
+        "ref": "paris",
+        "role": "secondary",
+        "note": "Hvarf á lestarleiðinni Dijon–París 1890"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1890,
+        "end": 1900,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks3": {
+    "subject": "Kjarnorkukafbáturinn Kúrsk ferst í Barentshafi 2000",
+    "places": [
+      {
+        "ref": "barentshaf",
+        "role": "primary",
+        "note": "Slysstaðurinn"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2000,
+        "end": 2000
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks4": {
+    "subject": "Síðasta bólusóttarsmitið: slysið í Birmingham 1978",
+    "places": [
+      {
+        "ref": "birmingham",
+        "role": "primary",
+        "note": "Rannsóknarstofa háskólans"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1978,
+        "end": 1978
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks5": {
+    "subject": "Han van Meegeren, snjallasti listfalsari sögunnar",
+    "places": [
+      {
+        "ref": "amsterdam",
+        "role": "primary",
+        "note": "Réttarhöldin 1947"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1932,
+        "end": 1947
+      }
+    ],
+    "confidence": "high"
+  },
+  "7hqks6": {
+    "subject": "Gull finnst í Sutter's Mill 1848",
+    "series": {
+      "key": "gullaedid-kalifornia",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "coloma",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1848,
+        "end": 1849
+      }
+    ],
+    "confidence": "high"
   }
 }

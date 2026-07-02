@@ -1090,7 +1090,7 @@
     "kind": "city",
     "lat": 36.8,
     "lon": 10.18,
-    "q": "Tunis"
+    "q": "Tunis, Tunisia"
   },
   "jeddah": {
     "name": "Jedda",
@@ -1146,7 +1146,7 @@
     "kind": "city",
     "lat": 14.17,
     "lon": 38.9,
-    "q": "Adwa"
+    "q": "Adwa, Tigray"
   },
   "addis-ababa": {
     "name": "Addis Ababa",
@@ -1202,7 +1202,8 @@
     "kind": "region",
     "lat": 23.4,
     "lon": -74.0,
-    "q": "Bahamas"
+    "q": "Bahamas",
+    "skipVerify": true
   },
   "tokyo": {
     "name": "Tókýó",
@@ -1210,5 +1211,150 @@
     "lat": 35.68,
     "lon": 139.69,
     "q": "Tokyo"
+  },
+  "donner-pass": {
+    "name": "Donner-skarð",
+    "kind": "landmark",
+    "lat": 39.32,
+    "lon": -120.33,
+    "q": "Donner Pass"
+  },
+  "tasiilaq": {
+    "name": "Tasiilaq (Angmagssalik)",
+    "kind": "city",
+    "lat": 65.61,
+    "lon": -37.64,
+    "q": "Tasiilaq"
+  },
+  "reykjavik": {
+    "name": "Reykjavík",
+    "kind": "city",
+    "lat": 64.15,
+    "lon": -21.94,
+    "q": "Reykjavík"
+  },
+  "pittsburgh": {
+    "name": "Pittsburgh",
+    "kind": "city",
+    "lat": 40.44,
+    "lon": -79.99
+  },
+  "kyiv": {
+    "name": "Kænugarður",
+    "kind": "city",
+    "lat": 50.45,
+    "lon": 30.52,
+    "q": "Kyiv"
+  },
+  "melbourne": {
+    "name": "Melbourne",
+    "kind": "city",
+    "lat": -37.81,
+    "lon": 144.96,
+    "q": "Melbourne"
+  },
+  "cooper-creek": {
+    "name": "Cooper Creek",
+    "kind": "water",
+    "lat": -27.7,
+    "lon": 141.0,
+    "q": "Cooper Creek"
+  },
+  "sochi": {
+    "name": "Sochi",
+    "kind": "city",
+    "lat": 43.6,
+    "lon": 39.73,
+    "q": "Sochi"
+  },
+  "nordur-ishaf": {
+    "name": "Norður-Íshafið",
+    "kind": "water",
+    "lat": 86.2,
+    "lon": 95.0,
+    "skipVerify": true
+  },
+  "frans-josefs-land": {
+    "name": "Frans Jósefs-land",
+    "kind": "region",
+    "lat": 80.7,
+    "lon": 54.8,
+    "q": "Franz Josef Land"
+  },
+  "saint-pierre-martinique": {
+    "name": "Saint-Pierre, Martinique",
+    "kind": "city",
+    "lat": 14.74,
+    "lon": -61.18,
+    "q": "Saint-Pierre, Martinique"
+  },
+  "jersey": {
+    "name": "Jersey",
+    "kind": "region",
+    "lat": 49.21,
+    "lon": -2.13,
+    "q": "Jersey"
+  },
+  "doha": {
+    "name": "Doha",
+    "kind": "city",
+    "lat": 25.29,
+    "lon": 51.53,
+    "q": "Doha"
+  },
+  "benin-city": {
+    "name": "Benín-borg",
+    "kind": "city",
+    "lat": 6.34,
+    "lon": 5.62,
+    "q": "Benin City"
+  },
+  "qaanaaq": {
+    "name": "Qaanaaq (Thule)",
+    "kind": "city",
+    "lat": 77.47,
+    "lon": -69.23,
+    "q": "Qaanaaq"
+  },
+  "bikini": {
+    "name": "Bikini-rif",
+    "kind": "region",
+    "lat": 11.6,
+    "lon": 165.38,
+    "q": "Bikini Atoll"
+  },
+  "leeds": {
+    "name": "Leeds",
+    "kind": "city",
+    "lat": 53.8,
+    "lon": -1.55,
+    "q": "Leeds"
+  },
+  "barentshaf": {
+    "name": "Barentshaf",
+    "kind": "water",
+    "lat": 69.67,
+    "lon": 37.58,
+    "skipVerify": true
+  },
+  "birmingham": {
+    "name": "Birmingham",
+    "kind": "city",
+    "lat": 52.48,
+    "lon": -1.9,
+    "q": "Birmingham, England"
+  },
+  "amsterdam": {
+    "name": "Amsterdam",
+    "kind": "city",
+    "lat": 52.37,
+    "lon": 4.9
+  },
+  "coloma": {
+    "name": "Coloma (Sutter's Mill)",
+    "kind": "landmark",
+    "lat": 38.8,
+    "lon": -120.89,
+    "q": "Coloma, California"
   }
 }
