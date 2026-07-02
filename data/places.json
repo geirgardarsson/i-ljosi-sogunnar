@@ -468,5 +468,121 @@
     "kind": "city",
     "lat": 12.79,
     "lon": 45.02
+  },
+  "saratov": {
+    "name": "Saratov",
+    "kind": "city",
+    "lat": 51.53,
+    "lon": 46.03,
+    "q": "Saratov"
+  },
+  "harare": {
+    "name": "Harare",
+    "kind": "city",
+    "lat": -17.83,
+    "lon": 31.05
+  },
+  "grosni": {
+    "name": "Grosní",
+    "kind": "city",
+    "lat": 43.32,
+    "lon": 45.69,
+    "q": "Grozny"
+  },
+  "barcelona": {
+    "name": "Barselóna",
+    "kind": "city",
+    "lat": 41.39,
+    "lon": 2.17,
+    "q": "Barcelona"
+  },
+  "boston": {
+    "name": "Boston",
+    "kind": "city",
+    "lat": 42.36,
+    "lon": -71.06
+  },
+  "jerusalem": {
+    "name": "Jerúsalem",
+    "kind": "city",
+    "lat": 31.78,
+    "lon": 35.22,
+    "q": "Jerusalem"
+  },
+  "sinai": {
+    "name": "Sínaí-skagi",
+    "kind": "region",
+    "lat": 29.5,
+    "lon": 33.8,
+    "q": "Sinai Peninsula"
+  },
+  "nome": {
+    "name": "Nome",
+    "kind": "city",
+    "lat": 64.5,
+    "lon": -165.41,
+    "q": "Nome, Alaska"
+  },
+  "nanjing": {
+    "name": "Nanjing",
+    "kind": "city",
+    "lat": 32.06,
+    "lon": 118.8,
+    "q": "Nanjing"
+  },
+  "rom": {
+    "name": "Róm",
+    "kind": "city",
+    "lat": 41.9,
+    "lon": 12.5,
+    "q": "Rome, Italy"
+  },
+  "berlin": {
+    "name": "Berlín",
+    "kind": "city",
+    "lat": 52.52,
+    "lon": 13.4,
+    "q": "Berlin"
+  },
+  "sichuan": {
+    "name": "Sichuan",
+    "kind": "region",
+    "lat": 30.5,
+    "lon": 103.0,
+    "q": "Sichuan"
+  },
+  "peking": {
+    "name": "Peking",
+    "kind": "city",
+    "lat": 39.9,
+    "lon": 116.4,
+    "q": "Beijing"
+  },
+  "london": {
+    "name": "London",
+    "kind": "city",
+    "lat": 51.51,
+    "lon": -0.13
+  },
+  "port-arthur": {
+    "name": "Port Arthur",
+    "kind": "landmark",
+    "lat": -43.15,
+    "lon": 147.85,
+    "q": "Port Arthur, Tasmania"
+  },
+  "erbil": {
+    "name": "Erbil",
+    "kind": "city",
+    "lat": 36.19,
+    "lon": 44.01,
+    "q": "Erbil"
+  },
+  "yanan": {
+    "name": "Yan'an",
+    "kind": "city",
+    "lat": 36.59,
+    "lon": 109.49,
+    "q": "Yan'an"
   }
 }

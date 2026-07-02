@@ -1151,5 +1151,585 @@
       }
     ],
     "confidence": "medium"
+  },
+  "72tl1r": {
+    "subject": "Nútímasaga Jemens: nýlendutími, tvö ríki og borgarastyrjöld",
+    "series": {
+      "key": "jemen",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "sanaa",
+        "role": "primary"
+      },
+      {
+        "ref": "aden",
+        "role": "secondary",
+        "note": "Bresk nýlenda 1839–1967"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1839,
+        "end": 1990
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl1s": {
+    "subject": "Nikolai Vavilov, brautryðjandi erfðavísinda sem Sovétríkin sveltu í hel",
+    "places": [
+      {
+        "ref": "sankti-petursborg",
+        "role": "primary",
+        "note": "Byggði þar upp stærsta fræbanka heims"
+      },
+      {
+        "ref": "saratov",
+        "role": "secondary",
+        "note": "Lést í fangelsi þar 1943"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1887,
+        "end": 1943
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl1t": {
+    "subject": "Robert Mugabe, forseti Simbabve",
+    "places": [
+      {
+        "ref": "harare",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1924,
+        "end": 2017
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl1u": {
+    "subject": "Téténía: aldalöng barátta við rússneska heimsveldið",
+    "series": {
+      "key": "tetenia",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "grosni",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1785,
+        "end": 1996,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  "72tl1v": {
+    "subject": "Seinna Téténíustríðið 1999 og afleiðingar þess",
+    "series": {
+      "key": "tetenia",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "grosni",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1999,
+        "end": 2009
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl20": {
+    "subject": "Blóðbaðið á Haymarket-torgi 1886, upphaf 1. maí sem baráttudags",
+    "places": [
+      {
+        "ref": "chicago",
+        "role": "primary",
+        "note": "Haymarket-torg"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1886,
+        "end": 1886
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl21": {
+    "subject": "Sarajevó-handritið: gyðingahandrit sem bjargað var aftur og aftur",
+    "places": [
+      {
+        "ref": "sarajevo",
+        "role": "primary"
+      },
+      {
+        "ref": "barcelona",
+        "role": "secondary",
+        "note": "Handritið skrifað á Spáni"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1400,
+        "end": 1500,
+        "approx": true
+      },
+      {
+        "start": 1941,
+        "end": 1945
+      },
+      {
+        "start": 1992,
+        "end": 1995
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl22": {
+    "subject": "Nauðungarflutningar Stalíns á Krímtatörum til Úsbekistans 1944",
+    "repeatOf": "6m1bmj",
+    "places": [
+      {
+        "ref": "krimskagi",
+        "role": "primary"
+      },
+      {
+        "ref": "tashkent",
+        "role": "secondary",
+        "note": "Þjóðin flutt nauðug til Úsbekistans"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1944,
+        "end": 1948
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl23": {
+    "subject": "Rætur Kennedy-ættarinnar og æska Johns F. Kennedy",
+    "series": {
+      "key": "john-f-kennedy",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "boston",
+        "role": "primary",
+        "note": "Ættin byggði veldi sitt í Boston; JFK fæddist í Brookline"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1848,
+        "end": 1940,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl24": {
+    "subject": "Stjórnmálaferill JFK: þingárin og kosningabaráttan 1960",
+    "series": {
+      "key": "john-f-kennedy",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "washington-dc",
+        "role": "primary"
+      },
+      {
+        "ref": "boston",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1946,
+        "end": 1960
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl25": {
+    "subject": "Morðin á nepölsku konungsfjölskyldunni 2001",
+    "repeatOf": "6m1bml",
+    "places": [
+      {
+        "ref": "katmandu",
+        "role": "primary",
+        "note": "Narayanhity-konungshöllin"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2001,
+        "end": 2001
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl26": {
+    "subject": "Sex daga stríðið 1967",
+    "places": [
+      {
+        "ref": "jerusalem",
+        "role": "primary",
+        "note": "Ísraelar hertóku Austur-Jerúsalem"
+      },
+      {
+        "ref": "sinai",
+        "role": "secondary",
+        "note": "Meginvígstöðvarnar gegn Egyptalandi"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1967,
+        "end": 1967
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl27": {
+    "subject": "Hundasleðaboðhlaupið til Nome 1925: mótefni gegn barnaveiki",
+    "places": [
+      {
+        "ref": "nome",
+        "role": "primary",
+        "note": "Mótefnið flutt þangað þúsund kílómetra með hundasleðum"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1924,
+        "end": 1925
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl28": {
+    "subject": "Taiping-uppreisnin: blóðugasta borgarastyrjöld sögunnar",
+    "places": [
+      {
+        "ref": "nanjing",
+        "role": "primary",
+        "note": "Höfuðborg Taiping-ríkisins"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1850,
+        "end": 1864
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl29": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 25 af 52“, 30. júní 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2a": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 26 af 52“, 7. júlí 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2b": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 27 af 52“, 14. júlí 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2c": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 28 af 52“, 21. júlí 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2d": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 29 af 52“, 28. júlí 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2e": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 30 af 52“, 4. ágúst 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2f": {
+    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 31 af 52“, 11. ágúst 2017)",
+    "places": [],
+    "spans": [],
+    "confidence": "low",
+    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+  },
+  "72tl2g": {
+    "subject": "Farúk Egyptalandskonungur: eyðslusemi, útlegð og endalok konungdæmisins",
+    "places": [
+      {
+        "ref": "kairo",
+        "role": "primary"
+      },
+      {
+        "ref": "rom",
+        "role": "secondary",
+        "note": "Útlegðarárin; lést þar 1965"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1920,
+        "end": 1965
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2h": {
+    "subject": "Þýsk-bandaríska bandalagið: nasistahreyfing í Bandaríkjunum",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary",
+        "note": "Fjöldafundurinn í Madison Square Garden 1939"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1936,
+        "end": 1941
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2i": {
+    "subject": "Angela Merkel: prestsdóttirin úr Austur-Þýskalandi sem varð kanslari",
+    "places": [
+      {
+        "ref": "berlin",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1954,
+        "end": 2017
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2j": {
+    "subject": "Kim Il-sung, skipting Kóreuskagans og upphaf kjarnorkuáætlunar Norður-Kóreu",
+    "repeatOf": "6m1bn4",
+    "places": [
+      {
+        "ref": "pjongjang",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1912,
+        "end": 1994
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2k": {
+    "subject": "Risapandan I: Vesturlandabúar uppgötva pönduna og fyrsta pönduæðið",
+    "series": {
+      "key": "risapandan",
+      "part": 1,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "sichuan",
+        "role": "primary",
+        "note": "Heimkynni risapöndunnar"
+      },
+      {
+        "ref": "new-york",
+        "role": "secondary",
+        "note": "Fyrsti lifandi pönduhúnninn fluttur vestur 1936"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1869,
+        "end": 1938,
+        "approx": true
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2l": {
+    "subject": "Risapandan II: Chi-Chi, kalda stríðið og pöndu-erindrekstur",
+    "series": {
+      "key": "risapandan",
+      "part": 2,
+      "of": 2
+    },
+    "places": [
+      {
+        "ref": "peking",
+        "role": "primary",
+        "note": "Nixon-heimsóknin 1972 og pöndugjafir Kína"
+      },
+      {
+        "ref": "london",
+        "role": "secondary",
+        "note": "Chi-Chi í dýragarðinum í London"
+      },
+      {
+        "ref": "washington-dc",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1957,
+        "end": 1972
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2m": {
+    "subject": "Min Kóreudrottning og endalok kóreska konungsríkisins",
+    "places": [
+      {
+        "ref": "seul",
+        "role": "primary",
+        "note": "Myrt í Gyeongbokgung-höllinni 1895"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1866,
+        "end": 1910
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2n": {
+    "subject": "Fjöldamorðin í Port Arthur 1996 og skotvopnalöggjöf Ástralíu",
+    "places": [
+      {
+        "ref": "port-arthur",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1996,
+        "end": 1996
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2o": {
+    "subject": "Sjálfstæðisbarátta Kúrda í Írak á 7. og 8. áratugnum",
+    "places": [
+      {
+        "ref": "erbil",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1961,
+        "end": 1975
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2p": {
+    "subject": "Xi Jinping: úr helli í sveit í æðstu völd Kína",
+    "places": [
+      {
+        "ref": "peking",
+        "role": "primary"
+      },
+      {
+        "ref": "yanan",
+        "role": "secondary",
+        "note": "Erfiðisvinna táningsáranna í Liangjiahe"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1953,
+        "end": 2017
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2q": {
+    "subject": "Gíslatakan í Dubrovka-leikhúsinu í Moskvu 2002",
+    "places": [
+      {
+        "ref": "moskva",
+        "role": "primary",
+        "note": "Dubrovka-leikhúsið"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2002,
+        "end": 2002
+      }
+    ],
+    "confidence": "high"
+  },
+  "72tl2r": {
+    "subject": "Kim Jong-un, þriðji einræðisherra Kim-ættarinnar",
+    "places": [
+      {
+        "ref": "pjongjang",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1984,
+        "end": 2017
+      }
+    ],
+    "confidence": "high"
   }
 }
