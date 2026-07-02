@@ -271,7 +271,12 @@ function reflectSelection(): void {
 
   if (store.selectFly) {
     const zoom = primary.zoom ?? KIND_ZOOM[primary.kind];
-    map.flyTo({ center: [primary.lon, primary.lat], zoom: Math.min(zoom, Math.max(map.getZoom(), zoom - 2)), speed: 1.4 });
+    const target = {
+      center: [primary.lon, primary.lat] as [number, number],
+      zoom: Math.min(zoom, Math.max(map.getZoom(), zoom - 2)),
+    };
+    if (REDUCED_MOTION) map.jumpTo(target);
+    else map.flyTo({ ...target, speed: 1.4 });
   }
 }
 
@@ -374,6 +379,45 @@ async function onClusterClick(e: MapLayerMouseEvent): Promise<void> {
   }
 }
 
+/**
+ * Keyboard path to the canvas markers (DESIGN.md §5): a visually hidden
+ * button per marker group in firstrun order. Focus rings the marker and
+ * lifts its timeline bins; Enter opens the detail panel.
+ */
+function buildKeyboardMarkers(container: HTMLElement): void {
+  const nav = document.createElement("nav");
+  nav.className = "kbd-markers";
+  nav.setAttribute("aria-label", "Sögustaðir á kortinu");
+  const ul = document.createElement("ul");
+  const ordered = [...groups].sort((a, b) =>
+    a.episodes[0].firstrun.localeCompare(b.episodes[0].firstrun),
+  );
+  for (const g of ordered) {
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+    const rep = g.episodes[0];
+    const primary = rep.places.find((p) => p.role === "primary")!;
+    btn.textContent = `${rep.title}${
+      g.episodes.length > 1 ? ` (${g.episodes.length} hlutar)` : ""
+    } — ${primary.name}${g.years ? `, ${g.years}` : ""}`;
+    btn.addEventListener("focus", () => {
+      setHoverRing([g]);
+      store.setHover({ ids: g.episodes.map((e) => e.id), source: "map" });
+    });
+    btn.addEventListener("blur", () => {
+      setHoverRing([]);
+      store.setHover(null);
+    });
+    btn.addEventListener("click", () => store.select(rep.id));
+    li.append(btn);
+    ul.append(li);
+  }
+  nav.append(ul);
+  container.append(nav);
+}
+
+const REDUCED_MOTION = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+
 function buildLegend(container: HTMLElement): void {
   legendEl = document.createElement("div");
   legendEl.className = "legend";
@@ -452,9 +496,11 @@ export function initMap(container: HTMLElement): void {
   });
 
   buildLegend(container);
+  buildKeyboardMarkers(container);
 }
 
 /** Pan the map to a place without selecting anything (place-chip hover). */
 export function panToPlace(lon: number, lat: number): void {
-  map.easeTo({ center: [lon, lat], duration: 600 });
+  if (REDUCED_MOTION) map.jumpTo({ center: [lon, lat] });
+  else map.easeTo({ center: [lon, lat], duration: 600 });
 }

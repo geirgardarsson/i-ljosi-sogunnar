@@ -12,7 +12,7 @@ lives in [DESIGN.md](DESIGN.md).
 
 ## Status (2026-07-02)
 
-**Data phase complete. App not yet started.**
+**Data phase and webapp complete. Awaiting first deploy.**
 
 | Piece | State |
 |---|---|
@@ -20,34 +20,34 @@ lives in [DESIGN.md](DESIGN.md).
 | Annotations (`data/annotations.json`) | ✅ 357/357 — 305 high / 39 medium / 13 low confidence |
 | Gazetteer (`data/places.json`) | ✅ 245 places, Nominatim-verified (or `skipVerify` hand-checked) |
 | Series & rebroadcasts | ✅ 64 series grouped; 15 repeats marked with `repeatOf` |
-| Merge/build script → `public/data/episodes.json` | ⬜ not started |
-| Webapp (map, timeline, panel, list view) | ⬜ not started |
-| Deploy (GitHub Pages) | ⬜ not started |
+| Merge/build script → `public/data/episodes.json` | ✅ `npm run build-episodes` (validates invariants) |
+| Webapp (map, timeline, panel, list view) | ✅ Vite + TS, MapLibre + OpenFreeMap, SVG timeline, dark mode |
+| Deploy (GitHub Pages) | ⬜ workflow ready (`.github/workflows/deploy.yml`), Pages not yet enabled |
 
 ### Remaining steps
 
-1. **Merge script** (`scripts/build-episodes.ts`): join catalog + annotations +
-   places into `public/data/episodes.json`; derive RÚV per-episode links
-   (`https://www.ruv.is/utvarp/spila/i-ljosi-sogunnar/23795/{id}`); episodes
-   with no places (the 13 placeholders) appear in the list view only.
-2. **App scaffold**: Vite + TypeScript, no framework. MapLibre GL +
-   OpenFreeMap tiles, era-colored markers (ordinal blue ramp — validate
-   against the basemap land color per DESIGN.md §4), clustering, series
-   collapse.
-3. **Timeline**: hand-rolled SVG, piecewise-linear scale with a clamped
-   prehistory band (data contains a span from −60000), pixel-space density
-   histogram, brushable range, era preset chips.
-4. **Detail panel & linking**: episode card with artwork, description,
-   `<audio>` on the RÚV MP3, RÚV link, series navigation; hover highlighting
-   linked both ways between map and timeline; „Listi" table view
-   (accessibility fallback). UI strings in Icelandic.
-5. **Dark mode + accessibility pass** per the checklist in DESIGN.md.
-6. **Data polish (optional)**: one-time Spotify API pass to recover the 13
+1. **Deploy**: push to GitHub and enable Pages (Settings → Pages → source
+   "GitHub Actions"); the workflow builds `dist/` on every push to main.
+2. **Data polish (optional)**: one-time Spotify API pass to recover the 13
    placeholder episode titles (match air dates against show
    `4z956m0MLbaecUeSjlJmw2`) and add per-episode Spotify links; human review
    of the 39 `confidence: medium` annotations.
-7. **Deploy** to GitHub Pages; re-run `npm run fetch-catalog` periodically —
-   new episodes show up as unannotated ids.
+3. **Upkeep**: re-run `npm run fetch-catalog` periodically — new episodes
+   show up as unannotated ids (annotate via the `annotate-episodes` skill),
+   then `npm run build-episodes` to refresh the app data.
+
+### App notes
+
+- Era marker colors are the ordinal blue ramp from DESIGN.md §4, validated
+  against the actual OpenFreeMap land colors (light ramp = steps 300–700).
+- Timeline segments were tuned to the real span distribution — 1900+ holds
+  258 of 329 mapped episodes and gets 40 % of the pixels; everything before
+  3000 f.Kr. is clamped into a thin „forsaga" band.
+- Co-located markers (31 places host several episodes, New York alone has
+  10) open a chooser popup instead of spiderfying.
+- Keyboard path: hidden marker buttons in firstrun order (focus rings the
+  marker, Enter opens the panel, Escape closes), arrow-steppable brush
+  handles, sortable „Listi" table as the full accessibility fallback.
 
 ## Data pipeline
 

@@ -59,9 +59,16 @@ function applyTheme(): void {
   document.documentElement.dataset.theme = store.theme;
 }
 
+function wireKeyboard(): void {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && store.selectedId) store.select(null);
+  });
+}
+
 async function main(): Promise<void> {
   applyTheme();
   wireHeader();
+  wireKeyboard();
 
   const res = await fetch(`${import.meta.env.BASE_URL}data/episodes.json`);
   if (!res.ok) throw new Error(`episodes.json: ${res.status}`);
