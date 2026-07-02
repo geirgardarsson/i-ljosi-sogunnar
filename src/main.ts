@@ -2,6 +2,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { store } from "./state";
 import { initMap } from "./map";
+import { initTimeline } from "./timeline";
 import { ERA_PRESETS } from "./eras";
 import type { EpisodesFile } from "./types";
 
@@ -66,6 +67,7 @@ async function main(): Promise<void> {
   store.init(data.episodes);
 
   initMap(document.getElementById("map")!);
+  initTimeline(document.getElementById("timeline") as unknown as SVGSVGElement);
 }
 
 main().catch((err: unknown) => {
