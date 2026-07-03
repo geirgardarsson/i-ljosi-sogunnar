@@ -1,88 +1,79 @@
 # Í ljósi sögunnar — kort og tímalína
 
-A static webapp that places every episode of the RÚV history podcast
+Vefur sem raðar öllum þáttum útvarpsþáttarins
 [Í ljósi sögunnar](https://www.ruv.is/utvarp/spila/i-ljosi-sogunnar/23795)
-(Vera Illugadóttir) on a world map and a historical timeline. Each episode is
-annotated with the places its story happens at (geocoded) and the year
-range(s) it covers, so you can browse a decade of episodes by geography or by
-century.
+eftir Veru Illugadóttur á heimskort og sögulega tímalínu. Hver þáttur er
+merktur við staðina þar sem sagan gerist og ártölin sem hún spannar, svo hægt
+er að vafra um rúman áratug af þáttum eftir landafræði jafnt sem öldum — sjá
+í sjónhendingu hvar í heiminum og hvenær í sögunni hver þáttur á heima.
 
-Full design — data schema, map/timeline interaction, visual encoding, stack —
-lives in [DESIGN.md](DESIGN.md).
+Þetta er óopinbert aðdáendaverkefni og ekki á vegum RÚV. Allt efni þáttanna —
+titlar, lýsingar, hljóð og myndir — tilheyrir RÚV og Veru Illugadóttur og er
+sótt beint þaðan.
 
-## Status (2026-07-02)
+## Eiginleikar
 
-**Data phase and webapp complete. Awaiting first deploy.**
+- **Heimskort** — hver þáttur fær punkt á sögusviði sínu. Litur punktsins
+  sýnir tímabil sögunnar á bláum litakvarða, frá ljósu (forsaga og fornöld)
+  yfir í dökkt (20. og 21. öld). Þar sem margir þættir gerast á sama stað
+  (New York ein hýsir tíu) opnast valmynd í stað þess að punktarnir skarist.
+- **Tímalína** — neðst á síðunni sést dreifing allra þátta frá forsögu til
+  nútímans, og með því að draga handföngin má sía kortið eftir tímabili.
+  Kvarðinn er ólínulegur: tuttugasta öldin, þar sem flestir þættir eiga heima,
+  fær rúmt pláss en allt fyrir 3000 f.Kr. þjappast í mjótt „forsögu“-band.
+- **Þáttaspjald** — við að smella á punkta opnast spjald með lýsingu þáttarins,
+  spilara sem streymir hljóðinu beint frá RÚV og tengli á þáttasíðuna á
+  ruv.is.
+- **Listi** — tafla yfir alla þætti í skúffu við hlið kortsins (á fullum
+  skjá á síma), raðanleg eftir titli, dagsetningu, stað og ártali. Þar sjást
+  líka endurfluttir þættir og þeir fáu sem ekki fá punkt á kortinu.
+- **Leit og tímabilsval** — textaleit í titlum og lýsingum ásamt forstilltum
+  tímabilum (fornöld, miðaldir, heimsstyrjaldirnar o.s.frv.).
 
-| Piece | State |
-|---|---|
-| Episode catalog (`data/catalog.json`) | ✅ 357 episodes fetched from RÚV GraphQL, incl. MP3 URLs |
-| Annotations (`data/annotations.json`) | ✅ 357/357 — 305 high / 39 medium / 13 low confidence |
-| Gazetteer (`data/places.json`) | ✅ 245 places, Nominatim-verified (or `skipVerify` hand-checked) |
-| Series & rebroadcasts | ✅ 64 series grouped; 15 repeats marked with `repeatOf` |
-| Merge/build script → `public/data/episodes.json` | ✅ `npm run build-episodes` (validates invariants) |
-| Webapp (map, timeline, panel, list view) | ✅ Vite + TS, MapLibre + OpenFreeMap, SVG timeline, dark mode |
-| UI/UX pass (antique theme, list drawer, mobile, about) | ✅ 2026-07-02 |
-| Deploy (GitHub Pages) | ⬜ workflow ready (`.github/workflows/deploy.yml`), Pages not yet enabled |
+## Hvernig gögnin urðu til
 
-### Remaining steps
+Vefurinn hvílir á þremur gagnasöfnum sem urðu til í sitthvoru skrefinu:
 
-1. **Deploy**: push to GitHub and enable Pages (Settings → Pages → source
-   "GitHub Actions"); the workflow builds `dist/` on every push to main.
-2. **Data polish (optional)**: one-time Spotify API pass to recover the 13
-   placeholder episode titles (match air dates against show
-   `4z956m0MLbaecUeSjlJmw2`) and add per-episode Spotify links; human review
-   of the 39 `confidence: medium` annotations.
-3. **Upkeep**: re-run `npm run fetch-catalog` periodically — new episodes
-   show up as unannotated ids (annotate via the `annotate-episodes` skill),
-   then `npm run build-episodes` to refresh the app data.
+1. **Þáttaskráin** (`data/catalog.json`) er sótt sjálfvirkt úr GraphQL-vef
+   RÚV með `npm run fetch-catalog`: 357 þættir með titlum, lýsingum,
+   útsendingardögum og beinum MP3-slóðum. Skráin er alfarið vélunnin og má
+   endurnýja hvenær sem er — nýir þættir bætast þá við sem óunnin auðkenni.
 
-### App notes
+2. **Efnisgreiningin** (`data/annotations.json`) er handunnin viðbót, gerð
+   með aðstoð gervigreindar í yfirförnum skömmtum: fyrir hvern þátt var lesið
+   úr titli og lýsingu hvaða staðir koma við sögu (og hver þeirra er
+   aðalstaður), hvaða ártalsbil sagan spannar, hvaða efnisorð eiga við, hvort
+   þátturinn tilheyri syrpu og hvort um endurflutning sé að ræða. Hver færsla
+   ber öryggismat (`high`/`medium`/`low`) eftir því hve skýrt sögusviðið er,
+   svo óvissar staðsetningar séu aðgreinanlegar frá öruggum.
 
-- The whole app wears an antique-atlas look: the OpenFreeMap basemap is
-  recolored at runtime (`src/basemap.ts`) onto parchment/sepia/teal ramps,
-  and the chrome is parchment + serif. See DESIGN.md §4.
-- Era marker colors are the ordinal blue ramp from DESIGN.md §4, validated
-  against the actual (antique-transformed) land colors `#f0e9d8`/`#1d1812`.
-- „Listi" is a drawer beside the map (fullscreen over it on mobile, where
-  picking an episode closes the list onto the map + detail sheet).
-- Timeline segments were tuned to the real span distribution — 1900+ holds
-  258 of 329 mapped episodes and gets 40 % of the pixels; everything before
-  3000 f.Kr. is clamped into a thin „forsaga" band.
-- Co-located markers (31 places host several episodes, New York alone has
-  10) open a chooser popup instead of spiderfying.
-- Keyboard path: hidden marker buttons in firstrun order (focus rings the
-  marker, Enter opens the panel, Escape closes), arrow-steppable brush
-  handles, sortable „Listi" table as the full accessibility fallback.
+3. **Staðaskráin** (`data/places.json`) er handvalin skrá yfir 245 sögustaði
+   með hnitum. Hnitin koma frá [Nominatim](https://nominatim.org)
+   (OpenStreetMap) og hver einasta færsla er sannreynd með
+   `npm run verify-places` áður en hún er tekin í notkun.
 
-## Data pipeline
+Skipunin `npm run build-episodes` fléttar söfnin þrjú saman í eina skrá,
+`public/data/episodes.json` — það eina sem vefurinn hleður — og gengur um
+leið úr skugga um innri reglur gagnanna: hver greindur þáttur hefur nákvæmlega
+einn aðalstað, allar staðatilvísanir vísa á gilda færslu í staðaskránni og
+upphafsár er aldrei á eftir lokaári (neikvæð ártöl tákna f.Kr.).
+Endurfluttir þættir (15 talsins) eru merktir við upprunalega þáttinn svo
+kortið sýni hverja sögu aðeins einu sinni, og þrettán þættir sem RÚV birti án
+lýsingar standa utan korts og sjást eingöngu í listanum.
 
-```
-RÚV GraphQL ──fetch-catalog──▶ data/catalog.json      (machine-owned, regenerate freely)
-                              data/annotations.json   (curated: subjects, places, spans, series)
-                              data/places.json        (curated gazetteer, geocoded once)
-                                       │
-                                 build-episodes (TODO)
-                                       ▼
-                              public/data/episodes.json  (the single file the app loads)
-```
+## Skipanir
 
-Curated files are never touched by the fetch step; a refetch only adds new
-episode ids, which then need annotation (see `.claude/skills/annotate-episodes`).
+| Skipun                              | Hlutverk                                           |
+| ----------------------------------- | -------------------------------------------------- |
+| `npm run fetch-catalog`             | Endursækja þáttalýsigögn frá GraphQL-vef RÚV       |
+| `npm run verify-places`             | Sannreyna öll hnit staðaskrárinnar gegn Nominatim  |
+| `npm run next-batch [-- N]`         | Prenta næstu N ógreindu þættina                    |
+| `npm run merge-batch -- batch.json` | Sannreyna og flétta greiningarskammt inn í `data/` |
+| `npm run build-episodes`            | Byggja `public/data/episodes.json` fyrir vefinn    |
 
-## Scripts
+## Gagnalindir og þakkir
 
-| Command | What it does |
-|---|---|
-| `npm run fetch-catalog` | Refetch all episode metadata from RÚV GraphQL |
-| `npm run verify-places` | Check every gazetteer coordinate against Nominatim (1 req/s) |
-| `npm run verify-places -- slug1 slug2` | Check only the named places |
-| `npm run next-batch [-- N]` | Print the next N unannotated episodes |
-| `npm run merge-batch -- batch.json` | Validate + merge an annotation batch into `data/` |
-
-## Data sources & credits
-
-- Episode metadata and audio: [RÚV](https://www.ruv.is) — this is a fan
-  project; all episode content belongs to RÚV and Vera Illugadóttir.
-- Geocoding: [Nominatim](https://nominatim.org) / OpenStreetMap contributors.
-- Basemap (planned): [OpenFreeMap](https://openfreemap.org).
+- Þáttalýsigögn og hljóð: [RÚV](https://www.ruv.is) — allt efni þáttanna
+  tilheyrir RÚV og Veru Illugadóttur.
+- Hnit: [Nominatim](https://nominatim.org) / OpenStreetMap-höfundar.
+- Kortagrunnur: [OpenFreeMap](https://openfreemap.org).

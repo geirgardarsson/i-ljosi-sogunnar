@@ -3,8 +3,8 @@
 Webapp mapping episodes of the RÚV history podcast *Í ljósi sögunnar* on a
 world map + timeline. **DESIGN.md is the source of truth** for the data
 schema, map/timeline interaction, and visual encoding — read the relevant
-section before building any part of the app. README.md has current status and
-the remaining-steps roadmap.
+section before building any part of the app. README.md is the public-facing
+introduction (in Icelandic — the one doc exempt from the English-docs rule).
 
 ## Ground rules
 
