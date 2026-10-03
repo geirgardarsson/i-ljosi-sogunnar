@@ -321,7 +321,7 @@ function addLayers(): void {
     },
   });
 
-  if (!map.hasImage("new-star")) map.addImage("new-star", newStarImage(), { pixelRatio: 1.5 });
+  if (!map.hasImage("new-star")) map.addImage("new-star", newStarImage(), { pixelRatio: 1.8 });
   map.addLayer({
     id: "marker-new",
     type: "symbol",
@@ -544,9 +544,8 @@ function buildKeyboardMarkers(container: HTMLElement): void {
     const btn = document.createElement("button");
     const rep = g.episodes[0];
     const primary = rep.places.find((p) => p.role === "primary")!;
-    btn.textContent = `${rep.title}${
-      g.episodes.length > 1 ? ` (${g.episodes.length} hlutar)` : ""
-    } — ${primary.name}${g.years ? `, ${g.years}` : ""}`;
+    btn.textContent = `${rep.title}${g.episodes.length > 1 ? ` (${g.episodes.length} hlutar)` : ""
+      } — ${primary.name}${g.years ? `, ${g.years}` : ""}`;
     btn.addEventListener("focus", () => {
       setHoverRing([g]);
       store.setHover({ ids: g.episodes.map((e) => e.id), source: "map" });
