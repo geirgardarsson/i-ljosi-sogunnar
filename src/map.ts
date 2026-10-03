@@ -87,9 +87,25 @@ function toGeoJSON(): GeoJSON.FeatureCollection {
         era: g.era,
         count: g.episodes.length,
         match: g.episodes.some((e) => store.matches(e)) ? 1 : 0,
-        isNew: g.episodes.some((e) => isNewEpisode(e.firstrun)) ? 1 : 0,
       },
     })),
+  };
+}
+
+/** Groups with a recent episode, unclustered so the star shows at any zoom. */
+function newGeoJSON(): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: groups
+      .filter((g) => g.episodes.some((e) => isNewEpisode(e.firstrun)))
+      .map((g) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [g.lon, g.lat] },
+        properties: {
+          key: g.key,
+          match: g.episodes.some((e) => store.matches(e)) ? 1 : 0,
+        },
+      })),
   };
 }
 
@@ -167,6 +183,7 @@ function addLayers(): void {
     clusterMaxZoom: 12,
     clusterProperties: { matched: ["+", ["get", "match"]] },
   });
+  map.addSource("new-episodes", { type: "geojson", data: newGeoJSON() });
   map.addSource("secondaries", { type: "geojson", data: secondariesGeoJSON() });
   map.addSource("hover", { type: "geojson", data: emptyFC() });
   map.addSource("selection", { type: "geojson", data: emptyFC() });
@@ -304,12 +321,11 @@ function addLayers(): void {
     },
   });
 
-  if (!map.hasImage("new-star")) map.addImage("new-star", newStarImage(), { pixelRatio: 1.6 });
+  if (!map.hasImage("new-star")) map.addImage("new-star", newStarImage(), { pixelRatio: 1.5 });
   map.addLayer({
     id: "marker-new",
     type: "symbol",
-    source: "episodes",
-    filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "isNew"], 1]],
+    source: "new-episodes",
     layout: {
       "icon-image": "new-star",
       "icon-anchor": "bottom",
@@ -331,6 +347,7 @@ function emptyFC(): GeoJSON.FeatureCollection {
 function refreshMatches(): void {
   clusterTip = null;
   (map.getSource("episodes") as GeoJSONSource | undefined)?.setData(toGeoJSON());
+  (map.getSource("new-episodes") as GeoJSONSource | undefined)?.setData(newGeoJSON());
   (map.getSource("secondaries") as GeoJSONSource | undefined)?.setData(secondariesGeoJSON());
 }
 
@@ -471,8 +488,13 @@ function openChooser(lngLat: maplibregl.LngLatLike, episodes: Episode[]): void {
     .addTo(map);
 }
 
+const handledClicks = new WeakSet<object>();
+
+/** Click on a pin or its "nýtt" star — both resolve to the same marker group. */
 function onMarkerClick(e: MapLayerMouseEvent): void {
-  const feats = map.queryRenderedFeatures(e.point, { layers: ["markers"] });
+  if (handledClicks.has(e.originalEvent)) return; // pin and star both fired
+  handledClicks.add(e.originalEvent);
+  const feats = map.queryRenderedFeatures(e.point, { layers: ["markers", "marker-new"] });
   const keys = [...new Set(feats.map((f) => f.properties.key as string))];
   const gs = keys.map((k) => groupByKey.get(k)!).filter(Boolean);
   if (gs.length === 0) return;
@@ -484,6 +506,8 @@ function onMarkerClick(e: MapLayerMouseEvent): void {
 }
 
 async function onClusterClick(e: MapLayerMouseEvent): Promise<void> {
+  // A star drawn over a cluster belongs to the click, not the cluster.
+  if (map.queryRenderedFeatures(e.point, { layers: ["marker-new"] }).length > 0) return;
   const feature = e.features?.[0];
   if (!feature) return;
   const clusterId = feature.properties.cluster_id as number;
@@ -692,6 +716,9 @@ export async function initMap(container: HTMLElement): Promise<void> {
     else if (eps.length > 1) openChooser(e.lngLat, eps);
   });
   map.on("click", "markers", onMarkerClick);
+  map.on("click", "marker-new", onMarkerClick);
+  map.on("mouseenter", "marker-new", () => (map.getCanvas().style.cursor = "pointer"));
+  map.on("mouseleave", "marker-new", () => (map.getCanvas().style.cursor = ""));
   map.on("click", "clusters", (e) => {
     void onClusterClick(e);
   });
