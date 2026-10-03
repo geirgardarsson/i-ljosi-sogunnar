@@ -122,7 +122,7 @@ function render(): void {
   if (ep.series) {
     const nav = el("nav", "panel-series");
     nav.setAttribute("aria-label", "Þáttaröð");
-    nav.append(el("p", "panel-series-label", `Hluti ${ep.series.part} af ${ep.series.of}`));
+    nav.append(el("p", "panel-series-label", `Hluti ${ep.series.part}${ep.series.of ? ` af ${ep.series.of}` : ""}`));
     const list = el("div", "panel-series-parts");
     for (const part of seriesParts(ep)) {
       const btn = el("button", "linklike", `${part.series!.part}. ${part.title}`);

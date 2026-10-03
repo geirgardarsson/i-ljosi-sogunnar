@@ -20,7 +20,8 @@ Run weekly-ish; the show airs on Fridays. Annotation details live in the
    scratchpad → `npm run merge-batch -- <batch>` → `npm run verify-places --
    <NEW_SLUGS>`). Check `data/annotations.json` for an existing `series.key`
    first — new episodes often continue a running series; reuse the key and
-   next part number, and retrofit `of` only when the count is certain.
+   next part number. Set `of` to the current part count (the UI shows
+   "3/3"); when a further part airs, bump `of` on all earlier parts (3/3 → 3/4).
 4. **Rebuild**: `npm run build-episodes`, then `npx tsc --noEmit` and
    `npm run build`. build-episodes fails if any invariant is broken.
 5. **Commit** `data/` + `public/data/episodes.json` in one commit, e.g.

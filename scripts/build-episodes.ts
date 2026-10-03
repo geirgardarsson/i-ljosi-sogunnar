@@ -34,7 +34,7 @@ interface PlaceEntry {
 
 interface Annotation {
   subject: string;
-  series?: { key: string; part: number; of: number };
+  series?: { key: string; part: number; of?: number };
   places: { ref: string; role: "primary" | "secondary"; note?: string }[];
   spans: { start: number; end: number; approx?: boolean }[];
   confidence: "high" | "medium" | "low";

@@ -7315,7 +7315,8 @@
     "subject": "Uppgangur Tímúrs halta og fyrstu landvinningar hans í Mið-Asíu",
     "series": {
       "key": "timur-halti",
-      "part": 1
+      "part": 1,
+      "of": 3
     },
     "places": [
       {
@@ -7335,7 +7336,8 @@
     "subject": "Stríðsrekstur Tímúrs halta",
     "series": {
       "key": "timur-halti",
-      "part": 2
+      "part": 2,
+      "of": 3
     },
     "places": [
       {
@@ -7355,7 +7357,8 @@
     "subject": "Tímúr halti, þriðji þáttur",
     "series": {
       "key": "timur-halti",
-      "part": 3
+      "part": 3,
+      "of": 3
     },
     "places": [
       {

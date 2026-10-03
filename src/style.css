@@ -631,6 +631,13 @@ html[data-theme="dark"] .maplibregl-ctrl-attrib {
   white-space: nowrap;
 }
 
+.list-tag-new {
+  background: #f2b928;
+  border-color: #4a3a25;
+  color: #3b2a10;
+  font-weight: 600;
+}
+
 /* ── Mobile ──────────────────────────────────────────────────── */
 
 @media (max-width: 720px) {

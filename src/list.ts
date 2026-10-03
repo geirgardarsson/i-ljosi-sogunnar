@@ -1,5 +1,5 @@
 import { store } from "./state";
-import { fmtDate, fmtSpans } from "./util";
+import { fmtDate, fmtSpans, isNewEpisode } from "./util";
 import type { Episode } from "./types";
 
 /**
@@ -92,8 +92,9 @@ function renderRow(ep: Episode): HTMLLIElement {
   const titleLine = document.createElement("span");
   titleLine.className = "list-row-title";
   titleLine.textContent = ep.title;
+  if (isNewEpisode(ep.firstrun)) titleLine.append(" ", tag("list-tag list-tag-new", "nýtt"));
   if (ep.repeatOf) titleLine.append(" ", tag("list-tag", "endurflutningur"));
-  if (ep.series) titleLine.append(" ", tag("list-tag", `hluti ${ep.series.part}/${ep.series.of}`));
+  if (ep.series) titleLine.append(" ", tag("list-tag", `hluti ${ep.series.part}${ep.series.of ? `/${ep.series.of}` : ""}`));
 
   const meta = document.createElement("span");
   meta.className = "list-row-meta";

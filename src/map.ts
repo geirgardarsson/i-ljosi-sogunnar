@@ -120,6 +120,40 @@ function secondariesGeoJSON(): GeoJSON.FeatureCollection {
   return { type: "FeatureCollection", features };
 }
 
+/** Gold five-point star with "nýtt" centered, drawn once and used as a map icon. */
+function newStarImage(): ImageData {
+  const size = 96;
+  const c = document.createElement("canvas");
+  c.width = c.height = size;
+  const ctx = c.getContext("2d")!;
+  const cx = size / 2;
+  const cy = size / 2 + 2;
+  const outer = size / 2 - 4;
+  const inner = outer * 0.58; // fat star so the label fits in the middle
+  ctx.beginPath();
+  for (let i = 0; i < 10; i++) {
+    const r = i % 2 === 0 ? outer : inner;
+    const ang = -Math.PI / 2 + (i * Math.PI) / 5;
+    const x = cx + r * Math.cos(ang);
+    const y = cy + r * Math.sin(ang);
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+  ctx.lineJoin = "round";
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = "#4a3a25";
+  ctx.fillStyle = "#f2b928";
+  ctx.stroke();
+  ctx.fill();
+  ctx.fillStyle = "#3b2a10";
+  ctx.font = "700 22px 'Noto Sans', 'Segoe UI', system-ui, sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText("nýtt", cx, cy + 3);
+  return ctx.getImageData(0, 0, size, size);
+}
+
 function addLayers(): void {
   const theme = store.theme;
   const ramp = ERA_RAMP[theme];
@@ -270,24 +304,20 @@ function addLayers(): void {
     },
   });
 
+  if (!map.hasImage("new-star")) map.addImage("new-star", newStarImage(), { pixelRatio: 1.6 });
   map.addLayer({
     id: "marker-new",
     type: "symbol",
     source: "episodes",
     filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "isNew"], 1]],
     layout: {
-      "text-field": "nýtt",
-      "text-font": ["Noto Sans Regular"],
-      "text-size": 10,
-      "text-anchor": "bottom",
-      "text-offset": [0, -0.7],
-      "text-allow-overlap": true,
+      "icon-image": "new-star",
+      "icon-anchor": "bottom",
+      "icon-offset": [0, -4],
+      "icon-allow-overlap": true,
     },
     paint: {
-      "text-color": chip.fill,
-      "text-halo-color": LAND_COLOR[theme],
-      "text-halo-width": 1.5,
-      "text-opacity": ["case", ["==", ["get", "match"], 1], 1, 0.15],
+      "icon-opacity": ["case", ["==", ["get", "match"], 1], 1, 0.15],
     },
   });
 

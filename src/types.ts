@@ -29,7 +29,7 @@ export interface Episode {
   image: string | null;
   ruv: string;
   subject: string;
-  series?: { key: string; part: number; of: number };
+  series?: { key: string; part: number; of?: number };
   repeatOf?: string;
   places: EpisodePlace[];
   spans: Span[];
