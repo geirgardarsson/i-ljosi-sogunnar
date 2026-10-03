@@ -7310,5 +7310,65 @@
       }
     ],
     "confidence": "high"
+  },
+  "bk8quk": {
+    "subject": "Uppgangur Tímúrs halta og fyrstu landvinningar hans í Mið-Asíu",
+    "series": {
+      "key": "timur-halti",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "samarkand",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1336,
+        "end": 1405
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qul": {
+    "subject": "Stríðsrekstur Tímúrs halta",
+    "series": {
+      "key": "timur-halti",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "samarkand",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1336,
+        "end": 1405
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qum": {
+    "subject": "Tímúr halti, þriðji þáttur",
+    "series": {
+      "key": "timur-halti",
+      "part": 3
+    },
+    "places": [
+      {
+        "ref": "samarkand",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1336,
+        "end": 1405
+      }
+    ],
+    "confidence": "medium"
   }
 }

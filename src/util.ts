@@ -37,3 +37,12 @@ export function fold(s: string): string {
     .replace(/þ/g, "th")
     .replace(/æ/g, "ae");
 }
+
+const NEW_DAYS = 7;
+
+/** True for episodes first aired within the last week (local date, inclusive). */
+export function isNewEpisode(firstrun: string, now = new Date()): boolean {
+  const [y, m, d] = firstrun.split("-").map(Number);
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  return (today - Date.UTC(y, m - 1, d)) / 86_400_000 <= NEW_DAYS;
+}

@@ -4,7 +4,7 @@ import { store } from "./state";
 import { antiqueStyle } from "./basemap";
 import { ERA_LABELS, ERA_RAMP, LAND_COLOR, eraIndex } from "./eras";
 import type { Episode, PlaceKind } from "./types";
-import { fmtSpans } from "./util";
+import { fmtSpans, isNewEpisode } from "./util";
 import { hideTooltip, showTooltip, type TooltipLine } from "./tooltip";
 
 /** Neutral cluster chip (DESIGN.md §4) — sepia ink on the antique basemap,
@@ -87,6 +87,7 @@ function toGeoJSON(): GeoJSON.FeatureCollection {
         era: g.era,
         count: g.episodes.length,
         match: g.episodes.some((e) => store.matches(e)) ? 1 : 0,
+        isNew: g.episodes.some((e) => isNewEpisode(e.firstrun)) ? 1 : 0,
       },
     })),
   };
@@ -265,6 +266,27 @@ function addLayers(): void {
       "text-color": chip.fill,
       "text-halo-color": LAND_COLOR[theme],
       "text-halo-width": 1.2,
+      "text-opacity": ["case", ["==", ["get", "match"], 1], 1, 0.15],
+    },
+  });
+
+  map.addLayer({
+    id: "marker-new",
+    type: "symbol",
+    source: "episodes",
+    filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "isNew"], 1]],
+    layout: {
+      "text-field": "nýtt",
+      "text-font": ["Noto Sans Regular"],
+      "text-size": 10,
+      "text-anchor": "bottom",
+      "text-offset": [0, -0.7],
+      "text-allow-overlap": true,
+    },
+    paint: {
+      "text-color": chip.fill,
+      "text-halo-color": LAND_COLOR[theme],
+      "text-halo-width": 1.5,
       "text-opacity": ["case", ["==", ["get", "match"], 1], 1, 0.15],
     },
   });

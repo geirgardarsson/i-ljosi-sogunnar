@@ -1,5 +1,5 @@
 {
- "fetched": "2026-07-02T11:44:10.277Z",
+ "fetched": "2026-10-03T11:25:56.129Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -3215,6 +3215,33 @@
    "durationSec": 2420,
    "audio": "https://ruv-radio.akamaized.net/opid/5482824D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2JhdDIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo5NjAsImhlaWdodCI6NTQwfSwidG9Gb3JtYXQiOiJ3ZWJwIn19"
+  },
+  {
+   "id": "bk8quk",
+   "title": "Tímúr halti I",
+   "description": "Fyrsti þáttur um miðasíska landvinningamanninn alræmda Tímúr halta.",
+   "firstrun": "2026-09-18",
+   "durationSec": 2457,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482825D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3RpbXVyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
+  },
+  {
+   "id": "bk8qul",
+   "title": "Tímúr halti II",
+   "description": "Annar þáttur um Tímúr halta og stríðsrekstur hans.",
+   "firstrun": "2026-09-25",
+   "durationSec": 2489,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482826D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3RpbXVyMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
+  },
+  {
+   "id": "bk8qum",
+   "title": "Tímúr halti III",
+   "description": "Þriðji þáttur um Tímúr halta.",
+   "firstrun": "2026-10-02",
+   "durationSec": 2432,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482897D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3RpbXVyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
   }
  ]
 }

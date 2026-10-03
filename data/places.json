@@ -1692,5 +1692,12 @@
     "lat": -6.13,
     "lon": 106.81,
     "q": "Jakarta"
+  },
+  "samarkand": {
+    "name": "Samarkand",
+    "kind": "city",
+    "lat": 39.6542,
+    "lon": 66.9597,
+    "q": "Samarkand, Uzbekistan"
   }
 }
