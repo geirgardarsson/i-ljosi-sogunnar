@@ -7316,7 +7316,7 @@
     "series": {
       "key": "timur-halti",
       "part": 1,
-      "of": 3
+      "of": 4
     },
     "places": [
       {
@@ -7337,7 +7337,7 @@
     "series": {
       "key": "timur-halti",
       "part": 2,
-      "of": 3
+      "of": 4
     },
     "places": [
       {
@@ -7358,7 +7358,28 @@
     "series": {
       "key": "timur-halti",
       "part": 3,
-      "of": 3
+      "of": 4
+    },
+    "places": [
+      {
+        "ref": "samarkand",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1336,
+        "end": 1405
+      }
+    ],
+    "confidence": "medium"
+  },
+  "bk8qun": {
+    "subject": "Tímúr halti, fjórði og síðasti þáttur",
+    "series": {
+      "key": "timur-halti",
+      "part": 4,
+      "of": 4
     },
     "places": [
       {
