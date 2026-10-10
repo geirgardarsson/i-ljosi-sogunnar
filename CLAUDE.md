@@ -37,3 +37,18 @@ introduction (in Icelandic — the one doc exempt from the English-docs rule).
   never give them a map marker.
 - Audio: use the direct `audio` MP3 URL from the catalog; RÚV episode page is
   `https://www.ruv.is/utvarp/spila/i-ljosi-sogunnar/23795/{id}`.
+
+## New-episode cron (Raspberry Pi)
+
+`scripts/new-episode-hook.py` (+ `scripts/new-episode-hook.crontab`) runs
+every 2 h as `geir` on the Pi (`geir@192.168.1.88`) that hosts
+auto-checklists. When RÚV lists an unseen episode ID it logs in to
+`http://localhost/api` and POSTs `ActiveChecks/activate-now/234`.
+
+- Deployed copy lives at `~/ljosi-watch/` on the Pi (`state.json` = seen IDs,
+  `log`). After editing, `scp scripts/new-episode-hook.py
+  geir@192.168.1.88:ljosi-watch/` — the Pi doesn't pull this repo.
+- Credentials: `~/.config/ljosi-watch/credentials` on the Pi (chmod 600) —
+  never copy them into the repo or print them.
+- Login-per-run is a stopgap: switch `activate_check()` to auto-checklists
+  webhooks once they ship, then delete the credentials file.
