@@ -1699,5 +1699,19 @@
     "lat": 39.6542,
     "lon": 66.9597,
     "q": "Samarkand, Uzbekistan"
+  },
+  "uluru": {
+    "name": "Uluru",
+    "kind": "landmark",
+    "lat": -25.3444,
+    "lon": 131.0369,
+    "q": "Uluru, Northern Territory, Australia"
+  },
+  "darwin": {
+    "name": "Darwin",
+    "kind": "city",
+    "lat": -12.4634,
+    "lon": 130.8456,
+    "q": "Darwin, Northern Territory, Australia"
   }
 }

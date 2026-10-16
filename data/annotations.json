@@ -545,11 +545,26 @@
     "confidence": "high"
   },
   "6m1bmr": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 27 af 52“, 22. júlí 2016)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Ævi og ferill Receps Tayyips Erdogans",
+    "repeatOf": "6m1bmh",
+    "places": [
+      {
+        "ref": "istanbul",
+        "role": "primary",
+        "note": "Fæddist þar og varð borgarstjóri 1994"
+      },
+      {
+        "ref": "ankara",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1954,
+        "end": 2016
+      }
+    ],
+    "confidence": "high"
   },
   "6m1bms": {
     "subject": "Valdarán herforingjanna í Grikklandi 1967 og sjö ára herstjórn",
@@ -607,11 +622,27 @@
     "confidence": "high"
   },
   "6m1bmv": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 31 af 52“, 19. ágúst 2016)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Ættarsaga Trump-fjölskyldunnar: gullæðið í Klondike og fasteignaveldið í New York",
+    "repeatOf": "6m1bm9",
+    "places": [
+      {
+        "ref": "new-york",
+        "role": "primary"
+      },
+      {
+        "ref": "klondike",
+        "role": "secondary",
+        "note": "Hótel- og vændishúsarekstur afans í gullæðinu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1885,
+        "end": 1971,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
   },
   "6m1bn0": {
     "subject": "Rætur Íslamska ríkisins: Abu Musab al-Zarqawi",
@@ -1451,39 +1482,110 @@
     "confidence": "high"
   },
   "72tl29": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 25 af 52“, 30. júní 2017)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Skipting Indlands 1947 og stofnun Indlands og Pakistans",
+    "repeatOf": "6m1bmp",
+    "places": [
+      {
+        "ref": "nyja-deli",
+        "role": "primary"
+      },
+      {
+        "ref": "lahore",
+        "role": "secondary",
+        "note": "Punjab klofnaði; blóðugustu átökin þar um kring"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1947,
+        "end": 1948
+      }
+    ],
+    "confidence": "high"
   },
   "72tl2a": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 26 af 52“, 7. júlí 2017)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Eftirmál skiptingar Indlands: flóttamannastraumur og blóðsúthellingar",
+    "repeatOf": "6m1bmq",
+    "places": [
+      {
+        "ref": "nyja-deli",
+        "role": "primary"
+      },
+      {
+        "ref": "lahore",
+        "role": "secondary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1947,
+        "end": 1948
+      }
+    ],
+    "confidence": "high"
   },
   "72tl2b": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 27 af 52“, 14. júlí 2017)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Valdarán herforingjanna í Grikklandi 1967 og sjö ára herstjórn",
+    "repeatOf": "6m1bms",
+    "places": [
+      {
+        "ref": "athen",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1967,
+        "end": 1974
+      }
+    ],
+    "confidence": "high"
   },
   "72tl2c": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 28 af 52“, 21. júlí 2017)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Rætur Íslamska ríkisins: Abu Musab al-Zarqawi",
+    "repeatOf": "6m1bn0",
+    "places": [
+      {
+        "ref": "bagdad",
+        "role": "primary",
+        "note": "Uppreisnin í Írak eftir innrásina 2003"
+      },
+      {
+        "ref": "zarqa",
+        "role": "secondary",
+        "note": "Fæðingarbær Zarqawis í Jórdaníu"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1966,
+        "end": 2006
+      }
+    ],
+    "confidence": "high"
   },
   "72tl2d": {
-    "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 29 af 52“, 28. júlí 2017)",
-    "places": [],
-    "spans": [],
-    "confidence": "low",
-    "todo": "Finna raunverulegt efni þáttarins, t.d. með samanburði við þáttalista Spotify"
+    "subject": "Íslamska ríkið: frá upplausn Íraks til kalífadæmis",
+    "repeatOf": "6m1bn1",
+    "places": [
+      {
+        "ref": "mosul",
+        "role": "primary",
+        "note": "Kalífadæmið lýst yfir þar 2014"
+      },
+      {
+        "ref": "raqqa",
+        "role": "secondary",
+        "note": "Höfuðvígi samtakanna í Sýrlandi"
+      }
+    ],
+    "spans": [
+      {
+        "start": 2006,
+        "end": 2016
+      }
+    ],
+    "confidence": "high"
   },
   "72tl2e": {
     "subject": "Óþekkt efni — titil og lýsingu vantar í gögn RÚV („Þáttur 30 af 52“, 4. ágúst 2017)",
@@ -7394,5 +7496,30 @@
       }
     ],
     "confidence": "medium"
+  },
+  "bk8quo": {
+    "subject": "Mál Lindy Chamberlain sem var sakfelld fyrir að myrða níu vikna dóttur sína Azariu við Uluru 1980, en dingó hafði tekið barnið",
+    "places": [
+      {
+        "ref": "uluru",
+        "role": "primary"
+      },
+      {
+        "ref": "darwin",
+        "role": "secondary",
+        "note": "Réttarhöldin 1982 og ógilding dómsins 1988"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1980,
+        "end": 1988
+      },
+      {
+        "start": 2012,
+        "end": 2012
+      }
+    ],
+    "confidence": "high"
   }
 }

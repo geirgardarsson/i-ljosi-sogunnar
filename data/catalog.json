@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-10T20:41:28.433Z",
+ "fetched": "2026-10-16T16:36:35.803Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -239,8 +239,8 @@
   },
   {
    "id": "6m1bmr",
-   "title": "Þáttur 27 af 52",
-   "description": "",
+   "title": "Recep Tayyip Erdogan",
+   "description": "Í þættinum er fjallað um tyrkneska stjórnmálamanninn Recep Tayyip Erdogan.",
    "firstrun": "2016-07-22",
    "durationSec": 2346,
    "audio": "https://ruv-radio.akamaized.net/opid/5297115D0.mp3",
@@ -275,8 +275,8 @@
   },
   {
    "id": "6m1bmv",
-   "title": "Þáttur 31 af 52",
-   "description": "",
+   "title": "Ættir Donalds Trumps",
+   "description": "Í þættinum er fjallað um afa og föður Donalds Trump, Friedrich og Fred Trump.",
    "firstrun": "2016-08-19",
    "durationSec": 2389,
    "audio": "https://ruv-radio.akamaized.net/opid/5297119D1.mp3",
@@ -653,7 +653,7 @@
   },
   {
    "id": "72tl29",
-   "title": "Þáttur 25 af 52",
+   "title": "Indland og Pakistan I",
    "description": "",
    "firstrun": "2017-06-30",
    "durationSec": 2363,
@@ -662,7 +662,7 @@
   },
   {
    "id": "72tl2a",
-   "title": "Þáttur 26 af 52",
+   "title": "Indland og Pakistan II",
    "description": "",
    "firstrun": "2017-07-07",
    "durationSec": 2103,
@@ -671,7 +671,7 @@
   },
   {
    "id": "72tl2b",
-   "title": "Þáttur 27 af 52",
+   "title": "Herstjórnin í Grikklandi",
    "description": "",
    "firstrun": "2017-07-14",
    "durationSec": 2331,
@@ -680,7 +680,7 @@
   },
   {
    "id": "72tl2c",
-   "title": "Þáttur 28 af 52",
+   "title": "Íslamska ríkið I",
    "description": "",
    "firstrun": "2017-07-21",
    "durationSec": 2472,
@@ -689,7 +689,7 @@
   },
   {
    "id": "72tl2d",
-   "title": "Þáttur 29 af 52",
+   "title": "Íslamska ríkið II",
    "description": "",
    "firstrun": "2017-07-28",
    "durationSec": 2305,
@@ -3251,6 +3251,15 @@
    "durationSec": 2425,
    "audio": "https://ruv-radio.akamaized.net/opid/5482828D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3RpbXVyNC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
+  },
+  {
+   "id": "bk8quo",
+   "title": "Dingó tók barnið",
+   "description": "Í þættinum er fjallað um mál Lindy Chamberlain, ástralskrar móður sem árið 1980 var sökuð um að hafa myrt níu vikna gamla dóttur sína, en hélt því sjálf fram að dingó-villihundur hefði tekið barnið.",
+   "firstrun": "2026-10-16",
+   "durationSec": 2401,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482779D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2xpbmR5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6OTYwLCJoZWlnaHQiOjU0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ=="
   }
  ]
 }
