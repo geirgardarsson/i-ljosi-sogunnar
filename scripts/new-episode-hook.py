@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Poll RÚV for new "Í ljósi sögunnar" episodes and, when one appears, activate a
-check in auto-checklists (POST /api/ActiveChecks/activate-now/{id}).
+check in auto-checklists by POSTing to its webhook.
 
 Runs from cron on the Raspberry Pi that hosts auto-checklists (stdlib only):
 
@@ -9,9 +9,8 @@ Runs from cron on the Raspberry Pi that hosts auto-checklists (stdlib only):
 
 Files (all under the cron user's home):
   ~/ljosi-watch/state.json            episode IDs already seen (machine-owned)
-  ~/.config/ljosi-watch/credentials   chmod 600, KEY=value lines, no quoting:
-                                        CHECKLIST_EMAIL=you@example.com
-                                        CHECKLIST_PASSWORD=...
+  ~/.config/ljosi-watch/webhook       chmod 600, the webhook URL on one line
+                                      (the token in it is the secret)
 
 The first run only records the current episodes. State is saved after a
 successful activation, so a failed call is retried on the next run.
@@ -26,26 +25,23 @@ from pathlib import Path
 
 GQL = "https://spilari.nyr.ruv.is/gql/"
 PROGRAM_ID = 23795
-API = "http://localhost/api"  # same Pi — keeps the password off the LAN
-CHECK_ID = 234
 # Ignore "new" IDs for old episodes (e.g. RÚV re-keying its archive).
 MAX_AGE = timedelta(days=14)
 
 HOME = Path.home()
 STATE = HOME / "ljosi-watch" / "state.json"
-CREDENTIALS = HOME / ".config" / "ljosi-watch" / "credentials"
+WEBHOOK = HOME / ".config" / "ljosi-watch" / "webhook"
 
 
 def log(msg: str) -> None:
     print(f"{datetime.now():%Y-%m-%d %H:%M:%S} {msg}", flush=True)
 
 
-def post_json(url: str, body: dict | None = None, token: str | None = None) -> dict:
-    headers = {"content-type": "application/json"}
-    if token:
-        headers["authorization"] = f"Bearer {token}"
+def post_json(url: str, body: dict | None = None) -> dict:
     data = json.dumps(body).encode() if body is not None else b""
-    req = urllib.request.Request(url, data=data, headers=headers, method="POST")
+    req = urllib.request.Request(
+        url, data=data, headers={"content-type": "application/json"}, method="POST"
+    )
     with urllib.request.urlopen(req, timeout=30) as res:
         raw = res.read()
     return json.loads(raw) if raw else {}
@@ -59,24 +55,11 @@ def latest_episodes() -> list[dict]:
     return body["data"]["Program"]["episodes"]
 
 
-def read_credentials() -> tuple[str, str]:
-    if not CREDENTIALS.exists():
-        raise RuntimeError(f"missing {CREDENTIALS}")
-    values = {}
-    for line in CREDENTIALS.read_text().splitlines():
-        if "=" in line and not line.lstrip().startswith("#"):
-            key, value = line.split("=", 1)
-            values[key.strip()] = value.strip()
-    try:
-        return values["CHECKLIST_EMAIL"], values["CHECKLIST_PASSWORD"]
-    except KeyError as e:
-        raise RuntimeError(f"{CREDENTIALS} lacks {e.args[0]}") from None
-
-
 def activate_check() -> None:
-    email, password = read_credentials()
-    auth = post_json(f"{API}/auth/login", {"email": email, "password": password})
-    post_json(f"{API}/ActiveChecks/activate-now/{CHECK_ID}", token=auth["accessToken"])
+    if not WEBHOOK.exists():
+        raise RuntimeError(f"missing {WEBHOOK}")
+    req = urllib.request.Request(WEBHOOK.read_text().strip(), data=b"", method="POST")
+    urllib.request.urlopen(req, timeout=30).close()
 
 
 def main() -> int:
@@ -101,9 +84,10 @@ def main() -> int:
         try:
             activate_check()
         except urllib.error.HTTPError as e:
-            log(f"new: {titles} — activation failed: HTTP {e.code} {e.url}")
+            # e.url would leak the webhook token into the log
+            log(f"new: {titles} — webhook failed: HTTP {e.code}")
             return 1
-        log(f"new: {titles} — activated check {CHECK_ID}")
+        log(f"new: {titles} — webhook fired")
 
     if ids - seen:
         STATE.write_text(json.dumps(sorted(seen | ids)) + "\n")
