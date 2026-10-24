@@ -7521,5 +7521,21 @@
       }
     ],
     "confidence": "high"
+  },
+  "bk8qup": {
+    "subject": "Ahmed Zogu, sem komst til valda í Albaníu og tók sér konungstitil 1928 sem Zog I, þar til Ítalir hernámu landið 1939",
+    "places": [
+      {
+        "ref": "tirana",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1895,
+        "end": 1961
+      }
+    ],
+    "confidence": "medium"
   }
 }

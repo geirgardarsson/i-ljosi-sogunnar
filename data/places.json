@@ -1713,5 +1713,12 @@
     "lat": -12.4634,
     "lon": 130.8456,
     "q": "Darwin, Northern Territory, Australia"
+  },
+  "tirana": {
+    "name": "Tírana",
+    "kind": "city",
+    "lat": 41.33,
+    "lon": 19.82,
+    "q": "Tirana, Albania"
   }
 }

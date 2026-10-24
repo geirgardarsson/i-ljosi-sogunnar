@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-16T16:36:35.803Z",
+ "fetched": "2026-10-24T17:55:44.670Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -3258,8 +3258,17 @@
    "description": "Í þættinum er fjallað um mál Lindy Chamberlain, ástralskrar móður sem árið 1980 var sökuð um að hafa myrt níu vikna gamla dóttur sína, en hélt því sjálf fram að dingó-villihundur hefði tekið barnið.",
    "firstrun": "2026-10-16",
    "durationSec": 2401,
-   "audio": "https://ruv-radio.akamaized.net/opid/5482779D0.mp3",
+   "audio": "https://ruv-radio.akamaized.net/opid/5482829D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2xpbmR5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6OTYwLCJoZWlnaHQiOjU0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ=="
+  },
+  {
+   "id": "bk8qup",
+   "title": "Zog, konungur Albaníu",
+   "description": "Í þættinum er fjallað um Ahmed Zogu, sem árið 1928 tók sér titil konungs í heimalandi sínu Albaníu.",
+   "firstrun": "2026-10-23",
+   "durationSec": 2400,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482900D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3pvZy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
   }
  ]
 }
