@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-24T17:55:44.670Z",
+ "fetched": "2026-10-30T18:19:40.456Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -3267,8 +3267,17 @@
    "description": "Í þættinum er fjallað um Ahmed Zogu, sem árið 1928 tók sér titil konungs í heimalandi sínu Albaníu.",
    "firstrun": "2026-10-23",
    "durationSec": 2400,
-   "audio": "https://ruv-radio.akamaized.net/opid/5482900D0.mp3",
+   "audio": "https://ruv-radio.akamaized.net/opid/5482830D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3pvZy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
+  },
+  {
+   "id": "bk8quq",
+   "title": "Endalok konungdæmis í Albaníu",
+   "description": "Í þættinum er fjallað um valdatíð Zogs konungs í Albaníu og endalok konungsríkis hans.",
+   "firstrun": "2026-10-30",
+   "durationSec": 2399,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482781D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL3pvZzIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo5NjAsImhlaWdodCI6NTQwfSwidG9Gb3JtYXQiOiJ3ZWJwIn19"
   }
  ]
 }
