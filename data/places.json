@@ -1720,5 +1720,19 @@
     "lat": 41.33,
     "lon": 19.82,
     "q": "Tirana, Albania"
+  },
+  "gjirokaster": {
+    "name": "Gjirokastër",
+    "kind": "city",
+    "lat": 40.08,
+    "lon": 20.14,
+    "q": "Gjirokastër, Albania"
+  },
+  "montpellier": {
+    "name": "Montpellier",
+    "kind": "city",
+    "lat": 43.61,
+    "lon": 3.88,
+    "q": "Montpellier, France"
   }
 }

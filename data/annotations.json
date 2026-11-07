@@ -7567,5 +7567,41 @@
       }
     ],
     "confidence": "medium"
+  },
+  "bk8qur": {
+    "subject": "Uppvöxtur Envers Hoxha, síðar einræðisherra Albaníu, í Gjirokastër og námsár hans í Frakklandi og Belgíu á fjórða áratugnum",
+    "series": {
+      "key": "enver-hoxha",
+      "part": 1
+    },
+    "places": [
+      {
+        "ref": "gjirokaster",
+        "role": "primary"
+      },
+      {
+        "ref": "montpellier",
+        "role": "secondary",
+        "note": "Hoxha nam við háskólann í Montpellier á styrk frá stjórn Zogs"
+      },
+      {
+        "ref": "paris",
+        "role": "secondary",
+        "note": "Dvaldi í París og kynntist þar kommúnisma"
+      },
+      {
+        "ref": "brussel",
+        "role": "secondary",
+        "note": "Starfaði á albönsku ræðismannsskrifstofunni í Brussel"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1908,
+        "end": 1936,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
   }
 }
