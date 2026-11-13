@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-07T11:05:14.724Z",
+ "fetched": "2026-11-13T15:15:19.009Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -3285,8 +3285,17 @@
    "description": "Í þættinum er fjallað um Enver Hoxha, sem varð einræðisherra í Albaníu eftir seinna stríð, um uppvöxt hans í sunnanverðri Albaníu og námsár í Evrópu.",
    "firstrun": "2026-11-06",
    "durationSec": 2369,
-   "audio": "https://ruv-radio.akamaized.net/opid/5482902D0.mp3",
+   "audio": "https://ruv-radio.akamaized.net/opid/5482832D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL0VudmVyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6OTYwLCJoZWlnaHQiOjU0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ=="
+  },
+  {
+   "id": "bk8qus",
+   "title": "Kommúnistar komast til valda í Albaníu",
+   "description": "Í þættinum er haldið áfram umfjöllun um Enver Hoxha, einræðisherra í Albaníu.",
+   "firstrun": "2026-11-13",
+   "durationSec": 2399,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482783D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2VudmVyMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
   }
  ]
 }

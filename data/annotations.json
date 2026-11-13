@@ -7603,5 +7603,26 @@
       }
     ],
     "confidence": "medium"
+  },
+  "bk8qus": {
+    "subject": "Enver Hoxha og albanskir kommúnistar í andspyrnunni gegn hernámi Ítala og Þjóðverja í seinni heimsstyrjöld og valdataka þeirra 1944",
+    "series": {
+      "key": "enver-hoxha",
+      "part": 2
+    },
+    "places": [
+      {
+        "ref": "tirana",
+        "role": "primary"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1936,
+        "end": 1946,
+        "approx": true
+      }
+    ],
+    "confidence": "medium"
   }
 }
