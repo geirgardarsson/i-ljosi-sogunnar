@@ -1734,5 +1734,12 @@
     "lat": 43.61,
     "lon": 3.88,
     "q": "Montpellier, France"
+  },
+  "ndola-hammarskjold": {
+    "name": "Slysstaður Hammarskjölds við Ndola",
+    "kind": "landmark",
+    "lat": -12.98,
+    "lon": 28.52,
+    "q": "Dag Hammarskjöld Memorial, Ndola, Zambia"
   }
 }

@@ -7624,5 +7624,26 @@
       }
     ],
     "confidence": "medium"
+  },
+  "bk8qut": {
+    "subject": "Flugslysið við Ndola í Norður-Ródesíu 1961 þar sem Dag Hammarskjöld aðalritari Sameinuðu þjóðanna fórst á leið til viðræðna um Katanga-deiluna",
+    "places": [
+      {
+        "ref": "ndola-hammarskjold",
+        "role": "primary"
+      },
+      {
+        "ref": "lubumbashi",
+        "role": "secondary",
+        "note": "Aðskilnaðarríkið Katanga, tilefni ferðarinnar"
+      }
+    ],
+    "spans": [
+      {
+        "start": 1961,
+        "end": 1961
+      }
+    ],
+    "confidence": "high"
   }
 }

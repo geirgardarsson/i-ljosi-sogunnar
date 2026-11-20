@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T15:15:19.009Z",
+ "fetched": "2026-11-20T18:32:28.489Z",
  "program": 23795,
  "programTitle": "Í ljósi sögunnar",
  "episodes": [
@@ -3294,8 +3294,17 @@
    "description": "Í þættinum er haldið áfram umfjöllun um Enver Hoxha, einræðisherra í Albaníu.",
    "firstrun": "2026-11-13",
    "durationSec": 2399,
-   "audio": "https://ruv-radio.akamaized.net/opid/5482783D0.mp3",
+   "audio": "https://ruv-radio.akamaized.net/opid/5482833D0.mp3",
    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2VudmVyMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
+  },
+  {
+   "id": "bk8qut",
+   "title": "Dauði Dags Hammarskjölds",
+   "description": "Í þættinum er fjallað um flugslysið sem dró aðalritara Sameinuðu þjóðanna Dag Hammarskjöld til dauða í Norður-Ródesíu 1961.",
+   "firstrun": "2026-11-20",
+   "durationSec": 2399,
+   "audio": "https://ruv-radio.akamaized.net/opid/5482784D0.mp3",
+   "image": "https://myndir.ruv.is/eyJidWNrZXQiOiJydXYtcHJvZC1ydXZpcy1wdWJsaWMiLCJrZXkiOiJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL0hhbW1hci5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjk2MCwiaGVpZ2h0Ijo1NDB9LCJ0b0Zvcm1hdCI6IndlYnAifX0="
   }
  ]
 }
